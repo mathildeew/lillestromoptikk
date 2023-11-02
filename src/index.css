@@ -32,4 +32,7 @@
   a {
     font-family: theme(fontFamily.sans);
   }
+  i {
+    color: theme(colors.secondary);
+  }
 }

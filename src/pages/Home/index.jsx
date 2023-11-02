@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SEOHelmet from "../components/SEOHelmet";
+import SEOHelmet from "../../components/SEOHelmet";
 
 export default function Home() {
   return (
