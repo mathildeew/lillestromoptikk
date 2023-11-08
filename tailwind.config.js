@@ -4,14 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#D4ECDC",
-        secondary: "#1C3400",
+        primary: "#ACC3FF",
+        grey: "#EFEFEF",
       },
       fontFamily: {
         sans: ["Open Sans, Arial, Tahoma, sans-serif"],
       },
       fontSize: {
         home: "10vh",
+      },
+      rotate: {
+        150: "150deg",
+        20: "20deg",
       },
     },
   },
