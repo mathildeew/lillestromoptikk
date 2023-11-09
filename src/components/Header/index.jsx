@@ -1,7 +1,18 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
+
+  function hideOnScroll() {
+    if (window.scrollY > 3) {
+      setOpenMenu(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", hideOnScroll);
+  });
 
   return (
     <>
