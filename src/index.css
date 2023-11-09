@@ -9,6 +9,7 @@
 
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 
   main {
@@ -23,7 +24,8 @@
   h1,
   h2,
   p,
-  a {
+  a,
+  span {
     font-family: theme(fontFamily.sans);
   }
 
@@ -34,7 +36,7 @@
     line-height: 35px;
   }
 
-  .brille {
-    width: 200px;
+  .ooBlue {
+    top: 1400px;
   }
 }

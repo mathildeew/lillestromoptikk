@@ -1,7 +1,7 @@
 export default function Synsundersokelse() {
   return (
     <>
-      <section className="mx-3.5 mb-24">
+      <section className="mx-3.5 mb-24 z-10">
         <h2>Synsundersøkelse</h2>
         <p className="mb-6">
           Med lang erfaring og kunnskap tilbyr vi synsundersøkelser med avansert
@@ -17,15 +17,21 @@ export default function Synsundersokelse() {
           Vi tar barns syn på alvor og tilbyr derfor en god pris for alle barn
           mellom 5 - 18 år. I tillegg til vanlig synsundersøkelse vurderer vi
           blant annet samsyn og fargesyn. Ved noen tilfeller har barnet rett på
-          støtte til briller og vi hjelper så klart til med søknader.
+          støtte fra NAV til briller og vi hjelper så klart til med søknader.
         </p>
       </section>
 
-      <button className="text-2xl font-semibold uppercase border-2 border-black rounded-lg px-3.5 py-5 mb-24">
+      <button
+        className="text-2xl font-semibold uppercase bg-white border-2 border-black rounded-lg px-3.5 py-5 mb-24 z-10"
+        onClick={() =>
+          (window.location =
+            "mailto:post@lillestromoptikk.no?subject=Timebestilling")
+        }
+      >
         Bestill time
       </button>
 
-      <section className="mx-3.5 mb-36">
+      <section className="mx-3.5 mb-36 z-10">
         <h2>Meny</h2>
         <div className="flex justify-between mb-5">
           <p>Synsundersøkelse</p>

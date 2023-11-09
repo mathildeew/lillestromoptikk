@@ -6,9 +6,15 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <main>
+
+      <main className="max-w-2xl flex flex-col mx-auto relative overflow-hidden">
         <Outlet />
+        <img
+          src="src/assets/oo-blue.png"
+          className="ooBlue w-3/4 absolute -rotate-45  "
+        />
       </main>
+
       <Footer />
     </>
   );

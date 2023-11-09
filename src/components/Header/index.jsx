@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import Nav from "../Nav";
+import DesktopNav from "../Nav/Desktop";
+import MobileNav from "../Nav/Mobile";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -17,11 +18,14 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white w-full h-20 border-black border-2 z-20 absolute">
+      <header className="bg-white w-full h-20  z-20 absolute">
         <div className="flex justify-between items-center mx-6 my-3.5">
           <img src="src/assets/logo.svg" className="w-40"></img>
+
+          <DesktopNav />
+
           <div
-            className="w-10 h-10 flex flex-col justify-around p-1"
+            className="w-10 h-10 flex flex-col justify-around p-1 md:hidden"
             onClick={() => setOpenMenu(!openMenu)}
           >
             <span
@@ -43,7 +47,7 @@ export default function Header() {
         </div>
       </header>
 
-      <Nav openMenu={openMenu} />
+      <MobileNav openMenu={openMenu} />
     </>
   );
 }

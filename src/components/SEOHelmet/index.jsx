@@ -1,6 +1,6 @@
 import { HelmetProvider, Helmet } from "react-helmet-async";
 
-export default function SEOHelmet({ title }, { content }) {
+export default function SEOHelmet({ title, content }) {
   return (
     <HelmetProvider>
       <Helmet>
@@ -9,6 +9,11 @@ export default function SEOHelmet({ title }, { content }) {
           src="https://kit.fontawesome.com/831e6c6172.js"
           crossorigin="anonymous"
         ></script>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="src/assets/favicon.svg"
+        ></link>
         <meta name="description" content={content} />
         <title>Lillestrøm Optikk | {title}</title>
       </Helmet>
