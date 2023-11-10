@@ -7,14 +7,14 @@ export default function Layout() {
     <>
       <Header />
 
-      <main className="max-w-2xl flex flex-col mx-auto relative overflow-hidden">
+      <main className="max-w-2xl h-full flex flex-col mx-auto relative overflow-hidden">
         <Outlet />
-        <img
+
+        {/* <img
           src="src/assets/oo-blue.png"
           className="ooBlue w-3/4 absolute -rotate-45  "
-        />
+        /> */}
       </main>
-
       <Footer />
     </>
   );

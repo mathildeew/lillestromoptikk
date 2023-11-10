@@ -6,7 +6,7 @@ export default function Hero() {
       </h1>
 
       <div className="mb-24">
-        <img src="src/assets/briller.svg" className="w-80 mx-auto" />
+        <img src="src/assets/briller.svg" className="w-80 mx-auto mb-8" />
 
         <p className="text-8xl font-bold mb-6">50 %</p>
         <p className="text-2xl font-bold uppercase mb-6">

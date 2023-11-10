@@ -4,12 +4,11 @@ export default function PageNotFound() {
   return (
     <>
       <SEOHelmet title={"Side ikke funnet"} />
-      <h1 className="uppercase absolute left-0 ">Lillestrøm Optikk</h1>
 
-      <div className="flex flex-col items-center justify-center">
-        <i class="fa-solid fa-mug-hot text-5xl mb-5"></i>
-        <p>Side ikke funnet.</p>
-      </div>
+      <section className="h-96 flex flex-col items-center justify-center px-3.5  mt-20 mb-24 border-black border-2">
+        <h1 className="text-6xl font-semibold mb-6">Side ikke funnet.</h1>
+        <p>Beklager, vi finner ikke innholdet du leter etter!</p>
+      </section>
     </>
   );
 }

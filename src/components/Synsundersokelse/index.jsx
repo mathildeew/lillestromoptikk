@@ -1,7 +1,7 @@
 export default function Synsundersokelse() {
   return (
     <>
-      <section className="mx-3.5 mb-24 z-10">
+      <section className="mx-3.5 mb-24 z-10" id="synsundersokelse">
         <h2>Synsundersøkelse</h2>
         <p className="mb-6">
           Med lang erfaring og kunnskap tilbyr vi synsundersøkelser med avansert
@@ -22,6 +22,7 @@ export default function Synsundersokelse() {
       </section>
 
       <button
+        id="bestilltime"
         className="text-2xl font-semibold uppercase bg-white border-2 border-black rounded-lg px-3.5 py-5 mb-24 z-10"
         onClick={() =>
           (window.location =
