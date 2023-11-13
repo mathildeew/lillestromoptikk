@@ -15,6 +15,7 @@ export default {
       },
       backgroundImage: {
         "hero-pattern": "url(/assets/elements/bg-hero.svg)",
+        "brille-bg": "url(/assets/elements/brille-blue-bg.svg)",
       },
       rotate: {
         150: "150deg",

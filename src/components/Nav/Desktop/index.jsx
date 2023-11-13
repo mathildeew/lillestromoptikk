@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function DesktopNav() {
   return (
     <nav className="hidden w-2/3  md:block">
@@ -8,7 +6,11 @@ export default function DesktopNav() {
           <a href={`/#synsundersokelse`}>Synsundersøkelse</a>
         </li>
         <li>
-          <a href={`https://www.coptikk.no/bestill-synstest`}>Bestill time</a>
+          <a
+            href={`https://www.coptikk.no/bestill-synstest?current_optician=5271`}
+          >
+            Bestill time
+          </a>
         </li>
         <li>
           <a href={`/#kontaktoss`}>Kontakt oss</a>

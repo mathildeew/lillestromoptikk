@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Synsundersokelse() {
   return (
     <>
-      <div className="max-w-6xl mx-auto ">
-        <section className="mt-20 mx-3.5 mb-24 z-10" id="synsundersokelse">
+      <div className=" max-w-6xl mx-auto">
+        <section className="mt-20 mx-3.5 mb-24" id="synsundersokelse">
           <h2>Synsundersøkelse</h2>
           <p className="mb-6">
             Med lang erfaring og kunnskap tilbyr vi synsundersøkelser med
@@ -29,10 +29,12 @@ export default function Synsundersokelse() {
           id="bestilltime"
           className="text-2xl font-semibold uppercase bg-white w-72  border-2 border-black rounded-lg px-3.5 py-5 mx-3.5 mb-24 z-10 hover:shadow-lg"
         >
-          <Link to="https://www.coptikk.no/bestill-synstest">Bestill time</Link>
+          <Link to="https://www.coptikk.no/bestill-synstest?current_optician=5271">
+            Bestill time
+          </Link>
         </button>
 
-        <section className="max-w-xl mx-3.5 mb-36 z-10">
+        <section className="max-w-xl mx-3.5 mb-36">
           <h2>Meny</h2>
           <div className="flex justify-between mb-5">
             <p>Synsundersøkelse</p>

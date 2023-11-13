@@ -11,7 +11,6 @@ export default function Home() {
           "Velkommen til Lillestrøm Optikk, din lokale optiker på Romerriket. Bestill synsundersøkelse online og besøk oss i Storgata 22."
         }
       />
-
       <Hero />
       <Synsundersokelse />
     </>
