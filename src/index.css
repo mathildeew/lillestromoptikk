@@ -3,4 +3,37 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    margin: 0;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  h1,
+  h2,
+  p,
+  a,
+  span {
+    font-family: theme(fontFamily.sans);
+  }
+
+  p,
+  ul {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+  }
+
+  .ooBlue {
+    top: 1400px;
+  }
 }
