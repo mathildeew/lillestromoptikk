@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
     <footer
-      className="bg-grey w-full px-3.5 py-24 z-20 relative"
+      className="bg-grey w-full px-3.5 py-24 z-20 relative "
       id="kontaktoss"
     >
-      <div className="max-w-2xl flex flex-col mx-auto">
+      <div className="max-w-6xl mx-auto">
         <section className="mb-12">
           <h2>Kontakt oss</h2>
           <div className="mb-6">

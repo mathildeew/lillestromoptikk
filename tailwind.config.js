@@ -13,6 +13,9 @@ export default {
       fontSize: {
         home: "10vh",
       },
+      backgroundImage: {
+        "hero-pattern": "url(/src/assets/bg-hero.svg)",
+      },
       rotate: {
         150: "150deg",
         20: "20deg",

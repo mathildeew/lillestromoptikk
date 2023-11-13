@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <>
       <header className="bg-white w-full h-20 flex absolute z-20">
-        <div className="w-full max-w-6xl flex justify-between items-center mx-6 md:mx-auto my-3.5">
+        <div className="w-full max-w-6xl flex justify-between items-center mx-6 md:mx-auto md:px-3.5">
           <Link to={`/`}>
             <img src="src/assets/logo.svg" className="w-40"></img>
           </Link>

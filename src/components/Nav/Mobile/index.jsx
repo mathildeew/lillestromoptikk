@@ -10,7 +10,7 @@ export default function MobileNav({ openMenu }) {
           <a href={`/#synsundersokelse`}>Synsundersøkelse</a>
         </li>
         <li className="mb-6">
-          <a href={`/#bestilltime`}>Bestill time</a>
+          <a href={`https://www.coptikk.no/bestill-synstest`}>Bestill time</a>
         </li>
         <li className="mb-6">
           <a href={`/#kontaktoss`}>Kontakt oss</a>

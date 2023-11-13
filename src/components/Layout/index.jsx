@@ -7,7 +7,7 @@ export default function Layout() {
     <>
       <Header />
 
-      <main className="max-w-2xl h-full flex flex-col mx-auto relative overflow-hidden">
+      <main className=" h-full flex flex-col mx-auto relative overflow-hidden">
         <Outlet />
 
         {/* <img
