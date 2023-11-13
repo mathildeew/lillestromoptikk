@@ -14,7 +14,7 @@ export default {
         home: "10vh",
       },
       backgroundImage: {
-        "hero-pattern": "url(/src/assets/bg-hero.svg)",
+        "hero-pattern": "url(/assets/elements/bg-hero.svg)",
       },
       rotate: {
         150: "150deg",

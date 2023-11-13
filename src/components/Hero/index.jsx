@@ -20,7 +20,7 @@ export default function Hero() {
 
         <div className="text-center">
           <img
-            src="src/assets/briller.svg"
+            src="/assets/elements/briller.svg"
             className="w-90 mx-auto mb-8 md:w-72"
           />
           <p className="text-8xl font-bold mb-6">50 %</p>
