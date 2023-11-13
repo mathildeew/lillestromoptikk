@@ -12,7 +12,7 @@ export default function Synsundersokelse() {
           </p>
           <p className="mb-6">
             Våre synsundersøkelser inkluderer alltid utmåling av brillestyrker
-            og en grundig øyehelseundersøkels. Vi kartlegger ditt behov og
+            og en grundig øyehelseundersøkelse. Vi kartlegger ditt behov og
             hjelper deg med å velge riktig løsning. Ved behov utfører vi
             supplerende tester.
           </p>
@@ -20,7 +20,7 @@ export default function Synsundersokelse() {
             Vi tar barns syn på alvor og tilbyr derfor en god pris for alle barn
             mellom 5 - 18 år. I tillegg til vanlig synsundersøkelse vurderer vi
             blant annet samsyn og fargesyn. Ved noen tilfeller har barnet rett
-            på støtte fra NAV til briller og vi hjelper så klart til med
+            på støtte fra NAV til briller, og vi hjelper så klart til med
             søknader.
           </p>
         </section>

@@ -25,7 +25,7 @@ export default function Hero() {
           />
           <p className="text-8xl font-bold mb-6">50 %</p>
           <p className="text-2xl font-bold uppercase">
-            Alle innfatinger og solbriller
+            Alle innfatninger og solbriller
           </p>
         </div>
       </div>
