@@ -27,7 +27,7 @@ export default function Synsundersokelse() {
 
         <button
           id="bestilltime"
-          className="text-2xl font-semibold uppercase bg-primary w-72  border-2 border-black rounded-lg px-3.5 py-5 mb-24 z-10 hover:shadow-lg"
+          className="text-2xl font-semibold uppercase bg-white w-72  border-2 border-black rounded-lg px-3.5 py-5 mb-24 z-10 hover:shadow-lg"
         >
           <Link to="https://www.coptikk.no/bestill-synstest">Bestill time</Link>
         </button>
