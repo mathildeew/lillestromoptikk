@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Synsundersokelse() {
   return (
     <>
-      <div className=" max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <section className="mt-20 mx-3.5 mb-24" id="synsundersokelse">
           <h2>Synsundersøkelse</h2>
           <p className="mb-6">
