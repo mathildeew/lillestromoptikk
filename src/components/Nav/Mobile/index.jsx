@@ -15,7 +15,7 @@ export default function MobileNav({ openMenu }) {
     >
       <ul className="w-full">
         <li className="mb-7 border-b border-black">
-          <Link to={"/synstest"}>Synstest</Link>
+          <Link to={"/synstest"}>Bestill synstest</Link>
         </li>
         <li className="mb-7 border-b border-black">
           <Link to={"/merker"}>Merker</Link>

@@ -1,17 +1,23 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function DesktopNav() {
   return (
     <nav className="hidden w-2/3  md:block">
       <ul className="flex justify-between">
         <li>
-          <a href={`/#synsundersokelse`}>Synsundersøkelse</a>
+          <Link to="/synstest">Bestill synstest</Link>
         </li>
         <li>
-          <Link to="/synstest">Synstest</Link>
+          <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
         </li>
         <li>
-          <a href={`/#kontaktoss`}>Kontakt oss</a>
+          <Link to="/merker">Merker</Link>
+        </li>
+        <li className="flex items-center">
+          <p className="mr-2">Om oss</p>
+          <FontAwesomeIcon icon={faCaretDown} />
         </li>
       </ul>
     </nav>

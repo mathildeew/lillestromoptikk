@@ -14,6 +14,9 @@
 
   h1 {
     font-size: 40px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    margin-bottom: 36px;
   }
 
   h2 {
@@ -31,7 +34,8 @@
   }
 
   p,
-  ul {
+  ul,
+  a {
     font-size: 18px;
     letter-spacing: 1.5px;
     line-height: 35px;
