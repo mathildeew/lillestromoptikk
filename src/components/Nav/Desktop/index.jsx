@@ -7,7 +7,7 @@ export default function DesktopNav() {
     <nav className="hidden w-2/3  md:block">
       <ul className="flex justify-between">
         <li>
-          <Link to="/synstest">Bestill synstest</Link>
+          <Link to="/bestill-synstest">Bestill synstest</Link>
         </li>
         <li>
           <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>

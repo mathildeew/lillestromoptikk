@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="w-full max-w-6xl mx-auto mt-36 px-3.5">
+    <section className="w-full max-w-6xl mx-auto px-3.5">
       <h1>Kontakt oss</h1>
 
       <div className="mb-6">

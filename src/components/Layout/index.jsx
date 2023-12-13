@@ -6,9 +6,8 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <main className="h-full flex flex-col mx-auto relative overflow-hidden">
-        <Outlet />
-      </main>
+      <Outlet />
+
       {/* <Footer /> */}
     </>
   );

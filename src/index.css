@@ -15,7 +15,6 @@
   h1 {
     font-size: 40px;
     font-weight: 600;
-    border-bottom: 1px solid black;
     margin-bottom: 36px;
   }
 
@@ -41,7 +40,21 @@
     line-height: 35px;
   }
 
+  .btn-primary {
+    @apply border-2 border-black rounded-full py-2 px-3;
+  }
+
   .ooBlue {
     top: 1400px;
+  }
+
+  #LogMarChart path {
+    filter: blur(20px);
+    padding: 3px;
+    transition: 0.3s;
+  }
+
+  #LogMarChart path:hover {
+    filter: blur(0px);
   }
 }
