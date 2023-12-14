@@ -3,11 +3,13 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { booking } from "./index-1.0.mjs";
 import "./bookingForm.css";
+import { useLocation } from "react-router-dom";
 
 export default function BookingForm() {
   const pageLoaded = useRef(false);
+  const location = useLocation();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (!pageLoaded.current) {
       pageLoaded.current = true;
       booking(); // Kjør booking-funksjonen ved første lasting av siden
@@ -16,7 +18,9 @@ export default function BookingForm() {
 
   useEffect(() => {
     const mountBooking = () => {
-      booking(); // Kjør booking-funksjonen ved lasting av siden
+      if (location === "/bestill-synstest") {
+        booking(); // Kjør booking-funksjonen ved lasting av siden
+      }
     };
 
     window.addEventListener("load", mountBooking);

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
-export default function MobileNav({ openMenu }) {
+export default function MobileNav({ openMenu, setOpenMenu }) {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
   return (
@@ -15,10 +15,14 @@ export default function MobileNav({ openMenu }) {
     >
       <ul className="w-full">
         <li className="mb-7 border-b border-black">
-          <Link to={"/bestill-synstest"}>Bestill synstest</Link>
+          <Link to={"/bestill-synstest"} onClick={() => setOpenMenu(!openMenu)}>
+            Bestill synstest
+          </Link>
         </li>
         <li className="mb-7 border-b border-black">
-          <Link to={"/merker"}>Merker</Link>
+          <Link to={"/merker"} onClick={() => setOpenMenu(!openMenu)}>
+            Merker
+          </Link>
         </li>
         <li className="mb-7 border-b border-black">
           <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
@@ -37,7 +41,9 @@ export default function MobileNav({ openMenu }) {
           </button>
           <ul {...getCollapseProps()}>
             <li className="mb-7">
-              <Link to={"/kontakt-oss"}>Kontakt</Link>
+              <Link to={"/kontakt-oss"} onClick={() => setOpenMenu(!openMenu)}>
+                Kontakt
+              </Link>
             </li>
             <li className="mb-7">
               <Link>Øyehelseklinikk</Link>

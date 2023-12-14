@@ -1,7 +1,8 @@
+import EyecheckInfo from "../../components/EyecheckInfo";
 import Hero from "../../components/Hero";
 import LogMAR from "../../components/LogMAR";
 import SEOHelmet from "../../components/SEOHelmet";
-import Synsundersokelse from "../../components/Synsundersokelse";
+import TimeForCheck from "../../components/TimeForEyecheck";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       />
       <main className="h-full flex flex-col mx-auto relative overflow-hidden">
         <Hero />
-        <LogMAR />
+        <TimeForCheck />
       </main>
     </>
   );

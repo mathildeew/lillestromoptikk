@@ -1,11 +1,17 @@
 @charset "UTF-8";
 .coptikk-app {
-  font-size: 15px;
+  font-size: 18px;
   /* max-width: 700px; */
 }
 
 .user-form {
   max-width: 600px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid #acc3ff;
 }
 
 .coptikk-app [type="color"],
@@ -57,6 +63,7 @@
   cursor: pointer;
   background-color: #004f68;
   color: #fefefe;
+  max-width: 300px;
 }
 .coptikk-app .button.expanded {
   display: block;
@@ -151,14 +158,14 @@
 .coptikk-app .columns {
   flex: 1 1 0px;
   padding-right: 0.625rem;
-  padding-left: 0.625rem;
+  /* padding-left: 0.625rem; */
   min-width: 0;
 }
 @media print, screen and (min-width: 40em) {
   .coptikk-app .column,
   .coptikk-app .columns {
     padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
+    /* padding-left: 0.9375rem; */
   }
 }
 .coptikk-app .small-12 {
@@ -184,6 +191,7 @@
   border: 1px solid #004f68;
   /* width: calc(100% - 20px); */
   padding: 10px 0 10px 20px;
+  font-size: 18px;
 }
 .coptikk-app .arrow-down_icon-wrapper .arrow-down_icon {
   color: #004f68;
@@ -1109,7 +1117,7 @@
   font-size: 1.44rem;
 }
 .coptikk-app .cop .cop__date-group {
-  width: 300px;
+  width: 280px;
 }
 .coptikk-app .cop .store-select {
   width: 100%;
@@ -1161,7 +1169,7 @@
   overflow: hidden;
 }
 .coptikk-app .cop .member-label {
-  font-size: 20px;
+  font-size: 24px;
   padding-bottom: 1rem;
 }
 .coptikk-app .cop .container {
@@ -1177,9 +1185,10 @@
 .coptikk-app .cop .fc-primary {
   border-color: #004f68;
   color: #004f68;
+  font-size: 18px;
 }
 .coptikk-app .cop .fc-primary::placeholder {
-  color: #004f68;
+  color: #680000;
 }
 .coptikk-app .cop .container input {
   position: absolute;
@@ -1192,15 +1201,15 @@
   left: 0;
   height: 24px;
   width: 24px;
-  border: 1px solid #004f68;
+  border: 1px solid black;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .coptikk-app .cop .return-btn {
-  background-color: lightblue;
-  border-color: #c7dee5;
+  background-color: #acc3ff;
+  border-color: #acc3ff;
   color: #161616;
   display: block;
 }
@@ -1265,11 +1274,13 @@
 }
 .coptikk-app .cop__booking-form {
   overflow-y: auto;
-  padding: 15px;
+  /* padding: 15px; */
 }
 .coptikk-app .cop__booking-form__title {
-  color: #004f68;
+  font-size: 24px;
+  color: black;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 .coptikk-app .cop__booking-form__success {
   background-color: #fff;
@@ -1303,10 +1314,12 @@
   padding: 0.5rem 1.5rem;
   height: 2.6rem;
   min-height: 110px;
+  border: 1px solid #004f68;
 }
 .coptikk-app .cop__separator {
-  border-top: 1px solid #bbb;
-  margin: 35px 0;
+  /* border-top: 1px solid #bbb;
+  margin: 35px 0; */
+  display: none;
 }
 .coptikk-app .cop .custom__input__header {
   width: 100%;

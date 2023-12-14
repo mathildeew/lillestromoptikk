@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white w-full h-20 flex  z-20">
+      <header className="bg-white w-full h-20 flex mb-20 z-20">
         <div className="w-full max-w-6xl flex justify-between items-center mx-6 md:mx-auto md:px-3.5">
           <Link to={`/`}>
             <img src="/assets/identity/logo.svg" className="w-40"></img>
@@ -43,14 +43,14 @@ export default function Header() {
             ></span>
             <span
               className={`w-full h-1 bg-black transition-all duration-500 ease-in-out ${
-                openMenu && "-rotate-45 relative -top-2.5"
+                openMenu && "-rotate-45 relative -top-3"
               }`}
             ></span>
           </div>
         </div>
       </header>
 
-      <MobileNav openMenu={openMenu} />
+      <MobileNav openMenu={openMenu} setOpenMenu={setOpenMenu} />
     </>
   );
 }
