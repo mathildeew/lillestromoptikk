@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "#ACC3FF",
         grey: "#EFEFEF",
+        kleinBlue: "#1F1BBD",
       },
       fontFamily: {
         sans: ["Open Sans, Arial, Tahoma, sans-serif"],
@@ -13,9 +14,13 @@ export default {
       fontSize: {
         home: "10vh",
       },
+      width: {
+        400: "450px",
+      },
       backgroundImage: {
         "hero-pattern": "url(/assets/elements/bg-hero.svg)",
         "brille-bg": "url(/assets/elements/brille-blue-bg.svg)",
+        brilleslange: "url(/dist/assets/elements/brilleslange.svg)",
       },
       rotate: {
         150: "150deg",

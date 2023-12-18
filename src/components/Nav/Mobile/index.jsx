@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function MobileNav({ openMenu, setOpenMenu }) {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();

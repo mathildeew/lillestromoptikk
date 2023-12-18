@@ -30,8 +30,8 @@ export default function DesktopNav() {
             }`}
           />
           <ul
-            className={`absolute top-20  bg-primary rounded-xl transition-all duration-1000 ease-in-out ${
-              openMenu ? "hidden opacity-0 " : "block opacity-100"
+            className={`absolute top-20 p-5 bg-primary rounded-xl transition-all ${
+              openMenu ? "scale-0 opacity-0" : "scale-100 opacity-100"
             }`}
           >
             <li>

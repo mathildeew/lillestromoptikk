@@ -1,12 +1,14 @@
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import LogMAR from "../LogMAR";
 
 export default function TimeForCheck() {
   return (
-    <section className="mt-10">
-      <h2 className="mb-6">På tide med en synstest?</h2>
+    <section className="pt-12 px-3.5 border-2">
+      <h2 className="uppercase mb-6">På tide med en synstest?</h2>
 
-      <div className="max-w-2xl mb-6">
+      <div className="max-w-2xl my-12">
         <LogMAR />
       </div>
 
@@ -16,36 +18,11 @@ export default function TimeForCheck() {
         Da kan det være på tide men en kontroll av synet.
       </p>
       <button className="btn-primary mb-6">
-        <Link to={"/bestill-synstest"}>Bestill synstest</Link>
+        <Link to={"/bestill-synstest"}>
+          Bestill synstest
+          <FontAwesomeIcon icon={faArrowRightLong} className="ml-3.5" />
+        </Link>
       </button>
-
-      <section className="max-w-xl mx-3.5 mb-36">
-        <h2>Meny</h2>
-        <div className="flex justify-between mb-5">
-          <p>Synsundersøkelse</p>
-          <p>790,–</p>
-        </div>
-
-        <div className="flex justify-between mb-5">
-          <p>Linsekontroll</p>
-          <p>790,–</p>
-        </div>
-
-        <div className="flex justify-between items-center mb-5">
-          <p>Nytilpasning av kontaktlinser</p>
-          <p>1390,–</p>
-        </div>
-
-        <div className="flex justify-between items-center mb-5">
-          <p>Synsundersøkelse av barn</p>
-          <p>590,–</p>
-        </div>
-
-        <div className="flex justify-between mb-5">
-          <p>Kaffe</p>
-          <p>0,–</p>
-        </div>
-      </section>
     </section>
   );
 }

@@ -3,6 +3,8 @@ import Hero from "../../components/Hero";
 import LogMAR from "../../components/LogMAR";
 import SEOHelmet from "../../components/SEOHelmet";
 import TimeForCheck from "../../components/TimeForEyecheck";
+import Sale from "../../components/Sale";
+import { BrandsSlider } from "../../components/BrandsSlider";
 
 export default function Home() {
   return (
@@ -13,9 +15,12 @@ export default function Home() {
           "Velkommen til Lillestrøm Optikk, din lokale optiker på Romerriket. Bestill synsundersøkelse online og besøk oss i Storgata 22."
         }
       />
+
       <main className="h-full flex flex-col mx-auto relative overflow-hidden">
         <Hero />
+        <Sale />
         <TimeForCheck />
+        <BrandsSlider />
       </main>
     </>
   );
