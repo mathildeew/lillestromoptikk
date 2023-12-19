@@ -1,15 +1,29 @@
+import { faTruckMonster } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./logMar.css";
 
 export default function LogMAR() {
   const [scrollToPlace, setScrollToPlace] = useState();
+  const [blowAway, setBlowAway] = useState(true);
 
   // window.addEventListener("scroll", function () {
   // if (window.scrollY > scrollAmount) {
   //   console.log("hei");
   // }
   // });
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      let scrolled = document.scrollingElement.scrollTop;
+
+      if (scrolled >= 1 && scrolled < 750) {
+        setBlowAway(false);
+      } else setBlowAway(true);
+
+      console.log(blowAway);
+    });
+  }, []);
 
   return (
     <svg
@@ -35,6 +49,7 @@ export default function LogMAR() {
             />
             <path
               id="Path_246"
+              className={`blowMeAway v ${blowAway && "active"}`}
               data-name="Path 246"
               d="M459.028.152,412.3,117.735,365.572.152H329.839l65.969,164.922h32.984L494.761.152Z"
             />
@@ -45,6 +60,7 @@ export default function LogMAR() {
             />
             <path
               id="Path_248"
+              className={`blowMeAway d ${blowAway && "active"}`}
               data-name="Path 248"
               d="M1154.44,99.105V66.121A66.084,66.084,0,0,0,1088.471.152H989.518V165.074h98.953a66.084,66.084,0,0,0,65.969-65.969m-32.984,0a33.241,33.241,0,0,1-32.985,32.984H1022.5V33.137h65.968a33.242,33.242,0,0,1,32.984,32.984Z"
             />
@@ -54,10 +70,10 @@ export default function LogMAR() {
               d="M1472.56,49.476c0-13.133-6.719-25.654-13.438-33.6h-.3A46.964,46.964,0,0,0,1423.083,0h-65.968c-16.8,0-27.487,8.246-33.6,14.049-20.157,18.935-21.684,51.309,0,70.855,7.024,6.414,18.325,13.743,33.6,13.743h65.968c3.054,0,9.468,1.527,12.827,5.5a16.842,16.842,0,0,1-2.137,23.514,21.032,21.032,0,0,1-10.995,3.97h-65.969c-6.719,0-8.857-.916-12.216-4.276s-4.276-7.33-4.276-12.216h-32.679c0,11.606,3.97,25.654,14.965,36.038a48.885,48.885,0,0,0,34.512,13.439h65.968c17.714,0,25.96-5.192,36.038-16.492,18.019-20.157,18.325-51-2.443-69.023-5.8-5.192-16.8-13.438-33.6-13.438h-65.963a15.753,15.753,0,0,1-12.522-5.8,17.013,17.013,0,0,1,.606-21.381c3.054-3.665,8.857-5.5,11.911-5.5h65.973c2.138,0,10.689,3.97,10.689,3.97s6.108,5.192,6.108,12.522Z"
             />
           </g>
-
           <g className="row2">
             <path
               id="Path_250"
+              className={`blowMeAway n ${blowAway && "active"}`}
               data-name="Path 250"
               d="M282.5,427.723V296.4H256.24V387.1l-78.8-91.013H151.177V427.418H177.44v-90.4l78.8,91.011,26.265-.305Z"
             />
@@ -73,6 +89,7 @@ export default function LogMAR() {
             />
             <path
               id="Path_253"
+              className={`blowMeAway k ${blowAway && "active"}`}
               data-name="Path 253"
               d="M1014.563,338.391l55.89-42.147H1026.78l-61.39,46.423V296.244H939.127V427.571H965.39v-51.92L991.963,355.8l45.2,72.077h33.29Z"
             />
@@ -95,6 +112,7 @@ export default function LogMAR() {
             />
             <path
               id="Path_257"
+              className={`blowMeAway s ${blowAway && "active"}`}
               data-name="Path 257"
               d="M786.673,562.712c0-8.246-4.276-16.187-8.551-21.073h-.3a28.081,28.081,0,0,0-22.3-10.079H713.985c-10.689,0-17.1,5.192-21.073,8.857-12.827,11.911-13.743,32.068,0,44.59,4.276,3.97,11.606,8.857,21.073,8.857h41.536c1.832,0,6.108.916,8.246,3.665,3.665,4.276,3.054,11.3-1.222,14.66a15.085,15.085,0,0,1-6.719,2.443H713.985c-4.276,0-5.5-.611-7.635-2.749s-2.749-4.581-2.749-7.635H682.833c0,7.33,2.443,16.187,9.468,22.6a30.164,30.164,0,0,0,21.684,8.552h41.536c11.3,0,16.492-3.36,22.6-10.384,11.606-12.522,11.606-32.068-1.527-43.368a30.866,30.866,0,0,0-21.073-8.551H713.985a9.851,9.851,0,0,1-7.941-3.665,11,11,0,0,1,.309-13.439,10.635,10.635,0,0,1,7.635-3.665h41.533c1.222,0,6.719,2.443,6.719,2.443s3.665,3.36,3.665,7.941Z"
             />
@@ -105,6 +123,7 @@ export default function LogMAR() {
             />
             <path
               id="Path_259"
+              className={`blowMeAway nn ${blowAway && "active"}`}
               data-name="Path 259"
               d="M1209.413,635.4V531.56h-20.768v71.772l-62.3-71.771h-20.772V635.4h20.768V563.628l62.3,71.771Z"
             />
@@ -117,6 +136,7 @@ export default function LogMAR() {
             />
             <path
               id="Path_261"
+              className={`blowMeAway nnn ${blowAway && "active"}`}
               data-name="Path 261"
               d="M618.45,800.319v-82.46H601.958V774.97l-49.476-57.111H535.99v82.46h16.492V743.208l49.476,57.111Z"
             />
@@ -136,10 +156,10 @@ export default function LogMAR() {
               d="M1113.209,800.472l-14.965-35.122a24.848,24.848,0,0,0-9.567-47.644h-57.928v82.46h16.492V767.487h33.9l14.049,32.985Zm-16.492-57.723a8.212,8.212,0,0,1-8.178,8.246h-41.3V734.5h41.23c4.581-.3,8.246,3.665,8.246,8.246"
             />
           </g>
-
           <g className="row5">
             <path
               id="Path_265"
+              className={`blowMeAway kk ${blowAway && "active"}`}
               data-name="Path 265"
               d="M485.608,887.655,513.4,866.582H491.716l-30.541,23.211V866.582H448.042V931.94h13.133V905.98l13.132-9.773,22.6,35.733H513.4Z"
             />
@@ -164,8 +184,7 @@ export default function LogMAR() {
               d="M1036.256,899.261a32.679,32.679,0,1,0-32.679,32.679,32.715,32.715,0,0,0,32.679-32.679m-13.133,0a19.546,19.546,0,1,1-19.546-19.546,19.683,19.683,0,0,1,19.546,19.546"
             />
           </g>
-
-          <g className="row6">
+          {/* <g className={`row6 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_270"
               data-name="Path 270"
@@ -192,7 +211,7 @@ export default function LogMAR() {
               d="M975.776,982.952h-11.3l-14.66,36.955-14.66-36.955h-11.3l20.768,51.92h10.384Z"
             />
           </g>
-          <g className="row7">
+          <g className={`row7 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_275"
               data-name="Path 275"
@@ -219,7 +238,7 @@ export default function LogMAR() {
               d="M927.307,1106.031h-8.551a12.506,12.506,0,0,1-11.606,8.246,12.216,12.216,0,1,1,11.606-16.186h8.551a20.643,20.643,0,0,0-40.924,3.97,20.6,20.6,0,0,0,20.431,20.768h.336a20.888,20.888,0,0,0,20.157-16.8"
             />
           </g>
-          <g className="row8">
+          <g className={`row8 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_280"
               data-name="Path 280"
@@ -246,7 +265,7 @@ export default function LogMAR() {
               d="M875.454,1165.584l14.049-10.692H878.511L863.238,1166.5v-11.605h-6.414v32.984h6.414v-13.132l6.719-4.887,11.3,18.019H889.5Z"
             />
           </g>
-          <g className="row9">
+          <g className={`row9 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_285"
               data-name="Path 285"
@@ -273,7 +292,7 @@ export default function LogMAR() {
               d="M858.8,1226.973a12.827,12.827,0,1,0-12.827,12.827,12.9,12.9,0,0,0,12.827-12.827m-5.192,0a7.635,7.635,0,1,1-15.27,0,7.561,7.561,0,0,1,7.486-7.635h.149a7.561,7.561,0,0,1,7.635,7.486v.149"
             />
           </g>
-          <g className="row10">
+          <g className={`row10 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_290"
               data-name="Path 290"
@@ -300,7 +319,7 @@ export default function LogMAR() {
               d="M834.831,1272.63v-3.97a8.213,8.213,0,0,0-8.178-8.246H814.368v20.768h12.216a8.467,8.467,0,0,0,8.247-8.552m-4.276,0a4.042,4.042,0,0,1-3.971,3.968h-8.246v-12.214h8.246a4.042,4.042,0,0,1,3.968,3.971Z"
             />
           </g>
-          <g className="row11">
+          <g className={`row11 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_295"
               data-name="Path 295"
@@ -327,7 +346,7 @@ export default function LogMAR() {
               d="M818.329,1314.176l-3.054-7.024a4.7,4.7,0,0,0,3.054-4.582,5.089,5.089,0,0,0-5.192-4.886h-11.3v16.187h3.36v-6.414h6.718l2.749,6.414h3.36v.305Zm-3.665-11.606a1.443,1.443,0,0,1-1.353,1.528,1.722,1.722,0,0,1-.174,0h-8.246v-3.36h8.246a1.936,1.936,0,0,1,1.527,1.832"
             />
           </g>
-          <g className="row12">
+          <g className={`row12 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_300"
               data-name="Path 300"
@@ -354,7 +373,7 @@ export default function LogMAR() {
               d="M800.473,1340.126V1327.3h-2.444v8.857l-7.94-8.857h-2.444v12.828h2.444v-8.857l7.94,8.857Z"
             />
           </g>
-          <g className="row13">
+          <g className={`row13 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_305"
               data-name="Path 305"
@@ -381,7 +400,7 @@ export default function LogMAR() {
               d="M788.247,1355.406a5.192,5.192,0,1,0-5.192,5.192,5.352,5.352,0,0,0,5.192-5.192m-2.138,0a3.054,3.054,0,1,1-3.054-3.054,3.284,3.284,0,0,1,3.054,3.054"
             />
           </g>
-          <g className="row14">
+          <g className={`row14 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_310"
               data-name="Path 310"
@@ -407,7 +426,7 @@ export default function LogMAR() {
               data-name="Path 314"
               d="M779.251,1376.77v-8.246h-1.527v5.8l-4.887-5.8h-1.526v8.246h1.527v-5.8l4.887,5.8Z"
             />
-          </g>
+          </g> */}
         </g>
       </g>
     </svg>

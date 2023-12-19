@@ -25,7 +25,10 @@
   }
 
   h1,
-  h2,
+  h2 {
+    font-family: theme(fontFamily.heading);
+  }
+
   p,
   a,
   span {
@@ -41,7 +44,7 @@
   }
 
   .btn-primary {
-    @apply border-2 border-black rounded-full py-1 px-3;
+    @apply font-semibold border-2 border-darkBlue rounded-full py-1 px-3.5;
   }
 
   .ooBlue {
@@ -49,12 +52,69 @@
   }
 
   #LogMarChart path {
-    filter: blur(20px);
     padding: 3px;
-    transition: 0.3s;
+    /* transition: 0.3s; */
+    filter: blur(20px);
+  }
+
+  /* #LogMarChart path:nth-child(-n + 3 of .blur) {
+    animation: blurry 10s linear 8s infinite;
+  } */
+
+  .blowMeAway {
+    transition: transform 1s ease-in-out;
+  }
+
+  .blowMeAway.v.active {
+    transform: translate(-7%, 10%);
+  }
+
+  .blowMeAway.d.active {
+    transform: translate(-8%, 100%);
+  }
+
+  .blowMeAway.n.active {
+    transform: translate(-100%, 50%);
+  }
+
+  .blowMeAway.k.active {
+    transform: translate(-100%, 300%);
+  }
+
+  .blowMeAway.s.active {
+    transform: translate(150%, 30%);
+  }
+
+  .blowMeAway.nn.active {
+    transform: translate(-80%, -200%);
+  }
+
+  .blowMeAway.nnn.active {
+    transform: translate(100%, -150%);
+  }
+
+  .blowMeAway.kk.active {
+    transform: translate(100%, 50%);
+  }
+
+  .blowMeAway {
+    transform: translate(0px, 0px);
   }
 
   #LogMarChart path:hover {
     filter: blur(0px);
+  }
+
+  /* Animation */
+  @keyframes blurry {
+    0% {
+      filter: blur(20px);
+    }
+    50% {
+      filter: blur(5px);
+    }
+    100 {
+      filter: blur(20px);
+    }
   }
 }
