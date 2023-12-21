@@ -6,6 +6,7 @@ import TimeForCheck from "../../components/TimeForEyecheck";
 import Sale from "../../components/Sale";
 import { BrandsSlider } from "../../components/BrandsSlider";
 import Newsletter from "../../components/Newsletter";
+import Intro from "../../components/intro";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
 
       <main className="">
         <Hero />
+        <Intro />
         {/* <Sale />
         <TimeForCheck />
         <BrandsSlider /> */}
