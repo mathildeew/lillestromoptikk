@@ -12,6 +12,10 @@
     overflow-x: hidden;
   }
 
+  main {
+    min-height: 100vh;
+  }
+
   h1 {
     font-size: 40px;
     font-weight: 600;
@@ -21,7 +25,6 @@
   h2 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 10px;
   }
 
   h1,
@@ -38,7 +41,7 @@
   p,
   ul,
   a {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1.5px;
     line-height: 35px;
   }
