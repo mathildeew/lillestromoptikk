@@ -5,6 +5,7 @@ import SEOHelmet from "../../components/SEOHelmet";
 import TimeForCheck from "../../components/TimeForEyecheck";
 import Sale from "../../components/Sale";
 import { BrandsSlider } from "../../components/BrandsSlider";
+import Newsletter from "../../components/Newsletter";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Sale />
         <TimeForCheck />
         <BrandsSlider /> */}
+        <Newsletter />
       </main>
     </>
   );
