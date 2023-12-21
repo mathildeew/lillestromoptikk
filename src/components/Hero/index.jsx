@@ -1,10 +1,14 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
+
 export default function Hero() {
   return (
-    <section className="w-full h-96 bg-brilleslange bg-cover bg-center flex flex-col justify-end ">
-      <div className="w-80 bg-kleinBlue p-4 mx-3.5 mb-16 sm:w-400 sm:p-5">
-        <h1 className="text-2xl text-white font-bold uppercase mb-0 sm:text-4xl">
-          Velkommen til Lillestrøm Optikk
+    <section className="px-4 py-20 lg:py-28">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-6xl">
+          Velkommen{<br />} til{<br />} Lillestrøm Optikk
         </h1>
+        <FontAwesomeIcon icon={faArrowDownLong} size="3x" />
       </div>
     </section>
   );

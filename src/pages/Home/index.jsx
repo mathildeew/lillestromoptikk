@@ -18,8 +18,8 @@ export default function Home() {
       />
 
       <main className="">
-        {/* <Hero />
-        <Sale />
+        <Hero />
+        {/* <Sale />
         <TimeForCheck />
         <BrandsSlider /> */}
         <Newsletter />
