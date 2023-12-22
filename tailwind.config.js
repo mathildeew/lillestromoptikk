@@ -8,6 +8,7 @@ export default {
         grey: "#EFEFEF",
         kleinBlue: "#1F1BBD",
         darkBlue: "#221896",
+        lightBlue: "#90ABE8",
       },
       fontFamily: {
         sans: ["Open Sans, Arial, Tahoma, sans-serif"],

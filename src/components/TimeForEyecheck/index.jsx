@@ -5,22 +5,33 @@ import LogMAR from "../LogMAR";
 
 export default function TimeForCheck() {
   return (
-    <section className="pt-12 px-3.5 border-2">
-      <h2 className="uppercase mb-6">På tide med en synstest?</h2>
+    <section className="flex flex-col gap-12 px-4 py-20">
+      <h2>På tide med en synstest?</h2>
 
-      <div className="max-w-2xl my-12">
+      <div>
         <LogMAR />
       </div>
 
-      <p className="mb-6">
-        Har synet på høyre, venstre eller kanskje begge øyne blitt dårligere? Er
-        det plutselig vanskelig å lese på nært? Har du plutselig fått hodepine?
-        Da kan det være på tide men en kontroll av synet.
-      </p>
-      <button className="btn-primary mb-6">
-        <Link to={"/bestill-synstest"}>
-          Bestill synstest
-          <FontAwesomeIcon icon={faArrowRightLong} className="ml-3.5" />
+      <div className="flex flex-col gap-6">
+        <p>
+          Merker du at høyre øye vil lese krimroman mens venstre foretrekker
+          romantikk? Eller kanskje begge øynene har blitt litt uenige om
+          skjermopplevelsen? Da høres det ut som det er på tide med en
+          synsundersøkelse.
+        </p>
+        <p>
+          Å prioritere regelmessige synsundersøkelser er å investere i fremtiden
+          til øynene dine, uavhengig av alder eller daglige aktiviteter.
+        </p>
+      </div>
+
+      <button className="btn-primary bg-lightBlue border-none">
+        <Link
+          to={"/bestill-synstest"}
+          className="flex items-center gap-5 hover:gap-10"
+        >
+          Bestill synsundersøkelse
+          <FontAwesomeIcon icon={faArrowRightLong} />
         </Link>
       </button>
     </section>

@@ -23,19 +23,28 @@
   }
 
   h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  h3 {
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 1.5px;
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     font-family: theme(fontFamily.heading);
   }
 
   p,
   a,
-  span {
+  span,
+  input::placeholder {
     font-family: theme(fontFamily.sans);
   }
 
@@ -48,12 +57,30 @@
     line-height: 35px;
   }
 
-  .btn-primary {
-    @apply font-semibold border-2 border-darkBlue rounded-full py-1 px-3.5;
+  a {
+    transition: all 0.2s ease-in-out;
   }
 
-  .ooBlue {
-    top: 1400px;
+  .btn-primary {
+    @apply font-semibold border-2 rounded-full  p-5 max-w-sm;
+  }
+
+  input::placeholder {
+    color: white;
+    font-size: 20px;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    /* -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none; */
+  }
+
+  input[type="checkbox"]::after {
+    border: 2px solid black;
   }
 
   #LogMarChart path {
@@ -62,11 +89,20 @@
     filter: blur(20px);
   }
 
+  .scrollBrille {
+    width: 550px;
+    height: fit-content;
+    position: absolute;
+    z-index: 20;
+    right: -150px;
+    top: 150px;
+  }
+
   /* #LogMarChart path:nth-child(-n + 3 of .blur) {
     animation: blurry 10s linear 8s infinite;
   } */
 
-  .blowMeAway {
+  /* .blowMeAway {
     transition: transform 1s ease-in-out;
   }
 
@@ -104,7 +140,7 @@
 
   .blowMeAway {
     transform: translate(0px, 0px);
-  }
+  } */
 
   #LogMarChart path:hover {
     filter: blur(0px);

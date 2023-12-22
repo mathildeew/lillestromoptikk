@@ -7,6 +7,7 @@ import Sale from "../../components/Sale";
 import { BrandsSlider } from "../../components/BrandsSlider";
 import Newsletter from "../../components/Newsletter";
 import Intro from "../../components/intro";
+import ScrollingGlasses from "../../components/ScrollingGlasses";
 
 export default function Home() {
   return (
@@ -17,13 +18,19 @@ export default function Home() {
           "Velkommen til Lillestrøm Optikk, din lokale optiker på Romerriket. Bestill synsundersøkelse online og besøk oss i Storgata 22."
         }
       />
+      <ScrollingGlasses />
 
-      <main className="">
+      <main>
         <Hero />
-        <Intro />
-        {/* <Sale />
+        <section className="flex flex-col gap-12">
+          <Intro />
+
+          <Sale />
+        </section>
+
         <TimeForCheck />
-        <BrandsSlider /> */}
+
+        {/*<BrandsSlider /> */}
         <Newsletter />
       </main>
     </>

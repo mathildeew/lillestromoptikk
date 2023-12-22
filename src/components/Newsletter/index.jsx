@@ -30,22 +30,19 @@ export default function Newsletter() {
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
         <h2>Meld deg på vårt nyhetsbrev for gode tilbud og informasjon</h2>
 
-        <form className="flex flex-col gap-5" ref={form} onSubmit={sendEmail}>
+        <form className="flex flex-col gap-8" ref={form} onSubmit={sendEmail}>
           <input
             type="email"
             name="user_email"
-            className=" max-w-xs bg-darkBlue border-2 border-white rounded-md py-2.5 px-5"
+            className=" bg-darkBlue border-2 border-white rounded-md p-5"
             placeholder="navn@epost.no"
             required
           />
-          <div className="flex gap-2">
-            <input type="checkbox" required />
+          <div className="flex items-center gap-4">
+            <input type="checkbox" className="bg-white" required />
             <p>Jeg vil motta nyhetsbrev</p>
           </div>
-          <button
-            value="Send"
-            className="max-w-xs border-2 border-white rounded-full py-2.5 px-5"
-          >
+          <button value="Send" className="btn-primary border-white">
             Meld meg på
           </button>
         </form>

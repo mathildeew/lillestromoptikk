@@ -13,17 +13,17 @@ export default function LogMAR() {
   // }
   // });
 
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      let scrolled = document.scrollingElement.scrollTop;
+  // useEffect(() => {
+  //   document.addEventListener("scroll", () => {
+  //     let scrolled = document.scrollingElement.scrollTop;
 
-      if (scrolled >= 1 && scrolled < 750) {
-        setBlowAway(false);
-      } else setBlowAway(true);
+  //     if (scrolled >= 1 && scrolled < 750) {
+  //       setBlowAway(false);
+  //     } else setBlowAway(true);
 
-      console.log(blowAway);
-    });
-  }, []);
+  //     console.log(blowAway);
+  //   });
+  // }, []);
 
   return (
     <svg
@@ -184,7 +184,7 @@ export default function LogMAR() {
               d="M1036.256,899.261a32.679,32.679,0,1,0-32.679,32.679,32.715,32.715,0,0,0,32.679-32.679m-13.133,0a19.546,19.546,0,1,1-19.546-19.546,19.683,19.683,0,0,1,19.546,19.546"
             />
           </g>
-          {/* <g className={`row6 blowMeAway ${blowAway && "active"}`}>
+          <g className={`row6 blowMeAway ${blowAway && "active"}`}>
             <path
               id="Path_270"
               data-name="Path 270"
@@ -426,7 +426,7 @@ export default function LogMAR() {
               data-name="Path 314"
               d="M779.251,1376.77v-8.246h-1.527v5.8l-4.887-5.8h-1.526v8.246h1.527v-5.8l4.887,5.8Z"
             />
-          </g> */}
+          </g>
         </g>
       </g>
     </svg>
