@@ -53,7 +53,7 @@ select:focus {
   margin: 0;
   padding: 0.66667rem 1.33333rem 0.8rem;
   border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius: 100px;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-family: inherit;
   font-size: 1rem;
@@ -1208,10 +1208,13 @@ select:focus {
   align-items: center;
 }
 .coptikk-app .cop .return-btn {
-  background-color: #acc3ff;
-  border-color: #acc3ff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #90abe8;
+  border-color: #90abe8;
   color: #161616;
   display: block;
+  padding: 20px;
 }
 .coptikk-app .cop .return-btn-step {
   margin: 40px 0;

@@ -2,13 +2,21 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 export default function ScrollingGlasses() {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const stopScroll = 500;
 
   useEffect(() => {
     const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
-      console.log(position);
+      const scrollBrille = document.querySelector(".scrollBrille");
+      if (scrollBrille) {
+        const scrollOffset = window.scrollY;
+
+        if (scrollOffset < stopScroll) {
+          const x = scrollOffset * 0.4; // Juster faktoren etter ønsket skrå bevegelse
+          const y = scrollOffset; // Juster faktoren etter ønsket skrå bevegelse
+
+          scrollBrille.style.transform = `translate(${x}px, ${y}px)`;
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -16,12 +24,7 @@ export default function ScrollingGlasses() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  const scrollBrilleStyle = {
-    transform: `translate(${scrollPosition}px, ${scrollPosition / 5}px)`, // Juster etter ønsket bevegelse
-    // Andre stiler...
-  };
+  }, [stopScroll]);
 
   return (
     <svg
@@ -29,8 +32,7 @@ export default function ScrollingGlasses() {
       width="1272.328"
       height="1292.354"
       viewBox="0 0 1272.328 1292.354"
-      className="scrollBrille"
-      style={scrollBrilleStyle}
+      className="scrollBrille w-550 h-fit absolute top-40 -right-40 z-20 md:w-750 lg:w-950 xl:w-1100"
     >
       <path
         id="logoelement_-_brille"

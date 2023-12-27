@@ -90,12 +90,17 @@
   }
 
   .scrollBrille {
-    width: 550px;
-    height: fit-content;
-    position: absolute;
-    z-index: 20;
-    right: -150px;
-    top: 150px;
+    /* width: 550px; */
+    /* height: fit-content; */
+    /* z-index: 20; */
+    /* right: -150px; */
+    /* top: 150px; */
+  }
+
+  @media (min-width: 1024px) {
+    .scrollBrille {
+      width: 1100px;
+    }
   }
 
   /* #LogMarChart path:nth-child(-n + 3 of .blur) {

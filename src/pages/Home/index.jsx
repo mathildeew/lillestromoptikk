@@ -20,7 +20,7 @@ export default function Home() {
       />
       <ScrollingGlasses />
 
-      <main>
+      <main className="">
         <Hero />
         <section className="flex flex-col gap-12">
           <Intro />

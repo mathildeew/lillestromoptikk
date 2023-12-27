@@ -19,6 +19,10 @@ export default {
       },
       width: {
         400: "450px",
+        550: "550px",
+        750: "750px",
+        950: "950px",
+        1100: "1100px",
       },
       backgroundImage: {
         "hero-pattern": "url(/assets/elements/bg-hero.svg)",

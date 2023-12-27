@@ -3,8 +3,8 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-grey w-full px-4 py-20 sticky top-[100vh]">
-      <div className="max-w-6xl grid gap-12 mx-auto sm:grid-cols-2">
+    <footer className="bg-grey w-full px-4 py-20 sticky top-[100vh] md:px-10 lg:px-20">
+      <div className="max-w-6xl grid gap-12 mx-auto md:grid-cols-2">
         <div className="flex flex-col gap-5">
           <h3>Åpningstider</h3>
           <div className="flex justify-between max-w-sm">

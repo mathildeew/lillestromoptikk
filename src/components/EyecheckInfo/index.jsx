@@ -1,21 +1,28 @@
 export default function EyecheckInfo() {
   return (
-    <section className="mb-12">
+    <section className="flex flex-col gap-6">
       <h1>Bestill synstest</h1>
-      <p className="mb-3.5">
+      <p>
         Med lang erfaring og kunnskap tilbyr vi synsundersøkelse med avansert og
         moderne utstyr.
       </p>
 
-      <p className="mb-3.5">
-        Våre undersøkelser inkluderer alltid utmåling av brillestyrke og en
-        grundig øyehelseundersøkelse. Vi kartlegger ditt behov og hjelper deg
-        med å velge riktig løsning. Vi tilpasser undersøkelsen individuelt og
-        ved behov henviser vi videre til øyelege.
+      <div>
+        <p className="font-bold">Våre undersøkelser inkluderer alltid:</p>
+        <ul>
+          <li>- Utmåling av brillestyrke.</li>
+          <li>- Øyehelseundersøkelse av fremre og bakre del av øynene.</li>
+          <li>- Trykkmåling.</li>
+          <li>- Kartlegging av ditt behov og valg av riktig løsning</li>
+        </ul>
+      </div>
+      <p>
+        Vi tilpasser undersøkelsene individuelt, og ved behov vil vi henvise til
+        øyelege.
       </p>
-      <p className="mb-6">
+      <p>
         En synsundersøkelse hos oss tar 45 - 60 minutter, og som regel anbefaler
-        vi undersøkelse annethvert år.
+        vi en undersøkelse annethvert år.
       </p>
     </section>
   );

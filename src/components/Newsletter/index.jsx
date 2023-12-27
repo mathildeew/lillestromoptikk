@@ -26,15 +26,15 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="text-white bg-darkBlue px-4 py-20">
-      <div className="max-w-6xl mx-auto flex flex-col gap-12">
+    <section className="text-white bg-darkBlue px-4 py-20 md:px-10 lg:px-20">
+      <div className="max-w-6xl  flex flex-col gap-12 text-center mx-auto">
         <h2>Meld deg på vårt nyhetsbrev for gode tilbud og informasjon</h2>
 
-        <form className="flex flex-col gap-8" ref={form} onSubmit={sendEmail}>
+        <form className="flex flex-col gap-8 " ref={form} onSubmit={sendEmail}>
           <input
             type="email"
             name="user_email"
-            className=" bg-darkBlue border-2 border-white rounded-md p-5"
+            className=" bg-darkBlue max-w-md border-2 border-white rounded-md p-5"
             placeholder="navn@epost.no"
             required
           />

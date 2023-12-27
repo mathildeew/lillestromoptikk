@@ -31,6 +31,7 @@ export default function LogMAR() {
       // width="auto"
       // height="auto"
       viewBox="0 0 1550 1460"
+      className="max-w-2xl"
     >
       <g id="LogMarChart" transform="translate(-39 -86)">
         <rect
