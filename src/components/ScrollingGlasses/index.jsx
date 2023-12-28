@@ -32,7 +32,7 @@ export default function ScrollingGlasses() {
       width="1272.328"
       height="1292.354"
       viewBox="0 0 1272.328 1292.354"
-      className="scrollBrille w-550 h-fit absolute top-40 -right-40 z-20 md:w-750 lg:w-950 xl:w-1100"
+      className="scrollBrille w-550 h-fit absolute top-40 -right-40 z-10 md:w-750 lg:w-950 xl:w-1100"
     >
       <path
         id="logoelement_-_brille"

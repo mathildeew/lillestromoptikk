@@ -8,10 +8,10 @@ export default function TimeForCheck() {
     <section className="max-w-6xl flex flex-col gap-12 px-4 py-20 md:px-10 lg:px-20 lg:mx-auto">
       <h2>På tide med en synstest?</h2>
 
-      <div className="lg:grid lg:grid-cols-2 lg:gap-14 lg:items-center">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center">
         <LogMAR />
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-14">
           <p>
             Merker du at høyre øye vil lese krimroman mens venstre foretrekker
             romantikk? Eller kanskje begge øynene har blitt litt uenige om
