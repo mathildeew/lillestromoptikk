@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 export default function DesktopNav() {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
 
   return (
     <nav className="hidden w-2/3  md:block">
@@ -13,10 +13,11 @@ export default function DesktopNav() {
           <Link to="/bestill-synstest">Bestill synstest</Link>
         </li>
         <li>
-          <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
+          <Link to="/merker">Merker</Link>
         </li>
         <li>
-          <Link to="/merker">Merker</Link>
+          <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
+          <FontAwesomeIcon icon={faArrowUp} className="rotate-45 ml-2" />
         </li>
         <li
           className="flex items-center"
@@ -40,6 +41,7 @@ export default function DesktopNav() {
             <li>
               <a href="https://www.coptikk.no/oyehelseklinikk">
                 Øyehelseklinikk
+                <FontAwesomeIcon icon={faArrowUp} className="rotate-45 ml-2" />
               </a>
             </li>
           </ul>

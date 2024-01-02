@@ -28,6 +28,8 @@ export default {
         "hero-pattern": "url(/assets/elements/bg-hero.svg)",
         "brille-bg": "url(/assets/elements/brille-blue-bg.svg)",
         brilleslange: "url(/dist/assets/elements/brilleslange.svg)",
+        downBg: "url(/dist/assets/elements/downBg.svg)",
+        rotated: "url(/dist/assets/elements/rotatedBg.svg)",
       },
       rotate: {
         150: "150deg",

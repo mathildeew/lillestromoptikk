@@ -1,10 +1,10 @@
 export default function Sale() {
   return (
-    <div className="max-w-6xl text-white bg-kleinBlue mx-4 rounded-3xl lg:mx-auto">
-      <div className="text-center p-2.5 py-20 flex flex-col gap-5">
-        {/* <img src="/assets/elements/briller.svg" className="mb-12 " /> */}
-        <span className="text-7xl font-bold mb-12 md:text-9xl">50 - 70%</span>
-        <span className="text-xl font-bold uppercase md:text-3xl">
+    <div className=" bg-rotated bg-contain bg-center w-full max-w-4xl mx-auto p-2.5 py-20 rounded-3xl border-2 border-kleinBlue">
+      <div className="text-white text-center bg-kleinBlue bg-opacity-90 max-w-4xl mx-auto rounded-3xl flex flex-col items-center gap-10 p-8">
+        <h2 className="uppercase text-7xl">Salg</h2>
+        <span className="text-7xl font-bold">50 - 70%</span>
+        <span className="text-xl font-bold uppercase">
           På et stort utvalg av innfatninger og solbriller
         </span>
       </div>

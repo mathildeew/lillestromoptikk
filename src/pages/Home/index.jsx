@@ -22,11 +22,9 @@ export default function Home() {
 
       <main className="">
         <Hero />
-        <section className="flex flex-col gap-12">
-          <Intro />
+        <Intro />
 
-          <Sale />
-        </section>
+        {/* <Sale /> */}
 
         <TimeForCheck />
 
