@@ -30,6 +30,7 @@ export default {
         brilleslange: "url(/dist/assets/elements/brilleslange.svg)",
         downBg: "url(/dist/assets/elements/downBg.svg)",
         rotated: "url(/dist/assets/elements/rotatedBg.svg)",
+        moscot: "url(/dist/assets/elements/brands/moscot/COLLECTION_5.jpeg)",
       },
       rotate: {
         150: "150deg",
