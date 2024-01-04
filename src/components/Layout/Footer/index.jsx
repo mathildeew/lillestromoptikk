@@ -46,7 +46,10 @@ export default function Footer() {
           <p className="text-base">2023 &copy; Lillestrøm Optikk</p>
           <p className="text-base mr-2">
             Utvikling og design av{" "}
-            <a href="www.mathildeelinor.no" className="text-base underline">
+            <a
+              href="https://www.mathildeelinor.no"
+              className="text-base underline"
+            >
               Mathilde Elinor
             </a>
           </p>
