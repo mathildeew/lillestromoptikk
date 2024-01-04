@@ -1,54 +1,50 @@
 import { Link } from "react-router-dom";
-import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function MobileNav({ openMenu, setOpenMenu }) {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-
   return (
     <nav
-      className={`bg-white w-full h-full flex flex-col items-end px-6 py-16 absolute transition-all duration-300 ease-in-out z-10 top-20 ${
+      className={`bg-white w-full h-full flex flex-col items-end px-6 py-16 absolute transition-all duration-500 ease-in-out z-50 top-20 lg:hidden ${
         openMenu ? "right-0" : "-right-full"
       }`}
     >
-      <ul className="w-full">
-        <li className="mb-7 border-b border-black">
-          <Link to={"/bestill-synstest"} onClick={() => setOpenMenu(!openMenu)}>
-            Bestill synstest
-          </Link>
-        </li>
-        <li className="mb-7 border-b border-black">
-          <Link to={"/merker"} onClick={() => setOpenMenu(!openMenu)}>
-            Merker
-          </Link>
-        </li>
-        <li className="mb-7 border-b border-black">
-          <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
-        </li>
-        <li>
-          <button
-            {...getToggleProps()}
-            className="w-full flex justify-between items-center mb-7"
+      <ul className="w-full flex flex-col gap-14">
+        <li className="border-b border-black">
+          <Link
+            to={"/timebestilling"}
+            onClick={() => setOpenMenu(!openMenu)}
+            className="px-4"
           >
-            Om oss
-            {isExpanded ? (
-              <FontAwesomeIcon icon={faCaretUp} />
-            ) : (
-              <FontAwesomeIcon icon={faCaretDown} />
-            )}
-          </button>
-          <ul {...getCollapseProps()}>
-            <li className="mb-7">
-              <Link to={"/kontakt-oss"} onClick={() => setOpenMenu(!openMenu)}>
-                Kontakt
-              </Link>
-            </li>
-            <li className="mb-7">
-              <Link>Øyehelseklinikk</Link>
-            </li>
-          </ul>
+            Timebestilling
+          </Link>
         </li>
+        <li className="border-b border-black">
+          <Link
+            to={"/merker"}
+            onClick={() => setOpenMenu(!openMenu)}
+            className="px-4"
+          >
+            Våre merker
+          </Link>
+        </li>
+        <li className="border-b border-black">
+          <Link
+            to={"/kontakt-oss"}
+            onClick={() => setOpenMenu(!openMenu)}
+            className="px-4"
+          >
+            Kontakt oss
+          </Link>
+        </li>
+        <li className="btn-link">
+          <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
+          <FontAwesomeIcon icon={faArrowUp} className="rotate-45" />
+        </li>
+        {/* <li className="btn-link">
+          <a href="https://www.coptikk.no/oyehelseklinikk">Øyehelseklinikk</a>
+          <FontAwesomeIcon icon={faArrowUp} className="rotate-45" />
+        </li> */}
       </ul>
     </nav>
   );

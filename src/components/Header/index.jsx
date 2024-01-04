@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import DesktopNav from "../Nav/Desktop";
 import MobileNav from "../Nav/Mobile";
@@ -19,31 +18,42 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white w-full h-20 flex z-20">
-        <div className="w-full max-w-6xl flex justify-between items-center mx-6 md:mx-auto md:px-3.5">
+      <header className="bg-white w-full h-20 flex z-20 md:px-12">
+        <div className="w-full max-w-6xl flex justify-between items-center px-6 md:mx-auto md:px-3.5">
           <Link to={`/`}>
-            <img src="/assets/identity/logo.svg" className="w-40"></img>
+            <img
+              aria-label="Gå til forsiden"
+              src="/assets/identity/logo.svg"
+              className="w-36"
+              alt="Lillestrøm Optikk logo"
+            />
           </Link>
 
           <DesktopNav />
 
           <div
-            className="w-10 h-10 flex flex-col justify-around p-1 md:hidden"
+            className="w-10 h-10 relative lg:hidden"
             onClick={() => setOpenMenu(!openMenu)}
+            aria-label="Åpne og lukk menu"
           >
             <span
-              className={`w-full h-1 bg-black relative transition-all duration-500 ease-in-out ${
-                openMenu && "rotate-45 top-2.5"
+              className={`w-full h-0.5 bg-black absolute top-3 transition-all duration-500 ease-in-out ${
+                openMenu && "translate-x-4 opacity-0"
               }`}
             ></span>
             <span
-              className={`w-full h-1 bg-black block transition all duration-100 ease-in-out ${
-                openMenu && "opacity-0"
+              className={`w-full h-0.5 bg-black absolute top-5 transition-all duration-500 ease-in-out ${
+                openMenu && "opacity-100 -rotate-45"
               }`}
             ></span>
             <span
-              className={`w-full h-1 bg-black transition-all duration-500 ease-in-out ${
-                openMenu && "-rotate-45 relative -top-3"
+              className={`w-full h-0.5 bg-black absolute top-5 transition-all duration-500 ease-in-out ${
+                openMenu && "rotate-45"
+              }`}
+            ></span>
+            <span
+              className={`w-full h-0.5 bg-black absolute top-7 transition-right duration-500 ease-in-out ${
+                openMenu && "-translate-x-4 opacity-0"
               }`}
             ></span>
           </div>
