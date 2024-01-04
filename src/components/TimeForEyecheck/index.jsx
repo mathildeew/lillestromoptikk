@@ -24,7 +24,7 @@ export default function TimeForCheck() {
             aktiviteter.
           </p>
 
-          <button className="btn-primary bg-lightBlue border-none">
+          <button className="btn-primary border-black">
             <Link
               to={"/bestill-synstest"}
               className="flex items-center gap-5 hover:gap-10"
