@@ -23,8 +23,7 @@ export default function Home() {
       <main className="">
         <Hero />
         <Intro />
-
-        {/* <Sale /> */}
+        <Sale />
 
         <TimeForCheck />
 

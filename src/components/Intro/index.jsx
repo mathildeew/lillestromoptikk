@@ -2,22 +2,23 @@ import Sale from "../Sale";
 
 export default function Intro() {
   return (
-    <section className="bg-grey flex flex-col gap-16 px-4 py-20 md:px-10 md:py-32 lg:py-28">
-      <div className="max-w-5xl mx-auto flex flex-col gap-6 z-30 relative">
-        <span className="max-w-2xl text-2xl text-bold md:text-5xl lg:text-7xl">
+    <section className="bg-grey flex flex-col gap-16 px-4 py-24 md:px-10 md:py-32 lg:py-28">
+      <div className="max-w-5xl mx-auto flex flex-col gap-10 z-30 relative">
+        <span className="max-w-2xl text-2xl font-semibold md:text-5xl lg:text-7xl">
           Din lokale optiker i Lillestrøm
         </span>
         <p>
-          Vi feirer nytt år med tilbud på et stort utvalg av innfatninger og
-          solbriller.
+          Med flere års erfaring og stort engasjement for å gi et klart,
+          klarere, klarest syn tilbyr vi grundige synsundersøkelser med topp
+          moderne utstyr.
         </p>
         <p>
-          Kom innom og gjør et kupp — og bli kjent med din nye lokale optiker i
-          Storgata 22.
+          Hos oss finner du også et nøye kuratert utvalg av innfatninger og
+          solbriller fra våre favorittmerker — alltid med kvalitet,
+          individualitet og varighet i tankene.
         </p>
+        <p>Psst, kaffen står alltid klar!</p>
       </div>
-
-      <Sale />
     </section>
   );
 }

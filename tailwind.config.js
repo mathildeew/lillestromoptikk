@@ -24,6 +24,9 @@ export default {
         950: "950px",
         1100: "1100px",
       },
+      padding: {
+        c80: "20%",
+      },
       backgroundImage: {
         "hero-pattern": "url(/assets/elements/bg-hero.svg)",
         "brille-bg": "url(/assets/elements/brille-blue-bg.svg)",
@@ -31,6 +34,7 @@ export default {
         downBg: "url(/dist/assets/elements/downBg.svg)",
         rotated: "url(/dist/assets/elements/rotatedBg.svg)",
         moscot: "url(/dist/assets/elements/brands/moscot/COLLECTION_5.jpeg)",
+        balloonDog: "url(/dist/assets/elements/balloon-sale.jpg)",
       },
       rotate: {
         150: "150deg",

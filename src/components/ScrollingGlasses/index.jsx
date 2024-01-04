@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 export default function ScrollingGlasses() {
-  const stopScroll = 500;
+  const stopScroll = 700;
 
   useEffect(() => {
     const handleScroll = () => {
