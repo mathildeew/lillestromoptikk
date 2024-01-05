@@ -89,7 +89,7 @@
 
   #LogMarChart path {
     padding: 3px;
-    /* transition: 0.3s; */
+    transition: 0.2s ease-in-out;
     filter: blur(20px);
   }
 

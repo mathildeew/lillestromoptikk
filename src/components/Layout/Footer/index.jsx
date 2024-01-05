@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-grey w-full px-4 py-20 sticky top-[100vh] md:px-10 lg:px-20">
-      <div className="max-w-6xl grid gap-12 mx-auto md:grid-cols-2">
+    <footer className="bg-grey w-full px-4 py-20 sticky top-[100vh] md:px-10">
+      <div className="max-w-5xl grid gap-12 mx-auto md:grid-cols-2">
         <div className="flex flex-col gap-5">
           <h3>Åpningstider</h3>
           <div className="flex justify-between max-w-sm">
@@ -37,13 +38,19 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-6">
-            <FontAwesomeIcon icon={faFacebook} size="3x" />
-            <FontAwesomeIcon icon={faInstagram} size="3x" />
+            <a href="https://www.facebook.com/lillestromoptikk">
+              <FontAwesomeIcon icon={faFacebook} size="3x" />
+            </a>
+            <a href="https://www.instagram.com/lillestromoptikk">
+              <FontAwesomeIcon icon={faInstagram} size="3x" />
+            </a>
           </div>
         </div>
 
         <div>
-          <p className="text-base">2023 &copy; Lillestrøm Optikk</p>
+          <p className="text-base">
+            {new Date().getFullYear()} &copy; Lillestrøm Optikk
+          </p>
           <p className="text-base mr-2">
             Utvikling og design av{" "}
             <a

@@ -2,11 +2,11 @@ import { brands } from "../../js/brands";
 
 export default function Brands() {
   return (
-    <main className="max-w-6xl px-3.5 mx-auto mt-20 md:px-10">
+    <main className="max-w-5xl py-20 px-3.5 mx-auto md:px-10 md:py-32 lg:px-0">
       <h1>Merker</h1>
 
       <div className="flex flex-col gap-24 lg:gap-32">
-        <section className="flex flex-col gap-6 lg:flex-row">
+        <section className="flex flex-col gap-6 lg:flex-row lg:items-center">
           <img
             src="/dist/assets/elements/brands/moscot/moscot-collection.jpg"
             className="w-full h-44 object-cover object-center lg:w-96 lg:h-96"
@@ -29,7 +29,7 @@ export default function Brands() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6 lg:flex-row-reverse">
+        <section className="flex flex-col gap-6 lg:flex-row-reverse lg:items-center">
           <img
             src="/dist/assets/elements/brands/orgreen/orgreen-optics-collection.jpg"
             className="w-full h-44 object-cover object-center lg:w-96 lg:h-96"
@@ -38,10 +38,9 @@ export default function Brands() {
             <h2>Ørgreen</h2>
             <p>
               Ørgreen er et internasjonalt merke fra København, som lager
-              førsteklasses briller ved hjelp av materialer av høy kvalitet.
-              Kjent for sine dynamiske design og tekniske presisjon, produserer
-              Ørgreen håndlagde rammer med unike fargekombinasjoner som varer
-              livet ut
+              førsteklasses briller i materialer av høy kvalitet. Kjent for sine
+              dynamiske design og tekniske presisjon, produserer Ørgreen
+              håndlagde rammer med unike fargekombinasjoner.
             </p>
             <p>
               Hele kolleksjonen til Ørgreen er produsert i Japan, et land kjent
@@ -49,7 +48,7 @@ export default function Brands() {
               for å anvende den høyeste standarden på hvert trinn i prosessen. Å
               kombinere denne produksjonsetikken med den danske designkulturen
               for presisjon og ekspertise resulterer i et produkt som
-              kjennetegnes av kjærlighet for detaljer og lang levetid.
+              kjennetegnes av kjærlighet for detaljer og varer livet ut.
             </p>
           </div>
         </section>

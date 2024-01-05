@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <main>
-      <div className="max-w-6xl px-3.5 mx-auto mt-20 md:px-10">
+      <div className="max-w-5xl px-3.5 mx-auto py-20 md:px-10 lg:px-0">
         <h1>Kontakt oss</h1>
 
         <div className="flex flex-col gap-16 lg:flex-row lg:gap-32">

@@ -1,8 +1,11 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function Newsletter() {
   const [btnText, setBtnText] = useState("Meld meg på");
+  const [subscribed, setSubscribed] = useState(false);
 
   const form = useRef();
 
@@ -21,6 +24,7 @@ export default function Newsletter() {
           console.log(result.text);
           console.log(e.target);
           setBtnText("Påmeldt!");
+          setSubscribed(true);
         },
         (error) => {
           console.log(error.text);
@@ -30,11 +34,11 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="text-white bg-darkBlue px-4 py-20 md:px-10 lg:px-20">
-      <div className="max-w-6xl flex flex-col gap-12 text-center mx-auto">
+    <section className="text-white bg-darkBlue px-4 py-24 md:px-10 md:py-32">
+      <div className="max-w-5xl flex flex-col gap-12 mx-auto">
         <h2>Meld deg på vårt nyhetsbrev for gode tilbud og informasjon</h2>
 
-        <form className="flex flex-col gap-8 " ref={form} onSubmit={sendEmail}>
+        <form className="flex flex-col gap-12" ref={form} onSubmit={sendEmail}>
           <input
             type="email"
             name="user_email"
@@ -44,10 +48,19 @@ export default function Newsletter() {
           />
           <div className="flex items-center gap-4">
             <input type="checkbox" className="bg-white" required />
-            <p>Jeg vil motta nyhetsbrev</p>
+            <p>Ja takk, send meg nyhetsbrev</p>
           </div>
-          <button value="Send" className="btn-primary border-white">
+          <button
+            value="Send"
+            className={`btn-primary max-w-72 border border-white flex items-center gap-5 transition-all 0.2s ease-in-out hover:gap-10 ${
+              subscribed && "hover:gap-5"
+            }`}
+          >
             {btnText}
+            <FontAwesomeIcon
+              icon={subscribed ? faCheck : faArrowRightLong}
+              className="text-2xl"
+            />
           </button>
         </form>
       </div>

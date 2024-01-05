@@ -32,7 +32,7 @@ export default function BookingForm() {
 
   return (
     <div
-      className="coptikk-booking-embed max-w-6xl mx-auto h-full"
+      className="coptikk-booking-embed max-w-6xl  h-full"
       data-member-no="5271"
       data-member-id="829"
       data-domain-name="https://www.coptikk.no"

@@ -25,7 +25,7 @@ export default function MobileNav({ openMenu, setOpenMenu }) {
             onClick={() => setOpenMenu(!openMenu)}
             className="px-4"
           >
-            Våre merker
+            Merker
           </Link>
         </li>
         <li className="border-b border-black">
