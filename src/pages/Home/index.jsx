@@ -20,14 +20,11 @@ export default function Home() {
       />
       <ScrollingGlasses />
 
-      <main className="">
+      <main>
         <Hero />
         <Intro />
         <Sale />
-
         <TimeForCheck />
-
-        {/*<BrandsSlider /> */}
         <Newsletter />
       </main>
     </>
