@@ -17,6 +17,7 @@
 
   main {
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -89,8 +90,19 @@
 
   #LogMarChart path {
     padding: 3px;
+    transition: 0.1s ease-in-out;
+    /* filter: blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: blur(20px); */
+  }
+
+  .blurry {
+    backdrop-filter: blur(10px);
     transition: 0.2s ease-in-out;
-    filter: blur(20px);
+  }
+
+  .blurry:hover {
+    backdrop-filter: blur(0px);
   }
 
   @media (min-width: 1024px) {
@@ -99,12 +111,12 @@
     }
   }
 
-  #LogMarChart path:hover {
+  /* #LogMarChart path:hover {
     filter: blur(0px);
-  }
+  } */
 
   /* Animation */
-  @keyframes blurry {
+  /* @keyframes blurry {
     0% {
       filter: blur(20px);
     }
@@ -114,5 +126,5 @@
     100 {
       filter: blur(20px);
     }
-  }
+  } */
 }
