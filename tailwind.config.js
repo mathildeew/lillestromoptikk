@@ -17,6 +17,10 @@ export default {
       fontSize: {
         home: "10vh",
       },
+      lineHeight: {
+        big: "40px",
+      },
+
       width: {
         400: "450px",
         550: "550px",
@@ -35,10 +39,35 @@ export default {
         rotated: "url(/dist/assets/elements/rotatedBg.svg)",
         moscot: "url(/dist/assets/elements/brands/moscot/COLLECTION_5.jpeg)",
         balloonDog: "url(/dist/assets/elements/balloon-sale.jpg)",
+        sale: "url(/public/sale/sale-background.jpg)",
       },
       rotate: {
         150: "150deg",
         20: "20deg",
+      },
+      boxShadow: {
+        double:
+          "-2px -2px #90ABE8, -5px -5px #fff, 2px 2px #90ABE8, 5px 5px #fff",
+      },
+      animation: {
+        sale: "saleCTA 4s linear infinite",
+        salePercent: "salePerc 4s linear infinite",
+      },
+      keyframes: {
+        saleCTA: {
+          "0%": { fontSize: "7vw", top: "5%", zIndex: "30" },
+          "25%": { fontSize: "12vw", zIndex: "30" },
+          "50%": { fontSize: "7.5vw", top: "65%", zIndex: "30" },
+          "75%": { fontSize: "4vw" },
+          "100%": { fontSize: "7vw", top: "5%" },
+        },
+        salePerc: {
+          "0%": { fontSize: "6.5vw", top: "65%" },
+          "25%": { fontSize: "3vw" },
+          "50%": { fontSize: "6vw", top: "5%" },
+          "75%": { fontSize: "11vw", zIndex: "30" },
+          "100%": { fontSize: "6.5vw", top: "65%", zIndex: "30" },
+        },
       },
     },
   },

@@ -28,7 +28,9 @@ export default function Footer() {
         <div className="flex flex-col gap-5">
           <h3>Kontakt oss</h3>
           <div>
-            <p>post@lillestromoptikk.no</p>
+            <a href="mailto:post@lillestromoptikk.no">
+              post@lillestromoptikk.no
+            </a>
             <p>64 80 85 85</p>
           </div>
 
