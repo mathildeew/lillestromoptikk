@@ -1,12 +1,9 @@
-import EyecheckInfo from "../../components/EyecheckInfo";
 import Hero from "../../components/Hero";
-import LogMAR from "../../components/LogMAR";
 import SEOHelmet from "../../components/SEOHelmet";
 import TimeForCheck from "../../components/TimeForEyecheck";
 import Sale from "../../components/Sale";
-import { BrandsSlider } from "../../components/BrandsSlider";
 import Newsletter from "../../components/Newsletter";
-import Intro from "../../components/intro";
+import Intro from "../../components/Intro";
 import ScrollingGlasses from "../../components/ScrollingGlasses";
 
 export default function Home() {
