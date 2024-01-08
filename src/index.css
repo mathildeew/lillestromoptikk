@@ -78,9 +78,6 @@
     width: 20px;
     height: 20px;
     border: 2px solid white;
-    /* -moz-appearance: none;
-    -webkit-appearance: none;
-    -o-appearance: none; */
   }
 
   input[type="checkbox"]::after {
@@ -93,63 +90,11 @@
     filter: blur(20px);
   }
 
-  .scrollBrille {
-    /* width: 550px; */
-    /* height: fit-content; */
-    /* z-index: 20; */
-    /* right: -150px; */
-    /* top: 150px; */
-  }
-
   @media (min-width: 1024px) {
     .scrollBrille {
       width: 1100px;
     }
   }
-
-  /* #LogMarChart path:nth-child(-n + 3 of .blur) {
-    animation: blurry 10s linear 8s infinite;
-  } */
-
-  /* .blowMeAway {
-    transition: transform 1s ease-in-out;
-  }
-
-  .blowMeAway.v.active {
-    transform: translate(-7%, 10%);
-  }
-
-  .blowMeAway.d.active {
-    transform: translate(-8%, 100%);
-  }
-
-  .blowMeAway.n.active {
-    transform: translate(-100%, 50%);
-  }
-
-  .blowMeAway.k.active {
-    transform: translate(-100%, 300%);
-  }
-
-  .blowMeAway.s.active {
-    transform: translate(150%, 30%);
-  }
-
-  .blowMeAway.nn.active {
-    transform: translate(-80%, -200%);
-  }
-
-  .blowMeAway.nnn.active {
-    transform: translate(100%, -150%);
-  }
-
-  .blowMeAway.kk.active {
-    transform: translate(100%, 50%);
-  }
-
-  .blowMeAway {
-    transform: translate(0px, 0px);
-  } */
 
   #LogMarChart path:hover {
     filter: blur(0px);
