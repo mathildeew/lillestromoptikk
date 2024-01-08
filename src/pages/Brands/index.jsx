@@ -16,7 +16,7 @@ export default function Brands() {
         <div className="flex flex-col gap-24 lg:gap-32">
           <section className="flex flex-col gap-6 lg:flex-row lg:items-center">
             <img
-              src="/dist/brands/moscot/moscot-collection.jpg"
+              src="/brands/moscot/moscot-collection.jpg"
               className="w-full h-44 object-cover object-center lg:w-96 lg:h-96"
             />
             <div className="flex flex-col gap-4">
@@ -39,7 +39,7 @@ export default function Brands() {
 
           <section className="flex flex-col gap-6 lg:flex-row-reverse lg:items-center">
             <img
-              src="/dist/brands/orgreen/orgreen-optics-collection.jpg"
+              src="/brands/orgreen/orgreen-optics-collection.jpg"
               className="w-full h-44 object-cover object-center lg:w-96 lg:h-96"
             />
             <div className="flex flex-col gap-4">

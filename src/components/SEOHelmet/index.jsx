@@ -12,7 +12,7 @@ export default function SEOHelmet({ title, content }) {
         <link
           rel="icon"
           type="image/x-icon"
-          href="/dist/identity/favicon.svg"
+          href="/identity/favicon.svg"
         ></link>
         <meta name="description" content={content} />
         <title>Lillestrøm Optikk | {title}</title>

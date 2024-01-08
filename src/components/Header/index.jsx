@@ -23,7 +23,7 @@ export default function Header() {
           <Link to={`/`}>
             <img
               aria-label="Gå til forsiden"
-              src="/dist/identity/logo.svg"
+              src="/identity/logo.svg"
               className="w-36"
               alt="Lillestrøm Optikk logo"
             />
