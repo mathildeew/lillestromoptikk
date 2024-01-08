@@ -4,22 +4,42 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ACC3FF",
         grey: "#EFEFEF",
+        kleinBlue: "#1F1BBD",
+        darkBlue: "#221896",
+        lightBlue: "#90ABE8",
       },
       fontFamily: {
         sans: ["Open Sans, Arial, Tahoma, sans-serif"],
+        heading: ["neue-haas-grotesk-display, sans-serif;"],
       },
-      fontSize: {
-        home: "10vh",
+
+      width: {
+        550: "550px",
+        750: "750px",
+        950: "950px",
+        1100: "1100px",
       },
-      backgroundImage: {
-        "hero-pattern": "url(/assets/elements/bg-hero.svg)",
-        "brille-bg": "url(/assets/elements/brille-blue-bg.svg)",
+
+      animation: {
+        sale: "saleCTA 4s linear infinite",
+        salePercent: "salePerc 4s linear infinite",
       },
-      rotate: {
-        150: "150deg",
-        20: "20deg",
+      keyframes: {
+        saleCTA: {
+          "0%": { fontSize: "7vw", top: "5%", zIndex: "30" },
+          "25%": { fontSize: "12vw", zIndex: "30" },
+          "50%": { fontSize: "7.5vw", top: "65%", zIndex: "30" },
+          "75%": { fontSize: "4vw" },
+          "100%": { fontSize: "7vw", top: "5%" },
+        },
+        salePerc: {
+          "0%": { fontSize: "6.5vw", top: "65%" },
+          "25%": { fontSize: "3vw" },
+          "50%": { fontSize: "6vw", top: "5%" },
+          "75%": { fontSize: "11vw", zIndex: "30" },
+          "100%": { fontSize: "6.5vw", top: "65%", zIndex: "30" },
+        },
       },
     },
   },

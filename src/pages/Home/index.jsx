@@ -1,6 +1,13 @@
+import EyecheckInfo from "../../components/EyecheckInfo";
 import Hero from "../../components/Hero";
+import LogMAR from "../../components/LogMAR";
 import SEOHelmet from "../../components/SEOHelmet";
-import Synsundersokelse from "../../components/Synsundersokelse";
+import TimeForCheck from "../../components/TimeForEyecheck";
+import Sale from "../../components/Sale";
+import { BrandsSlider } from "../../components/BrandsSlider";
+import Newsletter from "../../components/Newsletter";
+import Intro from "../../components/intro";
+import ScrollingGlasses from "../../components/ScrollingGlasses";
 
 export default function Home() {
   return (
@@ -11,8 +18,15 @@ export default function Home() {
           "Velkommen til Lillestrøm Optikk, din lokale optiker på Romerriket. Bestill synsundersøkelse online og besøk oss i Storgata 22."
         }
       />
-      <Hero />
-      <Synsundersokelse />
+      <ScrollingGlasses />
+
+      <main>
+        <Hero />
+        <Intro />
+        <Sale />
+        <TimeForCheck />
+        <Newsletter />
+      </main>
     </>
   );
 }

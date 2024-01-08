@@ -12,28 +12,104 @@
     overflow-x: hidden;
   }
 
+  main {
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 36px;
+  }
+
   h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  h3 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 10px;
+    letter-spacing: 1.5px;
   }
 
   h1,
   h2,
+  h3 {
+    font-family: theme(fontFamily.heading);
+  }
+
   p,
   a,
-  span {
+  span,
+  input::placeholder {
     font-family: theme(fontFamily.sans);
   }
 
   p,
-  ul {
+  ul,
+  a,
+  button {
     font-size: 20px;
     letter-spacing: 1.5px;
     line-height: 35px;
   }
 
-  .ooBlue {
-    top: 1400px;
+  a {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn-primary {
+    @apply font-semibold border-2 rounded-full  p-5 max-w-sm;
+  }
+
+  .btn-link {
+    @apply text-white bg-kleinBlue w-48 flex items-center justify-between px-4 py-1 border border-black rounded-full;
+  }
+
+  input::placeholder {
+    color: white;
+    font-size: 20px;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+  }
+
+  input[type="checkbox"]::after {
+    border: 2px solid black;
+  }
+
+  #LogMarChart path {
+    padding: 3px;
+    transition: 0.2s ease-in-out;
+    filter: blur(20px);
+  }
+
+  @media (min-width: 1024px) {
+    .scrollBrille {
+      width: 1100px;
+    }
+  }
+
+  #LogMarChart path:hover {
+    filter: blur(0px);
+  }
+
+  /* Animation */
+  @keyframes blurry {
+    0% {
+      filter: blur(20px);
+    }
+    50% {
+      filter: blur(5px);
+    }
+    100 {
+      filter: blur(20px);
+    }
   }
 }

@@ -1,24 +1,50 @@
-export default function MobileNav({ openMenu }) {
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+
+export default function MobileNav({ openMenu, setOpenMenu }) {
   return (
     <nav
-      className={`bg-white w-full h-80 text-end flex flex-col items-end px-6 py-16 absolute right-0 transition-all duration-300 ease-in-out z-10  ${
-        openMenu ? "top-20" : "-top-full"
+      className={`bg-white w-full h-full flex flex-col items-end px-6 py-16 absolute transition-all duration-500 ease-in-out z-50 top-20 lg:hidden ${
+        openMenu ? "right-0" : "-right-full"
       }`}
     >
-      <ul>
-        <li className="mb-6">
-          <a href={`/#synsundersokelse`}>Synsundersøkelse</a>
-        </li>
-        <li className="mb-6">
-          <a
-            href={`https://www.coptikk.no/bestill-synstest?current_optician=5271`}
+      <ul className="w-full flex flex-col gap-14">
+        <li className="border-b border-black">
+          <Link
+            to={"/timebestilling"}
+            onClick={() => setOpenMenu(!openMenu)}
+            className="px-4"
           >
-            Bestill time
-          </a>
+            Timebestilling
+          </Link>
         </li>
-        <li className="mb-6">
-          <a href={`/#kontaktoss`}>Kontakt oss</a>
+        <li className="border-b border-black">
+          <Link
+            to={"/merker"}
+            onClick={() => setOpenMenu(!openMenu)}
+            className="px-4"
+          >
+            Merker
+          </Link>
         </li>
+        <li className="border-b border-black">
+          <Link
+            to={"/kontakt-oss"}
+            onClick={() => setOpenMenu(!openMenu)}
+            className="px-4"
+          >
+            Kontakt oss
+          </Link>
+        </li>
+        <li className="btn-link">
+          <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
+          <FontAwesomeIcon icon={faArrowUp} className="rotate-45" />
+        </li>
+        {/* <li className="btn-link">
+          <a href="https://www.coptikk.no/oyehelseklinikk">Øyehelseklinikk</a>
+          <FontAwesomeIcon icon={faArrowUp} className="rotate-45" />
+        </li> */}
       </ul>
     </nav>
   );
