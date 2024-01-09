@@ -9,10 +9,12 @@
 
   html {
     overflow-x: hidden;
+    position: relative;
   }
 
   body {
     width: 100%;
+    position: relative;
     overflow-x: hidden;
   }
 
