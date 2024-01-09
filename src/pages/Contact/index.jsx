@@ -17,7 +17,7 @@ export default function Contact() {
             <div className="flex flex-col gap-16">
               <div className="flex flex-col gap-6">
                 <div>
-                  <p>64 85 80 80</p>
+                  <p>64 80 85 85</p>
                   <a href="mailto: post@lillestromoptikk.no">
                     post@lillestromoptikk.no
                   </a>
