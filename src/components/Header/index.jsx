@@ -7,7 +7,7 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
   function hideOnScroll() {
-    if (window.scrollY > 3) {
+    if (window.scrollY > 0) {
       setOpenMenu(false);
     }
   }
@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white w-full h-20 flex z-20 md:px-12">
+      <header className="bg-white w-full h-20 flex z-40 relative md:px-12">
         <div className="w-full max-w-6xl flex justify-between items-center px-6 md:mx-auto md:px-3.5">
           <Link to={`/`}>
             <img
@@ -58,9 +58,8 @@ export default function Header() {
             ></span>
           </div>
         </div>
+        <MobileNav openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </header>
-
-      <MobileNav openMenu={openMenu} setOpenMenu={setOpenMenu} />
     </>
   );
 }
