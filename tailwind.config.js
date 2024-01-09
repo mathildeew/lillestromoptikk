@@ -29,8 +29,8 @@ export default {
         saleCTA: {
           "0%": { fontSize: "7vw", top: "5%", zIndex: "30" },
           "25%": { fontSize: "12vw", zIndex: "30" },
-          "50%": { fontSize: "7.5vw", top: "65%", zIndex: "10" },
-          "75%": { fontSize: "4vw", zIndez: "10" },
+          "50%": { fontSize: "7.5vw", top: "65%", zIndex: "30" },
+          "75%": { fontSize: "4vw", zIndex: "10" },
           "100%": { fontSize: "7vw", top: "5%", zIndex: "10" },
         },
         salePerc: {
@@ -38,7 +38,7 @@ export default {
           "25%": { fontSize: "3vw", zIndex: "10" },
           "50%": { fontSize: "6vw", top: "5%", zIndex: "30" },
           "75%": { fontSize: "11vw", zIndex: "30" },
-          "100%": { fontSize: "6.5vw", top: "65%", zIndex: "10" },
+          "100%": { fontSize: "6.5vw", top: "65%", zIndex: "30" },
         },
       },
     },
