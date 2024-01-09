@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       <header className="bg-white w-full h-20 flex z-40 relative md:px-12">
-        <div className="w-full max-w-6xl flex justify-between items-center px-6 md:mx-auto md:px-3.5">
+        <div className="w-full max-w-6xl flex justify-between items-center px-6 py-12 md:mx-auto md:px-3.5 md:py-16">
           <Link to={`/`}>
             <img
               aria-label="Gå til forsiden"
