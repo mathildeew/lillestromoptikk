@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useState } from "react";
 
 export default function ScrollingGlasses() {
   const stopScroll = 700;
@@ -11,8 +10,8 @@ export default function ScrollingGlasses() {
         const scrollOffset = window.scrollY;
 
         if (scrollOffset < stopScroll) {
-          const x = scrollOffset * 0.4; // Juster faktoren etter ønsket skrå bevegelse
-          const y = scrollOffset; // Juster faktoren etter ønsket skrå bevegelse
+          const x = scrollOffset * 0.4;
+          const y = scrollOffset;
 
           scrollBrille.style.transform = `translate(${x}px, ${y}px)`;
         }
