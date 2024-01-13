@@ -3,7 +3,8 @@
 # Lillestrøm Optikk
 
 [Besøk nettsted](https://www.lillestromoptikk.no)
-[Flere detaljser](https://www.mathildeelinor.no/lillestrom-optikk)
+
+[Flere detaljer](https://www.mathildeelinor.no/lillestrom-optikk)
 
 ## Bygget med
 
