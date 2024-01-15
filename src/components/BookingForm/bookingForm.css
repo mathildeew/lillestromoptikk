@@ -1186,7 +1186,7 @@ select:focus {
 }
 .coptikk-app .cop .member-label {
   font-size: 24px;
-  font-family: "Open Sans";
+  font-family: Open Sans, sans-serif;
   font-weight: bolder;
   padding-bottom: 1rem;
 }
