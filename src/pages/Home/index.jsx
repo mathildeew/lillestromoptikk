@@ -5,6 +5,7 @@ import Sale from "../../components/Sale";
 import Newsletter from "../../components/Newsletter";
 import Intro from "../../components/Intro";
 import ScrollingGlasses from "../../components/ScrollingGlasses";
+import BrandSlider from "../../components/BrandsSlider";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Intro />
         <Sale />
         <TimeForCheck />
+        <BrandSlider />
         <Newsletter />
       </main>
     </>
