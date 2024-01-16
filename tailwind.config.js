@@ -13,14 +13,6 @@ export default {
         sans: ["Open Sans, Arial, Tahoma, sans-serif"],
         heading: ["neue-haas-grotesk-display, sans-serif;"],
       },
-
-      width: {
-        550: "550px",
-        750: "750px",
-        950: "950px",
-        1100: "1100px",
-      },
-
       animation: {
         sale: "saleCTA 4s linear infinite",
         salePercent: "salePerc 4s linear infinite",

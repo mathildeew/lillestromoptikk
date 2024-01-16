@@ -26,7 +26,7 @@ export default function ScrollingGlasses() {
   }, [stopScroll]);
 
   return (
-    <div className="scrollBrille w-550 absolute top-40 -right-28 z-10 overflow-x-hidden md:w-750 lg:w-950 xl:w-1100">
+    <div className="scrollBrille w-[550px] absolute top-40 -right-28 z-10 overflow-x-hidden md:w-[750px] lg:w-[950px] xl:w-[1100px]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1272.328"
