@@ -13,7 +13,7 @@ export default function BrandSlider() {
       img: "/dist/brands/orgreen/orgreen-optics-collection.jpg",
     },
     {
-      name: "Res Rei",
+      name: "RES REI",
       img: "/public/brands/resrei/resrei_SS2023_details_mod_Rodin-724_Dafne-854.jpg",
     },
     {
@@ -50,20 +50,21 @@ export default function BrandSlider() {
 
   return (
     <section>
-      <h2>Våre merker</h2>
       <div
-        className="w-full h-96 md:h-[500px] lg:h-[650px]"
+        className="w-full h-96 relative md:h-[500px] lg:h-[650px]"
         onMouseEnter={handleMouse}
         onMouseLeave={handleMouse}
       >
         {brands.map((brand, index) => (
           <div
-            className={`bg-cover bg-no-repeat bg-center h-full w-full ${
-              counter - 1 === index ? "show" : "not-show"
+            className={`h-full w-full bg-cover bg-no-repeat bg-center  ${
+              counter - 1 === index
+                ? "flex justify-center items-center animate-fade"
+                : "hidden"
             }`}
             style={{ backgroundImage: `url(${brand.img})` }}
           >
-            <span className="text-kleinBlue text-6xl md:text-9xl font-bold bg-white bg-opacity-60 rounded-full py-4 px-8 uppercase">
+            <span className="text-3xl font-bold uppercase bg-white rounded-full border-2 border-black py-4 px-8 md:text-5xl lg:text-8xl">
               {brand.name}
             </span>
           </div>

@@ -24,6 +24,7 @@ export default {
       animation: {
         sale: "saleCTA 4s linear infinite",
         salePercent: "salePerc 4s linear infinite",
+        fade: "fade 1s ease-in-out",
       },
       keyframes: {
         saleCTA: {
@@ -39,6 +40,10 @@ export default {
           "50%": { fontSize: "6vw", top: "5%", zIndex: "30" },
           "75%": { fontSize: "11vw", zIndex: "30" },
           "100%": { fontSize: "6.5vw", top: "65%", zIndex: "30" },
+        },
+        fade: {
+          "0%": { opacity: "0.1" },
+          "100%": { opacity: "1" },
         },
       },
     },
