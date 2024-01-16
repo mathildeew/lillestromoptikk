@@ -35,7 +35,7 @@ export default function Newsletter() {
 
   return (
     <section className="text-white bg-darkBlue px-4 py-24 md:px-10 md:py-32">
-      <div className="max-w-5xl flex flex-col gap-12 mx-auto">
+      <div className="max-w-7xl flex flex-col gap-12 mx-auto">
         <h2>Meld deg på vårt nyhetsbrev for gode tilbud og informasjon</h2>
 
         <form className="flex flex-col gap-12" ref={form} onSubmit={sendEmail}>
