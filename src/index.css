@@ -60,7 +60,8 @@
   ul,
   a,
   button,
-  label {
+  label,
+  input {
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 35px;
@@ -79,7 +80,6 @@
   }
 
   input::placeholder {
-    color: white;
     font-size: 20px;
   }
 

@@ -39,21 +39,25 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="text-white bg-darkBlue px-4 py-24 md:px-10 md:py-32">
-      <div className="max-w-7xl flex flex-col gap-12 mx-auto">
-        <h2>Meld deg på vårt nyhetsbrev for gode tilbud og informasjon</h2>
-
+    <section className=" bg-darkBlue px-4 py-24 md:px-10 md:py-32 md:flex md:items-center">
+      <div className="max-w-7xl flex flex-col gap-12 mx-auto ">
+        <h2 className="text-white">Meld deg på vårt nyhetsbrev*</h2>
         <form className="flex flex-col gap-12" ref={form} onSubmit={sendEmail}>
-          <div className="flex flex-col gap-2">
-            <label for="epost">Din epost</label>
+          <div className="relative w-full flex flex-col gap-6">
             <input
               id="epost"
               type="email"
               name="user_email"
-              className=" bg-darkBlue max-w-md border-2 border-white rounded-md p-5"
+              className="bg-white w-full py-4 pl-6 border-2 border-black rounded-full"
               placeholder="navn@epost.no"
               required
             />
+            <button
+              value="Send"
+              className="text-white px-4 py-2 border-2 border-white rounded-full md:absolute md:bg-darkBlue  md:right-5 md:top-2  transition-all 0.2s ease-in-out  hover:border-darkBlue "
+            >
+              {btnText}
+            </button>
           </div>
           <div className="flex items-center gap-4">
             <input
@@ -64,21 +68,12 @@ export default function Newsletter() {
               aria-checked={checked}
               required
             />
-            <p>Ja takk, send meg nyhetsbrev</p>
+            <p className="text-white">Ja takk, send meg nyhetsbrev</p>
           </div>
-          <button
-            value="Send"
-            className={`btn-primary max-w-72 border border-white flex items-center gap-5 transition-all 0.2s ease-in-out hover:gap-10 ${
-              subscribed && "hover:gap-5"
-            }`}
-          >
-            {btnText}
-            <FontAwesomeIcon
-              icon={subscribed ? faCheck : faArrowRightLong}
-              className="text-2xl"
-            />
-          </button>
         </form>
+        <p className="text-white italic">
+          * Kun gode tilbud og informasjon inkludert
+        </p>
       </div>
     </section>
   );

@@ -1,12 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer className="bg-grey w-full px-4 py-20 sticky top-[100vh] md:px-10">
       <div className="max-w-7xl grid gap-12 mx-auto md:grid-cols-2">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-6">
           <h3>Åpningstider</h3>
           <div className="flex justify-between max-w-sm">
             <div>
@@ -25,7 +24,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-6">
           <h3>Kontakt oss</h3>
           <div>
             <a href="mailto:post@lillestromoptikk.no">
@@ -39,16 +38,18 @@ export default function Footer() {
             <p>2000 Lillestrøm</p>
           </div>
 
-          <div className="flex flex-wrap gap-6">
+          <div className="flex  gap-6">
             <a
               href="https://www.facebook.com/lillestromoptikk"
               aria-label="Følg oss på Facebook"
+              className="hover:text-kleinBlue"
             >
               <FontAwesomeIcon icon={faFacebook} size="3x" />
             </a>
             <a
               href="https://www.instagram.com/lillestromoptikk"
               aria-label="Følg oss på Instagram"
+              className="hover:text-kleinBlue"
             >
               <FontAwesomeIcon icon={faInstagram} size="3x" />
             </a>
@@ -63,7 +64,7 @@ export default function Footer() {
             Utvikling og design av{" "}
             <a
               href="https://www.mathildeelinor.no"
-              className="text-base underline"
+              className="text-base underline hover:text-kleinBlue"
             >
               Mathilde Elinor
             </a>
