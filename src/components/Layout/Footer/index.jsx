@@ -40,10 +40,16 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-6">
-            <a href="https://www.facebook.com/lillestromoptikk">
+            <a
+              href="https://www.facebook.com/lillestromoptikk"
+              aria-label="Følg oss på Facebook"
+            >
               <FontAwesomeIcon icon={faFacebook} size="3x" />
             </a>
-            <a href="https://www.instagram.com/lillestromoptikk">
+            <a
+              href="https://www.instagram.com/lillestromoptikk"
+              aria-label="Følg oss på Instagram"
+            >
               <FontAwesomeIcon icon={faInstagram} size="3x" />
             </a>
           </div>

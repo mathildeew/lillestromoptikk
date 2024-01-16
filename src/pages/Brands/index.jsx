@@ -18,6 +18,7 @@ export default function Brands() {
             <img
               src="/brands/moscot/moscot-collection.jpg"
               className="w-full h-44 object-cover object-center lg:w-96 lg:h-96"
+              alt="Vi har briller fra Moscot"
             />
             <div className="flex flex-col gap-4">
               <h2>Moscot</h2>
@@ -41,6 +42,7 @@ export default function Brands() {
             <img
               src="/brands/orgreen/orgreen-optics-collection.jpg"
               className="w-full h-44 object-cover object-center lg:w-96 lg:h-96"
+              alt="Vi har briller fra Ørgreen"
             />
             <div className="flex flex-col gap-4">
               <h2>Ørgreen</h2>

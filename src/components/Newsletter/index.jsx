@@ -6,6 +6,11 @@ import { faArrowRightLong, faCheck } from "@fortawesome/free-solid-svg-icons";
 export default function Newsletter() {
   const [btnText, setBtnText] = useState("Meld meg på");
   const [subscribed, setSubscribed] = useState(false);
+  const [checked, setChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setChecked(!checked);
+  };
 
   const form = useRef();
 
@@ -39,15 +44,26 @@ export default function Newsletter() {
         <h2>Meld deg på vårt nyhetsbrev for gode tilbud og informasjon</h2>
 
         <form className="flex flex-col gap-12" ref={form} onSubmit={sendEmail}>
-          <input
-            type="email"
-            name="user_email"
-            className=" bg-darkBlue max-w-md border-2 border-white rounded-md p-5"
-            placeholder="navn@epost.no"
-            required
-          />
+          <div className="flex flex-col gap-2">
+            <label for="epost">Din epost</label>
+            <input
+              id="epost"
+              type="email"
+              name="user_email"
+              className=" bg-darkBlue max-w-md border-2 border-white rounded-md p-5"
+              placeholder="navn@epost.no"
+              required
+            />
+          </div>
           <div className="flex items-center gap-4">
-            <input type="checkbox" className="bg-white" required />
+            <input
+              className="bg-white"
+              type="checkbox"
+              role="checkbox"
+              onChange={handleCheckboxChange}
+              aria-checked={checked}
+              required
+            />
             <p>Ja takk, send meg nyhetsbrev</p>
           </div>
           <button
