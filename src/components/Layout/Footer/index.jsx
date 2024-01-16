@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-grey w-full px-4 py-20 sticky top-[100vh] md:px-10">
-      <div className="max-w-5xl grid gap-12 mx-auto md:grid-cols-2">
+      <div className="max-w-7xl grid gap-12 mx-auto md:grid-cols-2">
         <div className="flex flex-col gap-5">
           <h3>Åpningstider</h3>
           <div className="flex justify-between max-w-sm">
