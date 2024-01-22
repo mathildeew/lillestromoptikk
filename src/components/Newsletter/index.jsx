@@ -54,7 +54,7 @@ export default function Newsletter() {
             />
             <button
               value="Send"
-              className="text-white px-4 py-2 border-2 border-white rounded-full md:absolute md:bg-darkBlue  md:right-5 md:top-2  transition-all 0.2s ease-in-out  hover:border-darkBlue "
+              className="text-white px-4 py-2 border-2 border-white rounded-full md:absolute md:bg-darkBlue  md:right-5 md:top-2  transition-all 0.2s ease-in-out hover:bg-white hover:text-darkBlue lg:hover:border-darkBlue "
             >
               {btnText}
             </button>
