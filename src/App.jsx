@@ -21,9 +21,9 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />}></Route>
-        <Route exact path="/timebestilling" element={<Eyecheck />}></Route>
-        <Route path="/merker" element={<Brands />}></Route>
-        <Route path="/kontakt-oss" element={<Contact />}></Route>
+        <Route exact path="timebestilling" element={<Eyecheck />}></Route>
+        <Route path="merker" element={<Brands />}></Route>
+        <Route path="kontakt-oss" element={<Contact />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Route>
     </Routes>
