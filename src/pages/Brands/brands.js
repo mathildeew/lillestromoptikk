@@ -14,7 +14,7 @@ export const brands = [
     description1:
       "Ørgreen er et internasjonalt merke fra København, som lager førsteklasses briller i materialer av høy kvalitet. Kjent for sine dynamiske design og tekniske presisjon, produserer Ørgreen håndlagde rammer med unike fargekombinasjoner..",
     description2:
-      "Hele kolleksjonen til Ørgreen er produsert i Japan, et land kjent for sin stolte tradisjon innen overlegen produksjon av briller og for å anvende den høyeste standarden på hvert trinn i prosessen. Å kombinere denne produksjonsetikken med den danske designkulturen for presisjon og ekspertise resulterer i et produkt som kjennetegnes av kjærlighet for detaljer og varer ivet ut.",
+      "Hele kolleksjonen til Ørgreen er produsert i Japan, et land kjent for sin stolte tradisjon innen overlegen produksjon av briller og for å anvende den høyeste standarden på hvert trinn i prosessen. Å kombinere denne produksjonsetikken med den danske designkulturen for presisjon og ekspertise resulterer i et produkt som kjennetegnes av kjærlighet for detaljer og varer livet ut.",
     img: "/brands/orgreen/orgreen-optics-collection.jpg",
   },
   {
