@@ -1,4 +1,5 @@
 import SEOHelmet from "../../components/SEOHelmet";
+import { brands } from "./brands";
 
 export default function Brands() {
   return (
@@ -14,7 +15,28 @@ export default function Brands() {
         <h1>Merker</h1>
 
         <div className="flex flex-col gap-24 lg:gap-32">
-          <section className="flex flex-col gap-6 lg:flex-row lg:items-center">
+          {brands.map((brand) => (
+            <section
+              key={brand.id}
+              className={`flex flex-col gap-6 lg:flex-row lg:items-center ${
+                brand.id === "moscot" || brand.id === "resrei"
+                  ? "flex-row"
+                  : "lg:flex-row-reverse"
+              }`}
+            >
+              <img
+                src={brand.img}
+                className="w-full h-44 object-cover object-center lg:w-96 lg:h-96"
+                alt={`Vi har briller fra ${brand.name}`}
+              />
+              <div className="flex flex-col gap-4">
+                <h2>{brand.name}</h2>
+                <p>{brand.description1}</p>
+                <p>{brand.description2}</p>
+              </div>
+            </section>
+          ))}
+          {/* <section className="flex flex-col gap-6 lg:flex-row lg:items-center">
             <img
               src="/brands/moscot/moscot-collection.jpg"
               className="w-full h-44 object-cover object-center lg:w-96 lg:h-96"
@@ -62,7 +84,7 @@ export default function Brands() {
                 livet ut.
               </p>
             </div>
-          </section>
+          </section> */}
           <p className="font-semibold">
             Vi fører også merker som Tom Ford, Ray-Ban, Face a Face, Fleye,
             Traction Production og mange fler.
