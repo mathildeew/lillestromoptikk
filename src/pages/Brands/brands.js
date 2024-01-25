@@ -35,4 +35,13 @@ export const brands = [
       "Masunaga skiller seg ut ved å være det eneste selskapet i Japan med en integrert produksjonsprosess, håndtert internt fra råvarer til ferdigstillelse. Dette unike tilnærmingen sikrer en høy standard for håndverk og detaljer i hvert trinn av produksjonen. Med fokus på innovasjon og kvalitet har Masunaga  etablert seg som en pålitelig leder innen brilleindustrien, og  engasjementet for håndtverk og eksklusivitet har gjort Masunaga til et ettertraktet navn blant de som verdsetter både stil og substans.",
     img: "/brands/masunaga/MARGOT_1 downsized.jpeg",
   },
+  {
+    id: "gotti",
+    name: "Götti",
+    description1:
+      "Mannen bak er designer og optiker Sven Götti. Han er skikkelig fan av minimalistisk brilledesign, der brillene hans bare har det som trengs. Götti Eyewear er kjent for å være ordentlig godt laget, og designet er enkelt og tidløst. Det går aldri av moten. Det er ekte sveitsisk stil med fokus på detaljer og håndverk. Nylig har Götti Eyewear slengt ut to nye kule kolleksjoner.",
+    description2:
+      "Götti Dimension er laget med 3D-magi og inspirert av byliv, kunst, arkitektur, mote og naturens råskap. Götti Perspective er som en superperfeksjonert nyvinning av briller uten ramme. Stenger, hengsler og sidebiter er satt sammen uten skruer, lim eller lodding. Begge kolleksjonene lages på Göttis fabrikk i Sveits.",
+    img: "/brands/masunaga/MARGOT_1 downsized.jpeg",
+  },
 ];
