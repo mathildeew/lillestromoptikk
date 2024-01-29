@@ -12,7 +12,7 @@ export default function Home() {
       <SEOHelmet
         title={"Velkommen!"}
         content={
-          "Velkommen til Lillestrøm Optikk, din lokale optiker på Romerriket. Bestill synsundersøkelse online og besøk oss i Storgata 22."
+          "Velkommen til Lillestrøm Optikk, din lokale optiker i Lillestrøm. Bestill synsundersøkelse online og besøk oss i Storgata 22."
         }
       />
       <ScrollingGlasses />

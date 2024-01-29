@@ -41,10 +41,6 @@ export default function MobileNav({ openMenu, setOpenMenu }) {
           <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
           <FontAwesomeIcon icon={faArrowUp} className="rotate-45" />
         </li>
-        {/* <li className="btn-link">
-          <a href="https://www.coptikk.no/oyehelseklinikk">Øyehelseklinikk</a>
-          <FontAwesomeIcon icon={faArrowUp} className="rotate-45" />
-        </li> */}
       </ul>
     </nav>
   );

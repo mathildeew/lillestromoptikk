@@ -1,6 +1,6 @@
 export default function Sale() {
   return (
-    <section className=" bg-kleinBlue w-full flex flex-col items-center px-4 py-36 relative z-10  md:py-40 lg:py-64">
+    <section className=" bg-kleinBlue w-full flex flex-col items-center px-4 py-36 relative z-10  md:py-40 lg:py-64 xl:py-80">
       <span className="font-heading bg-white w-fit h-fit px-5 rounded-full border-2 border-black animate-sale uppercase absolute">
         Salg
       </span>
