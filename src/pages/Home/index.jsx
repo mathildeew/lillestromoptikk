@@ -5,6 +5,7 @@ import Sale from "../../components/Sale";
 import Newsletter from "../../components/Newsletter";
 import Intro from "../../components/Intro";
 import ScrollingGlasses from "../../components/ScrollingGlasses";
+import HomeNav from "../../components/HomeNav";
 
 export default function Home() {
   return (
@@ -15,14 +16,15 @@ export default function Home() {
           "Velkommen til Lillestrøm Optikk, din lokale optiker i Lillestrøm. Bestill synsundersøkelse online og besøk oss i Storgata 22."
         }
       />
-      <ScrollingGlasses />
+      {/* <ScrollingGlasses /> */}
 
       <main>
-        <Hero />
+        <HomeNav />
+        {/* <Hero />
         <Intro />
         <Sale />
         <TimeForCheck />
-        <Newsletter />
+        <Newsletter /> */}
       </main>
     </>
   );

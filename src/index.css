@@ -79,6 +79,16 @@
     @apply text-white bg-kleinBlue w-48 flex items-center justify-between px-4 py-1 border border-black rounded-full;
   }
 
+  .homeLink {
+    @apply text-6xl font-heading relative transition-all before:w-0 before:h-1 before:absolute before:rounded-sm before:-bottom-1 before:right-0 before:transition-all before:duration-500
+    hover:tracking-wider
+    hover:before:w-full hover:before:left-0 hover:before:bg-kleinBlue;
+  }
+
+  .funky {
+    @apply text-white text-7xl font-heading inline-block mr-2;
+  }
+
   input::placeholder {
     font-size: 20px;
   }
@@ -93,26 +103,7 @@
     border: 2px solid black;
   }
 
-  #container {
-    /* position: absolute; */
-    margin: auto;
-    width: 100vw;
-    height: 80pt;
-    top: 0;
-    bottom: 0;
-
-    filter: url(#threshold) blur(0.6px);
-  }
-
-  #text,
-  #text1,
-  #text2 {
-    position: absolute;
-    width: 100%;
-    display: inline-block;
-    font-family: "Raleway", sans-serif;
-    font-size: 80pt;
-    text-align: center;
-    user-select: none;
+  #LogMarChart path {
+    fill: white;
   }
 }

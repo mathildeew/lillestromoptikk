@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import DesktopNav from "../Nav/Desktop";
 import MobileNav from "../Nav/Mobile";
 
 export default function Header() {
+  const location = useLocation();
+  const path = location.pathname;
   const [openMenu, setOpenMenu] = useState(false);
 
   function hideOnScroll() {
@@ -18,8 +20,12 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white w-full h-20 flex z-40 relative md:px-12">
-        <div className="w-full max-w-7xl flex justify-between items-center px-6 py-12 md:mx-auto md:px-3.5 md:py-16">
+      <header
+        className={`bg-white h-20 flex items-center z-40 relative md:px-12 ${
+          path === "/" ? "w-1/2" : "w-full"
+        }`}
+      >
+        <div className="w-full max-w-screen-2xl flex justify-between items-center px-6 py-12 md:mx-auto md:px-3.5 md:py-16">
           <Link to={`/`}>
             <img
               aria-label="Gå til forsiden"
@@ -28,9 +34,7 @@ export default function Header() {
               alt="Lillestrøm Optikk logo"
             />
           </Link>
-
-          <DesktopNav />
-
+          {path !== "/" && <DesktopNav />}
           <div
             className="w-10 h-10 relative lg:hidden"
             onClick={() => setOpenMenu(!openMenu)}
