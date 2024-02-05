@@ -17,15 +17,15 @@ export const brands = [
       "Hele kolleksjonen til Ørgreen er produsert i Japan, et land kjent for sin stolte tradisjon innen overlegen produksjon av briller og for å anvende den høyeste standarden på hvert trinn i prosessen. Å kombinere denne produksjonsetikken med den danske designkulturen for presisjon og ekspertise resulterer i et produkt som kjennetegnes av kjærlighet for detaljer og varer livet ut.",
     img: "/brands/orgreen/orgreen-optics-collection.jpg",
   },
-  // {
-  //   id: "resrei",
-  //   name: "RES REI",
-  //   description1:
-  //     "Med en forkjærlighet for unikt og estetisk design har italienske RES REI et hovedfokus på detaljer rundt mønstre og farger. RES REI er skapt som et friskt og litt kantete alternativ til den klassike brilleindustrien, og er et godt valg for de som ønsker å skille seg ut.",
-  //   description2:
-  //     'Oliviero Zanon, designer og grunnlegger, insisterer alltid på å være tilstede når nye design, farger og materialer tar form, så han bor rett rundt hjørnet fra fabrikken - som en ekte designer. RES REI er latin og betyr "tingen", men det betyr også en idé med et bærekraftig konsept',
-  //   img: "/brands/resrei/SS2023_details_mod_Colosso-863-896_downsized.jpg",
-  // },
+  {
+    id: "resrei",
+    name: "RES REI",
+    description1:
+      "Med en forkjærlighet for unikt og estetisk design har italienske RES REI et hovedfokus på detaljer rundt mønstre og farger. RES REI er skapt som et friskt og litt kantete alternativ til den klassike brilleindustrien, og er et godt valg for de som ønsker å skille seg ut.",
+    description2:
+      "Oliviero Zanon, designer og grunnlegger, insisterer alltid på å være tilstede når nye design, farger og materialer tar form, så han bor rett rundt hjørnet fra fabrikken - som en ekte designer.",
+    img: "/brands/resrei/SS2023_details_mod_Colosso-863-896_downsized.jpg",
+  },
   {
     id: "masunaga",
     name: "Masunaga",

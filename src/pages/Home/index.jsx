@@ -1,7 +1,6 @@
 import Hero from "../../components/Hero";
 import SEOHelmet from "../../components/SEOHelmet";
 import TimeForCheck from "../../components/TimeForEyecheck";
-import Sale from "../../components/Sale";
 import Newsletter from "../../components/Newsletter";
 import Intro from "../../components/Intro";
 import ScrollingGlasses from "../../components/ScrollingGlasses";
@@ -22,7 +21,6 @@ export default function Home() {
         <HomeNav />
         {/* <Hero />
         <Intro />
-        <Sale />
         <TimeForCheck />
         <Newsletter /> */}
       </main>
