@@ -20,7 +20,7 @@ export default function Home() {
       <main>
         <Hero />
         <Intro />
-        <Sale />
+        {/* <Sale /> */}
         <TimeForCheck />
         <Newsletter />
       </main>
