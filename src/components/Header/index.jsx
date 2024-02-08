@@ -20,17 +20,13 @@ export default function Header() {
 
   return (
     <>
-      <header
-        className={`bg-white h-20 flex items-center z-40 relative md:px-12 ${
-          path === "/" ? "w-1/2" : "w-full"
-        }`}
-      >
-        <div className="w-full max-w-screen-2xl flex justify-between items-center px-6 py-12 md:mx-auto md:px-3.5 md:py-16">
+      <header className="bg-white w-full h-fit flex items-center px-4 z-10 absolute md:px-12">
+        <div className="w-full max-w-screen-2xl flex justify-between items-center py-6 md:mx-auto ">
           <Link to={`/`}>
             <img
               aria-label="Gå til forsiden"
               src="/identity/logo.svg"
-              className="w-36"
+              className="w-44"
               alt="Lillestrøm Optikk logo"
             />
           </Link>

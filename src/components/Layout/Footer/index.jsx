@@ -1,10 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import Newsletter from "../../Newsletter";
 
 export default function Footer() {
   return (
-    <footer className="bg-grey w-full px-4 py-20 sticky top-[100vh] md:px-10">
-      <div className="max-w-7xl grid gap-12 mx-auto md:grid-cols-2">
+    <footer className="bg-grey w-full flex justify-center px-4 py-20 sticky top-[100vh]">
+      <div className="max-w-9xl grid gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-32">
+        <Newsletter />
+
         <div className="flex flex-col gap-6">
           <h3>Åpningstider</h3>
           <div className="flex justify-between max-w-sm">
@@ -24,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="w-fit flex flex-col gap-6">
           <h3>Kontakt oss</h3>
           <div>
             <a href="mailto:post@lillestromoptikk.no">
@@ -38,7 +41,7 @@ export default function Footer() {
             <p>2000 Lillestrøm</p>
           </div>
 
-          <div className="flex  gap-6">
+          <div className="flex gap-6">
             <a
               href="https://www.facebook.com/lillestromoptikk"
               aria-label="Følg oss på Facebook"

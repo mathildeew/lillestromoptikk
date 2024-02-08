@@ -14,7 +14,7 @@ export default function HomeNav() {
 
   return (
     <>
-      <div className="flex w-full h-screen absolute top-0">
+      <div className="w-full h-screen relative top-0 z-20 hidden lg:flex">
         <div className="w-1/2 pt-20">
           <ul className="h-full flex flex-col justify-around items-center">
             <li>

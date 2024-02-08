@@ -5,25 +5,21 @@ import { useEffect } from "react";
 export default function BrandsAnimation() {
   const moscot = gsap.timeline({
     repeat: -1,
-    delay: 1,
     repeatDelay: 2,
   });
 
   const orgreen = gsap.timeline({
     repeat: -1,
-    delay: 1,
     repeatDelay: 2,
   });
 
   const masunaga = gsap.timeline({
     repeat: -1,
-    delay: 1,
     repeatDelay: 2,
   });
 
   const resrei = gsap.timeline({
     repeat: -1,
-    delay: 1,
     repeatDelay: 2,
   });
 

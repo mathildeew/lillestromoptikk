@@ -19,10 +19,11 @@ export default function Home() {
 
       <main>
         <HomeNav />
+
         {/* <Hero />
         <Intro />
-        <TimeForCheck />
-        <Newsletter /> */}
+        <TimeForCheck /> */}
+        {/* <Newsletter /> */}
       </main>
     </>
   );
