@@ -4,70 +4,72 @@ import Newsletter from "../../Newsletter";
 
 export default function Footer() {
   return (
-    <footer className="bg-grey w-full flex justify-center px-4 py-20 sticky top-[100vh]">
-      <div className="max-w-9xl grid gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-32">
-        <Newsletter />
+    <footer className="bg-grey flex justify-center px-4 py-20 sticky top-[100vh] sm:px-8">
+      <div className="w-full max-w-screen-2xl flex flex-col items-center gap-20">
+        <div className="w-full flex flex-col gap-16 sm:grid sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 lg:flex  lg:flex-row lg:justify-between">
+          <div className="footerGrids w-[250px]">
+            <h3>Åpningstider</h3>
+            <div className="flex justify-between">
+              <div>
+                <p>Mandag &ndash; onsdag</p>
+                <p>Torsdag</p>
+                <p>Fredag</p>
+                <p>Lørdag</p>
+              </div>
 
-        <div className="flex flex-col gap-6">
-          <h3>Åpningstider</h3>
-          <div className="flex justify-between max-w-sm">
+              <div>
+                <p>10 &ndash; 17</p>
+                <p>10 &ndash; 18</p>
+                <p>10 &ndash; 17</p>
+                <p>10 &ndash; 16</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="footerGrids w-fit">
+            <h3>Kontakt oss</h3>
             <div>
-              <p>Mandag &ndash; onsdag</p>
-              <p>Torsdag</p>
-              <p>Fredag</p>
-              <p>Lørdag</p>
+              <a href="mailto:post@lillestromoptikk.no">
+                post@lillestromoptikk.no
+              </a>
+              <p>64 80 85 85</p>
             </div>
 
             <div>
-              <p>10 &ndash; 17</p>
-              <p>10 &ndash; 18</p>
-              <p>10 &ndash; 17</p>
-              <p>10 &ndash; 16</p>
+              <p>Storgata 22</p>
+              <p>2000 Lillestrøm</p>
+            </div>
+
+            <div className="flex gap-6">
+              <a
+                href="https://www.facebook.com/lillestromoptikk"
+                aria-label="Følg oss på Facebook"
+                className="hover:text-kleinBlue"
+              >
+                <FontAwesomeIcon icon={faFacebook} size="3x" />
+              </a>
+              <a
+                href="https://www.instagram.com/lillestromoptikk"
+                aria-label="Følg oss på Instagram"
+                className="hover:text-kleinBlue"
+              >
+                <FontAwesomeIcon icon={faInstagram} size="3x" />
+              </a>
             </div>
           </div>
+
+          <Newsletter />
         </div>
 
-        <div className="w-fit flex flex-col gap-6">
-          <h3>Kontakt oss</h3>
-          <div>
-            <a href="mailto:post@lillestromoptikk.no">
-              post@lillestromoptikk.no
-            </a>
-            <p>64 80 85 85</p>
-          </div>
-
-          <div>
-            <p>Storgata 22</p>
-            <p>2000 Lillestrøm</p>
-          </div>
-
-          <div className="flex gap-6">
-            <a
-              href="https://www.facebook.com/lillestromoptikk"
-              aria-label="Følg oss på Facebook"
-              className="hover:text-kleinBlue"
-            >
-              <FontAwesomeIcon icon={faFacebook} size="3x" />
-            </a>
-            <a
-              href="https://www.instagram.com/lillestromoptikk"
-              aria-label="Følg oss på Instagram"
-              className="hover:text-kleinBlue"
-            >
-              <FontAwesomeIcon icon={faInstagram} size="3x" />
-            </a>
-          </div>
-        </div>
-
-        <div>
-          <p className="text-base">
+        <div className="w-full">
+          <p className="text-xs">
             {new Date().getFullYear()} &copy; Lillestrøm Optikk
           </p>
-          <p className="text-base mr-2">
+          <p className="text-xs">
             Utvikling og design av{" "}
             <a
               href="https://www.mathildeelinor.no"
-              className="text-base underline hover:text-kleinBlue"
+              className="text-xs underline hover:text-kleinBlue"
             >
               Mathilde Elinor
             </a>

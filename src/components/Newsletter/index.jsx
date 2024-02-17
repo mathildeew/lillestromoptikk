@@ -2,18 +2,26 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong, faCheck } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
+import { useCallback } from "react";
 
 export default function Newsletter() {
   const [btnText, setBtnText] = useState("Meld meg på");
-  const [subscribed, setSubscribed] = useState(false);
-  const [checked, setChecked] = useState(false);
+  const [formValid, setFormValid] = useState(false);
 
-  const handleCheckboxChange = () => {
-    setChecked(!checked);
-  };
+  useEffect(() => {
+    const invalid = document.querySelector("form:invalid");
+
+    if (invalid) {
+      setFormValid(false);
+    } else {
+      setFormValid(true);
+    }
+  }, []);
+
+  console.log(formValid);
 
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -29,7 +37,6 @@ export default function Newsletter() {
           console.log(result.text);
           console.log(e.target);
           setBtnText("Påmeldt!");
-          setSubscribed(true);
         },
         (error) => {
           console.log(error.text);
@@ -39,11 +46,11 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="w-fit md:flex md:items-center justify-center">
+    <section className="newsletter w-fit">
       <div className="flex flex-col gap-8 ">
         <h3>Meld deg på vårt nyhetsbrev*</h3>
-        <form className="flex flex-col gap-6" ref={form} onSubmit={sendEmail}>
-          <div className="relative w-full flex flex-col gap-6">
+        <form className="footerGrids" ref={form} onSubmit={sendEmail}>
+          <div className="footerGrids w-full">
             <input
               id="epost"
               type="email"
@@ -52,26 +59,23 @@ export default function Newsletter() {
               placeholder="navn@epost.no"
               required
             />
+            <div className="flex items-center gap-3">
+              <input type="checkbox" role="checkbox" required />
+              <p>Ja takk, send meg nyhetsbrev</p>
+            </div>
             <button
               value="Send"
-              className="text-white px-4 py-2 border-2 border-white rounded-full md:bg-kleinBlue transition-all 0.2s ease-in-out hover:bg-white hover:text-kleinBlue lg:hover:border-kleinBlue "
+              className={`px-4 py-2 rounded-full border-2 transition-all 0.3s ease-in-out ${
+                formValid
+                  ? "text-white  border-white md:bg-kleinBlue"
+                  : "border-stone-300 bg-stone-300"
+              }`}
             >
               {btnText}
             </button>
           </div>
-          <div className="flex items-center gap-3">
-            <input
-              className="bg-white"
-              type="checkbox"
-              role="checkbox"
-              onChange={handleCheckboxChange}
-              aria-checked={checked}
-              required
-            />
-            <p className="">Ja takk, send meg nyhetsbrev</p>
-          </div>
         </form>
-        <p className="italic">* Kun gode tilbud og informasjon inkludert.</p>
+        <p className="italic">* Kun gode tilbud og informasjon inkludert</p>
       </div>
     </section>
   );

@@ -5,6 +5,7 @@
 @layer base {
   * {
     margin: 0;
+    box-sizing: border-box;
   }
 
   html {
@@ -62,7 +63,7 @@
   button,
   label,
   input {
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 1px;
     line-height: 35px;
   }
@@ -89,22 +90,26 @@
     @apply text-white text-7xl font-heading inline-block mr-2;
   }
 
+  .footerGrids {
+    @apply flex flex-col gap-6;
+  }
+
   input::placeholder {
-    color: black;
-    font-size: 20px;
+    color: #949aa1;
+    font-size: 16px;
   }
 
   input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    border: 2px solid white;
-  }
-
-  input[type="checkbox"]::after {
-    border: 2px solid black;
+    outline: none;
   }
 
   #LogMarChart path {
     fill: white;
+  }
+
+  form:invalid {
+    border: 2px solid red;
   }
 }
