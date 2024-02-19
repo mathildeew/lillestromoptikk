@@ -31,7 +31,7 @@
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -72,8 +72,12 @@
     transition: all 0.2s ease-in-out;
   }
 
+  .home-container {
+    @apply w-full h-full flex flex-col items-center justify-center;
+  }
+
   .btn-primary {
-    @apply font-semibold border-2 rounded-full  p-5 max-w-sm;
+    @apply max-w-xs px-4 py-2 rounded-full border-2 transition-all duration-300 ease-in-out;
   }
 
   .btn-link {
@@ -81,13 +85,14 @@
   }
 
   .homeLink {
-    @apply text-6xl font-heading relative transition-all before:w-0 before:h-1 before:absolute before:rounded-sm before:-bottom-1 before:right-0 before:transition-all before:duration-500
+    @apply text-4xl font-heading relative transition-all before:w-0 before:h-1 before:absolute before:rounded-sm before:-bottom-1 before:right-0 before:transition-all before:duration-500
     hover:tracking-wider
-    hover:before:w-full hover:before:left-0 hover:before:bg-kleinBlue;
+    hover:before:w-full hover:before:left-0 hover:before:bg-kleinBlue
+    xl:text-6xl;
   }
 
   .funky {
-    @apply text-white text-7xl font-heading inline-block mr-2;
+    @apply text-white text-6xl font-heading inline-block mr-2 xl:text-7xl;
   }
 
   .footerGrids {
@@ -95,6 +100,9 @@
   }
 
   #LogMarChart path {
-    fill: white;
+    fill: black;
+    @media (min-width: 1024px) {
+      fill: white;
+    }
   }
 }

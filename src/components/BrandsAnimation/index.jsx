@@ -50,33 +50,34 @@ export default function BrandsAnimation() {
   });
 
   return (
-    <div className="bg-kleinBlue w-full h-full flex flex-col items-center justify-around">
+    <div className="bg-kleinBlue w-full h-[500px]  flex flex-col items-center justify-around py-12 lg:h-full lg:py-0">
+      <h2 className="text-white lg:hidden">Våre merker</h2>
       <div
         id="moscot"
         className="bg-white w-fit border-4 border-black rounded-full px-4 py-2"
       >
-        <p className="text-6xl uppercase">moscot</p>
+        <p className="text-2xl lg:text-6xl uppercase">moscot</p>
       </div>
 
       <div
         id="orgreen"
         className="bg-white w-fit border-4 border-black rounded-full px-4 py-2"
       >
-        <p className="text-6xl uppercase">ørgreen</p>
+        <p className="text-2xl lg:text-6xl uppercase">ørgreen</p>
       </div>
 
       <div
         id="masunaga"
         className="bg-white w-fit border-4 border-black rounded-full px-4 py-2"
       >
-        <p className="text-6xl uppercase">masunaga</p>
+        <p className="text-2xl lg:text-6xl uppercase">masunaga</p>
       </div>
 
       <div
         id="resrei"
         className="bg-white w-fit border-4 border-black rounded-full px-4 py-2"
       >
-        <p className="text-6xl uppercase">resrei</p>
+        <p className="text-2xl lg:text-6xl uppercase">resrei</p>
       </div>
     </div>
   );

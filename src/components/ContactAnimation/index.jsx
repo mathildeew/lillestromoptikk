@@ -84,8 +84,8 @@ export default function ContactAnimation() {
   }, []);
 
   return (
-    <div className="bg-kleinBlue w-full h-full flex flex-col gap-16 items-center justify-center">
-      <div>
+    <div className="home-container gap-16 ">
+      <div className="px-8">
         <span id="balance" className="funky">
           L
         </span>
@@ -105,7 +105,7 @@ export default function ContactAnimation() {
         </span>
         <span className="funky">M</span>
       </div>
-      <span className="text-white text-7xl text-right font-heading uppercase ml-40">
+      <span className="text-white text-6xl text-right font-heading uppercase ml-40 xl:text-7xl">
         optikk
       </span>
     </div>

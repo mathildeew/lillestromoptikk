@@ -1,10 +1,12 @@
-import Hero from "../../components/Hero";
 import SEOHelmet from "../../components/SEOHelmet";
-import TimeForCheck from "../../components/TimeForEyecheck";
 import Newsletter from "../../components/Newsletter";
 import Intro from "../../components/Intro";
 import ScrollingGlasses from "../../components/ScrollingGlasses";
 import HomeNav from "../../components/HomeNav";
+import Hero from "../../components/Hero";
+import BrandsAnimation from "../../components/BrandsAnimation";
+import HomeLogMar from "../../components/HomeLogMar";
+import HomeContainerSM from "../../components/HomeContainerSM";
 
 export default function Home() {
   return (
@@ -17,13 +19,9 @@ export default function Home() {
       />
       {/* <ScrollingGlasses /> */}
 
-      <main>
+      <main className="relative top-[88px] mb-28 lg:top-0">
+        <HomeContainerSM />
         <HomeNav />
-
-        {/* <Hero />
-        <Intro />
-        <TimeForCheck /> */}
-        {/* <Newsletter /> */}
       </main>
     </>
   );

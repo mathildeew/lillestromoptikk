@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import BrandsAnimation from "../BrandsAnimation";
 import ContactAnimation from "../ContactAnimation";
-import HomeAbout from "../HomeAbout";
+import Hero from "../Hero";
 import HomeLogMar from "../HomeLogMar";
 import HomeLenses from "../HomeLenses";
 
@@ -69,7 +69,7 @@ export default function HomeNav() {
           </ul>
         </div>
         <div className="w-1/2 h-full">
-          {hoverBg === "main" && <HomeAbout />}
+          {hoverBg === "main" && <Hero />}
           {hoverBg === "eyecheck" && <HomeLogMar />}
           {hoverBg === "brands" && <BrandsAnimation />}
           {hoverBg == "contact" && <ContactAnimation />}
