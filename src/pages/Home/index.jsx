@@ -7,6 +7,7 @@ import Hero from "../../components/Hero";
 import BrandsAnimation from "../../components/BrandsAnimation";
 import HomeLogMar from "../../components/HomeLogMar";
 import HomeContainerSM from "../../components/HomeContainerSM";
+import Instagram from "../../components/Instagram";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <main className="relative top-[88px] mb-28 lg:top-0">
         <HomeContainerSM />
         <HomeNav />
+        <Instagram />
       </main>
     </>
   );

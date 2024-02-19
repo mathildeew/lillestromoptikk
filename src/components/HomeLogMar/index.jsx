@@ -16,7 +16,7 @@ export default function HomeLogMar() {
   };
 
   return (
-    <div className="home-container bg-white lg:bg-kleinBlue lg:text-white">
+    <div className="home-container bg-whitelg:bg-kleinBlue lg:text-white">
       <div className="max-w-3xl flex flex-col gap-8 px-4">
         <h2 className="lg:hidden">Synsundersøkelse</h2>
         <LogMAR hover={hover} />

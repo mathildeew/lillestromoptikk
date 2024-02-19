@@ -1,6 +1,4 @@
 export default function LogMAR({ hover }) {
-  console.log(hover);
-
   return (
     <div className="relative max-w-xl w-full mx-auto">
       <div
