@@ -22,7 +22,8 @@ export default function Instagram() {
         <div key={post.id}>
           <img
             src={post.mediaUrl}
-            className="h-96 w-96 border-2 border-black"
+            className="h-96 w-96  object-cover
+             border-2 border-black"
           />
         </div>
       ))}
