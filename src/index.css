@@ -108,8 +108,4 @@
   #LogMarChart path {
     fill: white;
   }
-
-  form:invalid {
-    border: 2px solid red;
-  }
 }

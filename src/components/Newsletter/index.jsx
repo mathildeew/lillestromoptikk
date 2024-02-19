@@ -1,29 +1,20 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightLong, faCheck } from "@fortawesome/free-solid-svg-icons";
-import { useEffect } from "react";
-import { useCallback } from "react";
 
 export default function Newsletter() {
   const [btnText, setBtnText] = useState("Meld meg på");
-  const [formValid, setFormValid] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
+  const [isError, setError] = useState(false);
+  const [disableButton, setDisableButton] = useState(false);
 
-  useEffect(() => {
-    const invalid = document.querySelector("form:invalid");
-
-    if (invalid) {
-      setFormValid(false);
-    } else {
-      setFormValid(true);
-    }
-  }, []);
-
-  console.log(formValid);
+  const handleFormValidity = () => {
+    setIsFormValid(!document.querySelector("form:invalid"));
+  };
 
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    setBtnText("Melder på...");
 
     emailjs
       .sendForm(
@@ -37,10 +28,11 @@ export default function Newsletter() {
           console.log(result.text);
           console.log(e.target);
           setBtnText("Påmeldt!");
+          setDisableButton(true);
         },
         (error) => {
           console.log(error.text);
-          setBtnText("Noe gikk galt!");
+          setError(true);
         }
       );
   };
@@ -49,7 +41,12 @@ export default function Newsletter() {
     <section className="newsletter w-fit">
       <div className="flex flex-col gap-8 ">
         <h3>Meld deg på vårt nyhetsbrev*</h3>
-        <form className="footerGrids" ref={form} onSubmit={sendEmail}>
+        <form
+          className="footerGrids"
+          ref={form}
+          onChange={handleFormValidity}
+          onSubmit={sendEmail}
+        >
           <div className="footerGrids w-full">
             <input
               id="epost"
@@ -65,14 +62,18 @@ export default function Newsletter() {
             </div>
             <button
               value="Send"
+              disabled={disableButton}
               className={`px-4 py-2 rounded-full border-2 transition-all 0.3s ease-in-out ${
-                formValid
-                  ? "text-white  border-white md:bg-kleinBlue"
+                isFormValid
+                  ? "text-white bg-kleinBlue border-kleinBlue"
                   : "border-stone-300 bg-stone-300"
               }`}
             >
               {btnText}
             </button>
+            <p className={`text-red-700 ${!isError && "hidden"}`}>
+              Noe gikk galt, prøv igjen!
+            </p>
           </div>
         </form>
         <p className="italic">* Kun gode tilbud og informasjon inkludert</p>
