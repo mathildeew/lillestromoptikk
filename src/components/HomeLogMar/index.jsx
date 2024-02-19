@@ -17,7 +17,7 @@ export default function HomeLogMar() {
 
   return (
     <div className="home-container bg-white lg:bg-kleinBlue lg:text-white">
-      <div className="max-w-3xl flex flex-col gap-8 px-8">
+      <div className="max-w-3xl flex flex-col gap-8 px-4">
         <h2 className="lg:hidden">Synsundersøkelse</h2>
         <LogMAR hover={hover} />
 
@@ -31,19 +31,16 @@ export default function HomeLogMar() {
           Å prioritere regelmessige synsundersøkelser er å investere i fremtiden
           til øynene dine, uavhengig av alder eller daglige aktiviteter.
         </p>
-        <button
+
+        <Link
+          to="/timebestilling"
           onMouseEnter={handleHoverEnter}
           onMouseLeave={handleHoverLeave}
-          className="btn-primary border-kleinBlue  hover:bg-kleinBlue hover:text-white hover:border-white lg:hidden"
+          className="btn-primary border-kleinBlue flex gap-4 items-center justify-center hover:bg-kleinBlue hover:text-white lg:hidden"
         >
-          <Link
-            to="/timebestilling"
-            className="flex items-center justify-center gap-4 "
-          >
-            Bestill synsundersøkelse
-            <FontAwesomeIcon icon={faLongArrowRight} className="text-2xl" />
-          </Link>
-        </button>
+          Bestill synsundersøkelse
+          <FontAwesomeIcon icon={faLongArrowRight} className="text-2xl" />
+        </Link>
       </div>
     </div>
   );

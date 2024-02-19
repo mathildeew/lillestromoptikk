@@ -1,9 +1,11 @@
 export default function LogMAR({ hover }) {
+  console.log(hover);
+
   return (
     <div className="relative max-w-xl w-full mx-auto">
       <div
         className={`w-full h-full absolute p-4 backdrop-blur-sm  transition-all duration-500 ease-in-out ${
-          hover && "backdrop-blur-0"
+          hover && "backdrop-blur-none"
         }`}
       ></div>
 
