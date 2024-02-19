@@ -52,18 +52,23 @@ export default function Newsletter() {
               id="epost"
               type="email"
               name="user_email"
-              className="bg-grey w-full py-2 pl-6 border-2 border-black rounded-full"
+              className="bg-grey w-full py-2 pl-6 border-2 border-black rounded-full placeholder:text-placeholder"
               placeholder="navn@epost.no"
               required
             />
             <div className="flex items-center gap-3">
-              <input type="checkbox" role="checkbox" required />
+              <input
+                type="checkbox"
+                role="checkbox"
+                className="w-5 h-5 focus:outline-none"
+                required
+              />
               <p>Ja takk, send meg nyhetsbrev</p>
             </div>
             <button
               value="Send"
               disabled={disableButton}
-              className={`px-4 py-2 rounded-full border-2 transition-all 0.3s ease-in-out ${
+              className={`px-4 py-2 rounded-full border-2 transition-all 3s ease-in-out ${
                 isFormValid
                   ? "text-white bg-kleinBlue border-kleinBlue"
                   : "border-stone-300 bg-stone-300"
