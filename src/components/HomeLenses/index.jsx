@@ -1,6 +1,6 @@
 export default function HomeLenses() {
   return (
-    <div className="home-container">
+    <div className="home-container text-white bg-kleinBlue">
       <div className="max-w-3xl flex flex-col gap-8 px-8">
         <h1 className="uppercase tracking-wider">
           Bestill linser rett hjem til postkassen din
