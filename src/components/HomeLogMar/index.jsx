@@ -1,5 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronRight,
+  faLongArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import LogMAR from "../LogMAR";
 import { useState } from "react";
 import { Link } from "react-router-dom";
