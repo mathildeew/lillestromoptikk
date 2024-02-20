@@ -61,7 +61,7 @@ export default function SlidingGlasses() {
             />
           </g>
         </svg>
-        <h1 className="text-6xl mb-0 py-8">
+        <h1 className="text-6xl tracking-wide mb-0 py-8">
           Velkommen {<br />} til {<br />} Lillestrøm Optikk
         </h1>
         <svg
