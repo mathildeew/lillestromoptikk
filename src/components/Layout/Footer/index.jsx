@@ -4,7 +4,7 @@ import Newsletter from "../../Newsletter";
 
 export default function Footer() {
   return (
-    <footer className="bg-grey flex justify-center px-4 py-20 sticky top-[100vh] sm:px-8">
+    <footer className="bg-grey flex justify-center px-4 py-20 sm:px-8">
       <div className="w-full max-w-screen-2xl flex flex-col items-center gap-20">
         <div className="w-full flex flex-col gap-16 sm:grid sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 lg:flex  lg:flex-row lg:justify-between">
           <div className="footerGrids w-[250px]">

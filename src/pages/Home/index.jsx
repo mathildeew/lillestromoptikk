@@ -20,7 +20,7 @@ export default function Home() {
       />
       {/* <ScrollingGlasses /> */}
 
-      <main className="relative top-[88px] mb-24 lg:top-0">
+      <main className="relative top-[88px] lg:top-0">
         <HomeContainerSM />
         <HomeNav />
         <Instagram />

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function useAPI() {
-  const [instagramFeed, setInstagramFeed] = useState([]);
+  const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -11,16 +11,15 @@ export default function useAPI() {
     try {
       const response = await fetch(url);
       const json = await response.json();
-      setInstagramFeed(json);
-      return response;
+      setData(json);
     } catch (error) {
       setIsError(true);
-
       return null;
     } finally {
       setIsLoading(false);
+      setIsError(true);
     }
   }
 
-  return { fetchAPI, instagramFeed, isLoading, isError };
+  return { fetchAPI, data, isLoading, isError };
 }
