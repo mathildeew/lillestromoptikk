@@ -84,7 +84,7 @@ export default function ContactAnimation() {
   }, []);
 
   return (
-    <div className="home-container gap-16 ">
+    <div className="home-container bg-kleinBlue gap-16 ">
       <div className="px-8">
         <span id="balance" className="funky">
           L
