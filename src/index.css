@@ -105,8 +105,4 @@
       fill: white;
     }
   }
-
-  .polygon {
-    clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
-  }
 }

@@ -30,8 +30,8 @@ export default function SlidingGlasses() {
   }, [stopScroll]);
 
   return (
-    <section className="text-black bg-white w-full relative  lg:hidden">
-      <div className="border-2 max-w-3xl mx-auto px-4 py-32 md:px-12">
+    <section className="text-black bg-white w-full relative lg:hidden">
+      <div className="max-w-3xl mx-auto px-4 py-32 md:px-12">
         <h1 className="text-7xl tracking-wide mb-0 py-8 relative z-30 sm:text-8xl md:text-9xl">
           Velkommen {<br />} til {<br />} Lillestrøm Optikk
         </h1>
