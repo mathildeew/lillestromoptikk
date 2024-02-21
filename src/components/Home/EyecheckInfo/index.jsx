@@ -3,11 +3,11 @@ import {
   faChevronRight,
   faLongArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
-import LogMAR from "../LogMAR";
+import LogMAR from "./LogMAR";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function HomeLogMar() {
+export default function EyecheckInfo() {
   const [hover, setHover] = useState(false);
 
   const handleHoverEnter = () => {

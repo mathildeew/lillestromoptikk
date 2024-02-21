@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function SlidingGlasses() {
+export default function ScrollingGlasses() {
   const fillColor = "#1F1BBD";
   const strokeColor = "#ffffff";
   const strokeWidth = 10;

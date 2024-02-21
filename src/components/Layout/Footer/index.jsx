@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import Newsletter from "../../Newsletter";
+import Newsletter from "./Newsletter";
 
 export default function Footer() {
   return (

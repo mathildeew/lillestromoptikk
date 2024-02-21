@@ -1,8 +1,8 @@
-import { brands } from "../../pages/Brands/brands";
+import { brands } from "../../../pages/Brands/brands";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 
-export default function BrandsAnimation() {
+export default function OurBrands() {
   const moscot = gsap.timeline({
     repeat: -1,
     repeatDelay: 2,

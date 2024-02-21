@@ -1,11 +1,9 @@
-import SlidingGlasses from "../../SlidingGlasses";
-import ScrollingGlasses from "../ScrollingGlasses";
+import ScrollingGlasses from "./ScrollingGlasses";
 
 export default function Hero() {
   return (
     <div className="text-white  h-full flex flex-col items-center justify-center">
-      {/* <ScrollingGlasses /> */}
-      <SlidingGlasses />
+      <ScrollingGlasses />
 
       <div className="w-full bg-kleinBlue py-20 lg:px-8">
         <div className="max-w-3xl flex flex-col gap-8 px-4 relative z-30 md:">

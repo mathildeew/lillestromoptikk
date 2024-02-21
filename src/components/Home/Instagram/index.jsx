@@ -7,7 +7,7 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import useAPI from "../../hooks/useAPI";
+import useAPI from "../../../hooks/useAPI";
 
 export default function Instagram() {
   const { fetchAPI, data: instagramFeed, isLoading, isError } = useAPI();

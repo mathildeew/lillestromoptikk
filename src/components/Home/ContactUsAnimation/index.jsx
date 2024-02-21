@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { useEffect } from "react";
 
-export default function ContactAnimation() {
+export default function ContactUsAnimation() {
   useEffect(() => {
     const balance = gsap.timeline({
       repeat: -1,

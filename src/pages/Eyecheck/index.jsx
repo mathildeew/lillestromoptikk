@@ -1,5 +1,5 @@
-import BookingForm from "../../components/BookingForm";
-import EyecheckInfo from "../../components/EyecheckInfo";
+import BookingForm from "../../components/Eyecheck/BookingForm";
+import EyecheckInfo from "../../components/Eyecheck/EyecheckInfo";
 import SEOHelmet from "../../components/SEOHelmet";
 
 export default function Eyecheck() {

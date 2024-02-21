@@ -1,4 +1,4 @@
-export default function HomeLenses() {
+export default function OrderLensesInfo() {
   return (
     <div className="home-container text-white bg-kleinBlue">
       <div className="max-w-3xl flex flex-col gap-8 px-8">

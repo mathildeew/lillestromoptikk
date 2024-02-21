@@ -3,13 +3,13 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import BrandsAnimation from "../BrandsAnimation";
-import ContactAnimation from "../ContactAnimation";
-import Hero from "../Hero";
-import HomeLogMar from "../HomeLogMar";
-import HomeLenses from "../HomeLenses";
+import OurBrands from "../../OurBrands";
+import ContactUsAnimation from "../../ContactUsAnimation";
+import Hero from "../../Hero";
+import EyecheckInfo from "../../EyecheckInfo";
+import OrderLensesInfo from "../../OrderLensesInfo";
 
-export default function HomeNav() {
+export default function HomeContainerLg() {
   const [hoverBg, setHoverBg] = useState("main");
 
   return (
@@ -70,10 +70,10 @@ export default function HomeNav() {
         </div>
         <div className="w-1/2 h-full">
           {hoverBg === "main" && <Hero />}
-          {hoverBg === "eyecheck" && <HomeLogMar />}
-          {hoverBg === "brands" && <BrandsAnimation />}
-          {hoverBg == "contact" && <ContactAnimation />}
-          {hoverBg === "lenses" && <HomeLenses />}
+          {hoverBg === "eyecheck" && <EyecheckInfo />}
+          {hoverBg === "brands" && <OurBrands />}
+          {hoverBg == "contact" && <ContactUsAnimation />}
+          {hoverBg === "lenses" && <OrderLensesInfo />}
         </div>
       </div>
     </>
