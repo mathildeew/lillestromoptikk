@@ -47,7 +47,7 @@ export default function Instagram() {
     return (
       <button
         onClick={() => onClick()}
-        className="text-white w-9 h-9 bg-black bg-opacity-50  rounded-full flex items-center justify-center absolute right-6 sm:right-2 md:right-5"
+        className="text-white w-9 h-9 bg-black bg-opacity-30  rounded-full flex items-center justify-center absolute right-6 sm:right-2 md:right-5"
       >
         <FontAwesomeIcon icon={faChevronRight} className="text-xl" />
       </button>
@@ -58,7 +58,7 @@ export default function Instagram() {
     return (
       <button
         onClick={() => onClick()}
-        className="text-white w-9 h-9 bg-black bg-opacity-50  rounded-full flex items-center justify-center absolute left-6 sm:left-2 md:left-6"
+        className="text-white w-9 h-9 bg-black bg-opacity-30  rounded-full flex items-center justify-center absolute left-6 sm:left-2 md:left-6"
       >
         <FontAwesomeIcon icon={faChevronLeft} className="text-xl" />
       </button>
@@ -71,7 +71,6 @@ export default function Instagram() {
         responsive={responsive}
         customRightArrow={<CustomRightArrow />}
         customLeftArrow={<CustomLeftArrow />}
-        infinite={true}
         className="max-w-screen-2xl mx-auto"
       >
         {instagramFeed.map((post) => (

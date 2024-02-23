@@ -46,10 +46,10 @@ export default function OurBrands() {
   });
 
   return (
-    <section className="bg-kleinBlue w-full flex flex-col items-center justify-around gap-16 py-20 lg:h-full lg:py-0">
+    <section className="bg-kleinBlue w-full flex flex-col items-center gap-16 py-20 lg:h-full lg:py-0">
       <h2 className="text-white lg:hidden">Våre merker</h2>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 lg:gap-0 lg:h-full lg:justify-around">
         {brands.map((brand) => (
           <div
             key={brand.id}

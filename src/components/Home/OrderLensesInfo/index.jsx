@@ -2,9 +2,9 @@ export default function OrderLensesInfo() {
   return (
     <div className="home-container text-white bg-kleinBlue">
       <div className="max-w-3xl flex flex-col gap-8 px-8">
-        <h1 className="uppercase tracking-wider">
+        <h2 className="uppercase tracking-wider">
           Bestill linser rett hjem til postkassen din
-        </h1>
+        </h2>
         <p>
           Nettbutikken er enkel å bruke, du logger inn med mobilnummer og
           engangskode du får på sms. Ingen vanskelige brukernavn og passord å

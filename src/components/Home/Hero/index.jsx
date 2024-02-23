@@ -5,8 +5,8 @@ export default function Hero() {
     <div className="text-white  h-full flex flex-col items-center justify-center">
       <ScrollingGlasses />
 
-      <div className="w-full bg-kleinBlue py-20 lg:px-8">
-        <div className="max-w-3xl flex flex-col gap-8 px-4 relative z-30 md:">
+      <div className="w-full h-full bg-kleinBlue py-20 lg:px-8">
+        <div className="max-w-3xl w-full h-full flex flex-col justify-center gap-8 px-4 relative z-30 md:px-10">
           <h2>Vi er din lokale optiker</h2>
           <p>
             Med flere års erfaring og stort engasjement for å gi et klart,
