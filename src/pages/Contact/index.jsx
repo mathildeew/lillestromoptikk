@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
       <SEOHelmet
-        title={"Kontakt oss"}
+        title={"Kontakt oss | "}
         content={
           "Du finner oss i Storgata 22, Lillestrøm. Mail post@lillestromoptikk.no, telefon 64 80 85 85. "
         }

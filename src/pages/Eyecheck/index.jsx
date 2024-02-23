@@ -6,9 +6,9 @@ export default function Eyecheck() {
   return (
     <>
       <SEOHelmet
-        title={"Bestill synsundersøkelse"}
+        title={"Bestill synsundersøkelse | "}
         content={
-          "På tide med en synsundersøkelse? Bestill time i dag hos erfarne optikere."
+          "På tide med en synsundersøkelse? Bestill time i dag hos erfaren optiker med topp moderne utstyr."
         }
       />
 

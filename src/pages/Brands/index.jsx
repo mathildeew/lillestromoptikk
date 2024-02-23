@@ -5,9 +5,9 @@ export default function Brands() {
   return (
     <>
       <SEOHelmet
-        title={"Merker"}
+        title={"Våre merker | "}
         content={
-          "Vi fører merker som Moscot, Ørgreen, Tom Ford, Traction Production og mange fler. Kom innom oss og opplev hele utvalget."
+          "Vi fører merker som Moscot, Ørgreen, RES REI, Masunaga, Tom Ford, Traction Production og mange fler. Kom innom oss og opplev hele utvalget."
         }
       />
 

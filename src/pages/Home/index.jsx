@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <SEOHelmet
-        title={"Velkommen!"}
+        title={"Din lokale optiker | "}
         content={
           "Velkommen til Lillestrøm Optikk, din lokale optiker i Lillestrøm. Bestill synsundersøkelse online og besøk oss i Storgata 22."
         }

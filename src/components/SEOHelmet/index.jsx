@@ -36,7 +36,7 @@ export default function SEOHelmet({ title, content }) {
         <meta name="theme-color" content="#ffffff" />
 
         <meta name="description" content={content} />
-        <title>Lillestrøm Optikk | {title}</title>
+        <title>{title} Lillestrøm Optikk </title>
       </Helmet>
     </HelmetProvider>
   );
