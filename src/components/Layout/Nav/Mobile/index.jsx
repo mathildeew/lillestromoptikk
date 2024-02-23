@@ -5,43 +5,40 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 export default function MobileNav({ openMenu, setOpenMenu }) {
   return (
     <nav
-      className={`bg-white w-full h-screen flex flex-col items-end px-6 py-16 absolute z- transition-all duration-500 ease-in-out top-20 lg:hidden ${
+      className={`bg-white w-full h-screen flex flex-col px-4 pt-8 absolute top-20 transition-all duration-500 ease-in-out md:pt-20 md:px-10 lg:hidden ${
         openMenu ? "right-0 opacity-100" : "-right-full opacity-0"
       }`}
     >
-      <ul className="w-full flex flex-col gap-14">
-        <li className="border-b border-black">
-          <Link
-            to={"/timebestilling"}
-            onClick={() => setOpenMenu(!openMenu)}
-            className="px-4"
-          >
-            Timebestilling
-          </Link>
-        </li>
-        <li className="border-b border-black">
-          <Link
-            to={"/merker"}
-            onClick={() => setOpenMenu(!openMenu)}
-            className="px-4"
-          >
-            Merker
-          </Link>
-        </li>
-        <li className="border-b border-black">
-          <Link
-            to={"/kontakt-oss"}
-            onClick={() => setOpenMenu(!openMenu)}
-            className="px-4"
-          >
-            Kontakt oss
-          </Link>
-        </li>
-        <li className="btn-link">
-          <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
+      <div className="w-full flex flex-col gap-8 md:gap-16">
+        <Link
+          to={"/timebestilling"}
+          onClick={() => setOpenMenu(!openMenu)}
+          className="underline font-semibold transition-all duration-500 ease-in-out md:text-xl hover:text-kleinBlue"
+        >
+          Timebestilling
+        </Link>
+        <Link
+          to={"/merker"}
+          onClick={() => setOpenMenu(!openMenu)}
+          className="underline font-semibold transition-all duration-500 ease-in-out  md:text-xl hover:text-kleinBlue"
+        >
+          Våre merker
+        </Link>
+        <Link
+          to={"/kontakt-oss"}
+          onClick={() => setOpenMenu(!openMenu)}
+          className="underline font-semibold transition-all duration-500 ease-in-out  md:text-xl hover:text-kleinBlue"
+        >
+          Kontakt oss
+        </Link>
+        <a
+          href="https://linsebutikk.coptikk.no/login"
+          className="underline font-semibold flex items-center gap-4 transition-all duration-500 ease-in-out  md:text-xl hover:text-kleinBlue"
+        >
+          Bestill kontaktlinser
           <FontAwesomeIcon icon={faArrowUp} className="rotate-45" />
-        </li>
-      </ul>
+        </a>
+      </div>
     </nav>
   );
 }
