@@ -2,15 +2,15 @@ export default function LogMAR({ hover }) {
   return (
     <div className="relative max-w-xl w-full mx-auto">
       <div
-        className={`w-full h-full absolute p-4 backdrop-blur-sm  transition-all duration-500 ease-in-out ${
-          hover && "backdrop-blur-none"
+        className={`w-full h-full absolute p-4 backdrop-blur-sm transition-all duration-500 ease-in-out ${
+          hover && "backdrop-blur-0"
         }`}
       ></div>
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1550 1460"
-        className="h-full w-full mx-auto"
+        className="mx-auto max-w-[400px] "
       >
         <g transform="translate(-39 -86)" id="LogMarChart">
           <g transform="translate(78 128.004)">
