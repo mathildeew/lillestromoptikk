@@ -19,7 +19,7 @@ export default function EyecheckInfo() {
   };
 
   return (
-    <div className="home-container bg-white px-4 py-20 md:px-10 relative z-30 lg:text-white lg:bg-kleinBlue">
+    <section className="home-container bg-white px-4 py-20 md:px-10 relative z-30 lg:text-white lg:bg-kleinBlue">
       <div className="flex flex-col gap-16">
         <h2 className="lg:hidden">Bestill synsundersøkelse</h2>
 
@@ -54,6 +54,6 @@ export default function EyecheckInfo() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

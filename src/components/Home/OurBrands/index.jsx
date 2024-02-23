@@ -1,26 +1,22 @@
-import { brands } from "../../../pages/Brands/brands";
-import { gsap } from "gsap";
 import { useEffect } from "react";
+import { gsap } from "gsap";
+import { brands } from "../../../pages/Brands/brands";
 
 export default function OurBrands() {
   const moscot = gsap.timeline({
     repeat: -1,
-    repeatDelay: 2,
   });
 
   const orgreen = gsap.timeline({
     repeat: -1,
-    repeatDelay: 2,
   });
 
   const masunaga = gsap.timeline({
     repeat: -1,
-    repeatDelay: 2,
   });
 
   const resrei = gsap.timeline({
     repeat: -1,
-    repeatDelay: 2,
   });
 
   useEffect(() => {
@@ -50,35 +46,22 @@ export default function OurBrands() {
   });
 
   return (
-    <div className="bg-kleinBlue w-full h-[500px]  flex flex-col items-center justify-around py-12 lg:h-full lg:py-0">
+    <section className="bg-kleinBlue w-full flex flex-col items-center justify-around gap-16 py-20 lg:h-full lg:py-0">
       <h2 className="text-white lg:hidden">Våre merker</h2>
-      <div
-        id="moscot"
-        className="bg-white w-fit border-4 border-black rounded-full px-4 py-2"
-      >
-        <p className="text-2xl lg:text-6xl uppercase">moscot</p>
-      </div>
 
-      <div
-        id="orgreen"
-        className="bg-white w-fit border-4 border-black rounded-full px-4 py-2"
-      >
-        <p className="text-2xl lg:text-6xl uppercase">ørgreen</p>
+      <div className="flex flex-col gap-10">
+        {brands.map((brand) => (
+          <div
+            key={brand.id}
+            id={brand.id}
+            className="bg-white w-fit px-4 py-2 border-2 border-black rounded-full md:border-4"
+          >
+            <p className="text-2xl md:text-4xl lg:text-6xl uppercase">
+              {brand.name}
+            </p>
+          </div>
+        ))}
       </div>
-
-      <div
-        id="masunaga"
-        className="bg-white w-fit border-4 border-black rounded-full px-4 py-2"
-      >
-        <p className="text-2xl lg:text-6xl uppercase">masunaga</p>
-      </div>
-
-      <div
-        id="resrei"
-        className="bg-white w-fit border-4 border-black rounded-full px-4 py-2"
-      >
-        <p className="text-2xl lg:text-6xl uppercase">resrei</p>
-      </div>
-    </div>
+    </section>
   );
 }
