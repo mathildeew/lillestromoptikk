@@ -3,7 +3,13 @@ const openingHours = {
   title: 'Åpningstider',
   type: 'document',
   fields: [
-    {name: 'title', title: 'Tittel', type: 'string', initialValue: 'Åpningstider', readOnly: true},
+    {
+      name: 'title',
+      title: 'Tittel',
+      type: 'string',
+      initialValue: 'Åpningstider',
+      readOnly: true,
+    },
     {
       name: 'content',
       title: 'Åpningstider',
@@ -16,10 +22,6 @@ const openingHours = {
             {
               title: 'Normal',
               value: 'normal',
-            },
-            {
-              title: 'Heading 1',
-              value: 'h1',
             },
           ],
         },

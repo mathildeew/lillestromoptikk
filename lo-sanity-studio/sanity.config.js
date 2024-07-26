@@ -10,6 +10,7 @@ export default defineConfig({
 
   projectId: 'mabzg02x',
   dataset: 'production',
+  apiVersion: '2024-07-26',
 
   plugins: [structureTool({structure: myStructure}), visionTool()],
 
