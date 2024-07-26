@@ -1,3 +1,4 @@
-import siteSettings from "./siteSettings";
+import brands from './brands'
+import openingHours from './openingHours'
 
-export const schemaTypes = [siteSettings]
+export const schemaTypes = [openingHours, brands]
