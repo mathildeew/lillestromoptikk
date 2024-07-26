@@ -8,12 +8,7 @@ import ScrollingGlasses from "../../components/ScrollingGlasses";
 export default function Home() {
   return (
     <>
-      <SEOHelmet
-        title={"Velkommen!"}
-        content={
-          "Velkommen til Lillestrøm Optikk, din lokale optiker i Lillestrøm. Bestill synsundersøkelse online og besøk oss i Storgata 22."
-        }
-      />
+      <SEOHelmet title={"Velkommen!"} content={"Velkommen til Lillestrøm Optikk, din lokale optiker i Lillestrøm. Bestill synsundersøkelse online og besøk oss i Storgata 22."} />
       <ScrollingGlasses />
 
       <main>
