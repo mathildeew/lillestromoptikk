@@ -1,10 +1,8 @@
-import {EyeOpenIcon} from '@sanity/icons'
 
-const brands = {
-  name: 'brands',
+const ourBrands = {
+  name: 'ourBrands',
   title: 'Merker',
   type: 'document',
-  icon: EyeOpenIcon,
   fields: [
     {
       name: 'title',
@@ -15,4 +13,4 @@ const brands = {
   ],
 }
 
-export default brands
+export default ourBrands
