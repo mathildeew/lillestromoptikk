@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { useOpeningHours } from "../../../context/GetOpeninghours";
 import { PortableText } from "@portabletext/react";
+import { PortableTextFooter } from "./PortableTextFooter";
 
 export default function Footer() {
   const { openingHours } = useOpeningHours();
@@ -12,38 +13,9 @@ export default function Footer() {
       <div className="max-w-7xl grid gap-12 mx-auto md:grid-cols-2">
         <div className="flex flex-col gap-6">
           <h3>Åpningstider</h3>
-          {/* <div className="flex justify-between max-w-md">
-            <div>
-              <div className="flex gap-2">
-                <p className="font-semibold">Mandag &ndash; onsdag:</p>
-                <p>10 &ndash; 17</p>
-              </div>
-
-              <div className="flex gap-2">
-                <p className="font-semibold">Torsdag:</p>
-                <p>10 &ndash; 18</p>
-              </div>
-
-              <div className="flex gap-2">
-                <p className="font-semibold">Fredag:</p>
-                <p>10 &ndash; 17</p>
-              </div>
-
-              <div>
-                <div className="flex gap-2">
-                  <p className="font-semibold">Lørdag: </p>
-                  <p>10 &ndash; 15 (oddetallsuker)</p>
-                </div>
-
-                <div>
-                  <p>Neste åpne lørdager: 3. august, 10. august og 17. august.</p>
-                </div>
-              </div>
-            </div>
-
-            <div></div>
-          </div> */}
-          <PortableText value={openingHours.content} />
+          <div>
+            <PortableText value={openingHours.content} components={PortableTextFooter} />
+          </div>
         </div>
 
         <div className="flex flex-col gap-6">
