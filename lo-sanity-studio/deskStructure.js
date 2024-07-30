@@ -7,6 +7,7 @@ import {
   InfoOutlineIcon,
   RefreshIcon,
   AddIcon,
+  SparklesIcon,
 } from '@sanity/icons'
 
 export const myStructure = (S) =>
@@ -76,7 +77,7 @@ export const myStructure = (S) =>
 
       S.listItem()
         .title('Våre merker')
-        .icon(EyeOpenIcon)
+        .icon(SparklesIcon)
         .child(
           S.list()
             .title('Merker')
