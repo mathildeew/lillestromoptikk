@@ -1,34 +1,25 @@
+import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
 import { brands } from "./brands";
 
 export default function Brands() {
+  const defaultMetadata = {
+    title: "Våre merker → Lillestrøm Optikk",
+    desc: "",
+  };
+  const metadata = getMetadata(`brandsMetadata`, defaultMetadata);
+
   return (
     <>
-      <SEOHelmet
-        title={"Merker"}
-        content={
-          "Vi fører merker som Moscot, Ørgreen, Tom Ford, Traction Production og mange fler. Kom innom oss og opplev hele utvalget."
-        }
-      />
+      <SEOHelmet title={metadata.title} content={metadata.desc} />
 
       <main className="max-w-5xl py-20 px-3.5 mx-auto md:px-10 md:py-32 lg:px-0">
         <h1>Merker</h1>
 
         <div className="flex flex-col gap-24 lg:gap-32">
           {brands.map((brand) => (
-            <section
-              key={brand.id}
-              className={`flex flex-col gap-6 lg:flex-row lg:items-center ${
-                brand.id === "moscot" || brand.id === "masunaga"
-                  ? "flex-row"
-                  : "lg:flex-row-reverse"
-              }`}
-            >
-              <img
-                src={brand.img}
-                className="w-full h-44 object-cover object-center md:h-72 lg:w-96 lg:h-96"
-                alt={`Vi har briller fra ${brand.name}`}
-              />
+            <section key={brand.id} className={`flex flex-col gap-6 lg:flex-row lg:items-center ${brand.id === "moscot" || brand.id === "masunaga" ? "flex-row" : "lg:flex-row-reverse"}`}>
+              <img src={brand.img} className="w-full h-44 object-cover object-center md:h-72 lg:w-96 lg:h-96" alt={`Vi har briller fra ${brand.name}`} />
               <div className="flex flex-col gap-4">
                 <h2>{brand.name}</h2>
                 <p>{brand.description1}</p>
@@ -37,10 +28,7 @@ export default function Brands() {
             </section>
           ))}
 
-          <p className="font-semibold">
-            Vi fører også merker som Tom Ford, Ray-Ban, Face a Face, Fleye,
-            Traction Production og mange fler.
-          </p>
+          <p className="font-semibold">Vi fører også merker som Tom Ford, Ray-Ban, Face a Face, Fleye, Traction Production og mange fler.</p>
         </div>
       </main>
     </>

@@ -6,7 +6,6 @@ import { PortableTextFooter } from "./PortableTextFooter";
 
 export default function Footer() {
   const { openingHours } = useOpeningHours();
-  console.log(openingHours);
 
   return (
     <footer className="bg-grey w-full px-4 py-20 sticky top-[100vh] md:px-10">

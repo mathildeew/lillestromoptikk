@@ -1,14 +1,21 @@
-import Hero from "../../components/Hero";
+import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
+import ScrollingGlasses from "../../components/ScrollingGlasses";
+import Intro from "../../components/Intro";
+import Hero from "../../components/Hero";
 import TimeForCheck from "../../components/TimeForEyecheck";
 import Newsletter from "../../components/Newsletter";
-import Intro from "../../components/Intro";
-import ScrollingGlasses from "../../components/ScrollingGlasses";
 
 export default function Home() {
+  const defaultMetadata = {
+    title: "Velkommen til Lillestrøm Optikk",
+    desc: "",
+  };
+  const metadata = getMetadata(`homeMetadata`, defaultMetadata);
+
   return (
     <>
-      <SEOHelmet title={"Velkommen!"} content={"Velkommen til Lillestrøm Optikk, din lokale optiker i Lillestrøm. Bestill synsundersøkelse online og besøk oss i Storgata 22."} />
+      <SEOHelmet title={metadata.title} content={metadata.desc} />
       <ScrollingGlasses />
 
       <main>
