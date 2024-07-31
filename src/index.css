@@ -58,13 +58,10 @@
   }
 
   p,
-  ul,
   button,
   label,
   input {
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 35px;
+    @apply text-base tracking-wider leading-loose;
   }
 
   a {
