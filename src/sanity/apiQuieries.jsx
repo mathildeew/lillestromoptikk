@@ -12,31 +12,14 @@ export const apiQuieries = (query, slug) => ({
    }
   `,
 
-  eyecheckMetadata: `
-  *[_type == "eyecheckMetadata"][0]{
+  ourBrands: `
+  *[_type == "ourBrands"]{
+    _id,
     title,
-    desc
-  }
-  `,
-
-  aboutMetadata: `
-  *[_type == "aboutMetadata"][0]{
-    title,
-    desc
-  }
-  `,
-
-  brandsMetadata: `
-  *[_type == "brandsMetadata"][0]{
-    title,
-    desc
-  }
-  `,
-
-  recyclingMetadata: `
-  *[_type == "homeMetadata"][0]{
-    title,
-    desc
-  }
+    "imageUrl": image.asset -> url,
+    "imageAlt": image.alt,
+    image,
+    content
+   }
   `,
 });

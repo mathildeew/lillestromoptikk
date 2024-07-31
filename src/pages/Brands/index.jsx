@@ -1,6 +1,9 @@
+import { PortableText } from "@portabletext/react";
 import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
-import { brands } from "./brands";
+import useAPI from "../../hooks/useAPI";
+import { apiQuieries } from "../../sanity/apiQuieries";
+import { useEffect, useState } from "react";
 
 export default function Brands() {
   const defaultMetadata = {
@@ -8,22 +11,33 @@ export default function Brands() {
     desc: "",
   };
   const metadata = getMetadata(`brandsMetadata`, defaultMetadata);
+  const [ourBrands, setOurBrands] = useState([]);
+  const { fetchAPI, isLoading, isSuccess, isError } = useAPI();
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await fetchAPI(apiQuieries().ourBrands);
+      setOurBrands(data);
+    };
+    getData();
+  }, [fetchAPI]);
+
+  console.log(ourBrands);
 
   return (
     <>
       <SEOHelmet title={metadata.title} content={metadata.desc} />
 
       <main className="max-w-5xl py-20 px-3.5 mx-auto md:px-10 md:py-32 lg:px-0">
-        <h1>Merker</h1>
+        <h1>Våre merker</h1>
 
         <div className="flex flex-col gap-24 lg:gap-32">
-          {brands.map((brand) => (
-            <section key={brand.id} className={`flex flex-col gap-6 lg:flex-row lg:items-center ${brand.id === "moscot" || brand.id === "masunaga" ? "flex-row" : "lg:flex-row-reverse"}`}>
-              <img src={brand.img} className="w-full h-44 object-cover object-center md:h-72 lg:w-96 lg:h-96" alt={`Vi har briller fra ${brand.name}`} />
+          {ourBrands.map((brand, index) => (
+            <section key={brand._id} className={`flex flex-col gap-6 lg:flex-row lg:items-center ${index % 2 === 1 ? "flex-row" : "lg:flex-row-reverse"}`}>
+              <img src={brand.imageUrl} className="w-full h-44 object-cover object-center md:h-72 lg:w-96 lg:h-96" alt={`Vi har briller fra ${brand.title}`} />
               <div className="flex flex-col gap-4">
-                <h2>{brand.name}</h2>
-                <p>{brand.description1}</p>
-                <p>{brand.description2}</p>
+                <h2>{brand.title}</h2>
+                <PortableText value={brand.content} />
               </div>
             </section>
           ))}
