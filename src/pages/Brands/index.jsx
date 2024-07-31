@@ -33,7 +33,7 @@ export default function Brands() {
 
         <div className="flex flex-col gap-24 lg:gap-32">
           {ourBrands.map((brand, index) => (
-            <section key={brand._id} className={`flex flex-col gap-6 lg:flex-row lg:items-center ${index % 2 === 1 ? "flex-row" : "lg:flex-row-reverse"}`}>
+            <section key={brand._id} className={`flex flex-col gap-6 lg:flex-row lg:items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : "flex-row"}`}>
               <img src={brand.imageUrl} className="w-full h-44 object-cover object-center md:h-72 lg:w-96 lg:h-96" alt={`Vi har briller fra ${brand.title}`} />
               <div className="flex flex-col gap-4">
                 <h2>{brand.title}</h2>
