@@ -22,4 +22,12 @@ export const apiQuieries = (query, slug) => ({
     content
    }
   `,
+
+  about: `
+  *[_type == "ourBrands"]{
+    title,
+    
+    content
+   }
+  `,
 });

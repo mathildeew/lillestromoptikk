@@ -30,10 +30,10 @@ export default function Footer() {
           </div>
 
           <div className="flex  gap-6">
-            <a href="https://www.facebook.com/lillestromoptikk" aria-label="Følg oss på Facebook" className="hover:text-kleinBlue">
+            <a href="https://www.facebook.com/lillestromoptikk" aria-label="Følg oss på Facebook" className="hover:text-green361">
               <FontAwesomeIcon icon={faFacebook} size="3x" />
             </a>
-            <a href="https://www.instagram.com/lillestromoptikk" aria-label="Følg oss på Instagram" className="hover:text-kleinBlue">
+            <a href="https://www.instagram.com/lillestromoptikk" aria-label="Følg oss på Instagram" className="hover:text-green361">
               <FontAwesomeIcon icon={faInstagram} size="3x" />
             </a>
           </div>
