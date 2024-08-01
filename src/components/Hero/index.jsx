@@ -1,9 +1,29 @@
+import { useEffect, useState } from "react";
+import useAPI from "../../hooks/useAPI";
+import { apiQuieries } from "../../sanity/apiQuieries";
+import { urlFor } from "../../sanity/urlFor";
+
 export default function Hero() {
+  const { fetchAPI, isLoading, isSuccess, isError } = useAPI();
+
+  const [heroImage, setHeroImage] = useState(null);
+  useEffect(() => {
+    const getData = async () => {
+      const data = await fetchAPI(apiQuieries().hero);
+      setHeroImage(data);
+    };
+    getData();
+  }, [fetchAPI]);
+
+  const backgroundImage = heroImage && heroImage.image && heroImage.image.asset ? `url(${urlFor(heroImage.image.asset).url()})` : "none";
+
   return (
-    <section className="max-w-5xl flex flex-col gap-16 px-4 pt-20 pb-40 mx-auto relative z-30 md:px-10 md:pt-32 md:pb-48 lg:py-28 ">
-      <h1 className=" text-6xl md:text-8xl lg:text-9xl">
-        Velkommen{<br />} til{<br />} Lillestrøm Optikk
-      </h1>
+    <section className="bg-cover bg-no-repeat bg-center w-full h-[400px] flex flex-col justify-center" style={{ backgroundImage }}>
+      <div className="text-green361 text-right px-5">
+        <h1 className="flex flex-col text-right">
+          <span>Hei!</span> <span>Velkommen til oss</span>
+        </h1>
+      </div>
     </section>
   );
 }

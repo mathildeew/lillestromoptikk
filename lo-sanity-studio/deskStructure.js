@@ -8,6 +8,7 @@ import {
   RefreshIcon,
   AddIcon,
   SparklesIcon,
+  SparkleIcon,
 } from '@sanity/icons'
 
 export const myStructure = (S) =>
@@ -40,6 +41,10 @@ export const myStructure = (S) =>
                 .title('Metadata')
                 .icon(InfoOutlineIcon)
                 .child(S.document().schemaType('homeMetadata').documentId('homeMetadata')),
+              S.listItem()
+                .title('Hero')
+                .icon(SparkleIcon)
+                .child(S.document().schemaType('hero').documentId('hero')),
             ]),
         ),
 

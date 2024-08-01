@@ -6,7 +6,7 @@ import LogMAR from "../LogMAR";
 export default function TimeForCheck() {
   return (
     <section className="max-w-7xl flex flex-col items-center gap-12 mx-auto px-4 py-16 md:px-10">
-      <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+      <div className="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
         <LogMAR />
 
         <div className="flex flex-col gap-10">

@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <>
       <SEOHelmet title={metadata.title} content={metadata.desc} />
-      <ScrollingGlasses />
+      {/* <ScrollingGlasses /> */}
 
-      <main>
+      <main data-animate-in="true" data-animation-order="1">
         <Hero />
         <Intro />
         <TimeForCheck />
