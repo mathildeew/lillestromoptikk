@@ -26,10 +26,10 @@ export default function About() {
     getData();
   }, [fetchAPI]);
 
-
   return (
     <>
       <SEOHelmet title={metadata.title} content={metadata.desc} />
+
       <main>
         <section className="flex flex-col gap-16 items-center" data-animate-in="true" data-animation-order="1">
           <section className="w-full text-center bg-grey flex flex-col items-center gap-6 px-4 py-10 md:px-10 lg:py-20">

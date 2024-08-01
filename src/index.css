@@ -51,6 +51,7 @@
   p,
   a,
   span,
+  li,
   input::placeholder,
   label {
     font-family: theme(fontFamily.sans);
@@ -59,7 +60,8 @@
   p,
   button,
   label,
-  input {
+  input,
+  li {
     @apply text-base tracking-wider leading-loose;
   }
 

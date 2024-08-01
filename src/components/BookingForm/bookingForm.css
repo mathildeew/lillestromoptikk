@@ -47,14 +47,18 @@ select:focus {
   font-weight: 400;
   line-height: 1.5;
   color: #0a0a0a;
-  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  transition:
+    box-shadow 0.5s,
+    border-color 0.25s ease-in-out;
   appearance: none;
 }
 
 .coptikk-app [type="text"],
 [type="search"],
 [type="email"] {
-  font-family: Open Sans, sans-serif;
+  font-family:
+    Open Sans,
+    sans-serif;
 }
 
 .coptikk-app .button {
@@ -64,7 +68,9 @@ select:focus {
   padding: 0.66667rem 1.33333rem 0.8rem;
   border: 1px solid transparent;
   border-radius: 100px;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  transition:
+    background-color 0.25s ease-out,
+    color 0.25s ease-out;
   font-family: inherit;
   font-size: 1rem;
   -webkit-appearance: none;
@@ -99,7 +105,9 @@ select:focus {
   background-repeat: no-repeat;
   background-size: 9px 6px;
   padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  transition:
+    box-shadow 0.5s,
+    border-color 0.25s ease-in-out;
 }
 .coptikk-app select:disabled {
   background-color: #e6e6e6;
@@ -185,7 +193,7 @@ select:focus {
 .coptikk-app .small-12 {
   flex: 0 0 100%;
   max-width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1.5px;
 }
 .coptikk-app .small-6 {
@@ -242,28 +250,16 @@ select:focus {
   top: 6px;
   width: 9px;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle,
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle {
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle,
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle {
   margin-left: -4px;
   position: absolute;
   width: 0;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle:after,
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle:before,
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle:after,
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle:before {
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle:after,
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle:before,
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle:after,
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle:before {
   box-sizing: initial;
   position: absolute;
   height: 0;
@@ -273,63 +269,39 @@ select:focus {
   border: 8px solid transparent;
   left: -8px;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle:before,
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle:before {
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle:before,
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle:before {
   border-bottom-color: #c7dee5;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle {
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
   top: 0;
   margin-top: -8px;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle:after,
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle:before {
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle:after,
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle:before {
   border-top: none;
   border-bottom-color: #fff;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle:after {
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle:after {
   top: 0;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle:before {
+.coptikk-app .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle:before {
   top: -1px;
   border-bottom-color: #c7dee5;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle {
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle {
   bottom: 0;
   margin-bottom: -8px;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle:after,
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle:before {
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle:after,
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle:before {
   border-bottom: none;
   border-top-color: #fff;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle:after {
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle:after {
   bottom: 0;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle:before {
+.coptikk-app .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle:before {
   bottom: -1px;
   border-top-color: #c7dee5;
 }
@@ -341,7 +313,11 @@ select:focus {
   margin-bottom: 10px;
 }
 .coptikk-app .react-datepicker {
-  font-family: Helvetica Neue, helvetica, arial, sans-serif;
+  font-family:
+    Helvetica Neue,
+    helvetica,
+    arial,
+    sans-serif;
   font-size: 0.8rem;
   background-color: #fff;
   color: #000;
@@ -371,12 +347,8 @@ select:focus {
 .coptikk-app .react-datepicker-popper[data-placement^="bottom"] {
   padding-top: 10px;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement="bottom-end"]
-  .react-datepicker__triangle,
-.coptikk-app
-  .react-datepicker-popper[data-placement="top-end"]
-  .react-datepicker__triangle {
+.coptikk-app .react-datepicker-popper[data-placement="bottom-end"] .react-datepicker__triangle,
+.coptikk-app .react-datepicker-popper[data-placement="top-end"] .react-datepicker__triangle {
   left: auto;
   right: 50px;
 }
@@ -386,18 +358,14 @@ select:focus {
 .coptikk-app .react-datepicker-popper[data-placement^="right"] {
   padding-left: 8px;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="right"]
-  .react-datepicker__triangle {
+.coptikk-app .react-datepicker-popper[data-placement^="right"] .react-datepicker__triangle {
   left: auto;
   right: 42px;
 }
 .coptikk-app .react-datepicker-popper[data-placement^="left"] {
   padding-right: 8px;
 }
-.coptikk-app
-  .react-datepicker-popper[data-placement^="left"]
-  .react-datepicker__triangle {
+.coptikk-app .react-datepicker-popper[data-placement^="left"] .react-datepicker__triangle {
   left: 42px;
   right: auto;
 }
@@ -414,12 +382,10 @@ select:focus {
   padding-left: 5px;
   padding-right: 5px;
 }
-.coptikk-app
-  .react-datepicker__header--time:not(.react-datepicker__header--time--only) {
+.coptikk-app .react-datepicker__header--time:not(.react-datepicker__header--time--only) {
   border-top-left-radius: 0;
 }
-.coptikk-app
-  .react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+.coptikk-app .react-datepicker__header:not(.react-datepicker__header--has-time-select) {
   border-top-right-radius: 0.3rem;
 }
 .coptikk-app .react-datepicker__month-dropdown-container--scroll,
@@ -467,10 +433,7 @@ select:focus {
 .coptikk-app .react-datepicker__navigation--next {
   right: 2px;
 }
-.coptikk-app
-  .react-datepicker__navigation--next--with-time:not(
-    .react-datepicker__navigation--next--with-today-button
-  ) {
+.coptikk-app .react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
   right: 85px;
 }
 .coptikk-app .react-datepicker__navigation--years {
@@ -543,52 +506,26 @@ select:focus {
   margin: 5px 0 10px 15px;
   text-align: left;
 }
-.coptikk-app
-  .react-datepicker__input-time-container
-  .react-datepicker-time__caption,
-.coptikk-app
-  .react-datepicker__input-time-container
-  .react-datepicker-time__input-container {
+.coptikk-app .react-datepicker__input-time-container .react-datepicker-time__caption,
+.coptikk-app .react-datepicker__input-time-container .react-datepicker-time__input-container {
   display: inline-block;
 }
-.coptikk-app
-  .react-datepicker__input-time-container
-  .react-datepicker-time__input-container
-  .react-datepicker-time__input {
+.coptikk-app .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input {
   display: inline-block;
   margin-left: 10px;
 }
-.coptikk-app
-  .react-datepicker__input-time-container
-  .react-datepicker-time__input-container
-  .react-datepicker-time__input
-  input {
+.coptikk-app .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input {
   width: auto;
 }
-.coptikk-app
-  .react-datepicker__input-time-container
-  .react-datepicker-time__input-container
-  .react-datepicker-time__input
-  input[type="time"]::-webkit-inner-spin-button,
-.coptikk-app
-  .react-datepicker__input-time-container
-  .react-datepicker-time__input-container
-  .react-datepicker-time__input
-  input[type="time"]::-webkit-outer-spin-button {
+.coptikk-app .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-inner-spin-button,
+.coptikk-app .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.coptikk-app
-  .react-datepicker__input-time-container
-  .react-datepicker-time__input-container
-  .react-datepicker-time__input
-  input[type="time"] {
+.coptikk-app .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"] {
   -moz-appearance: textfield;
 }
-.coptikk-app
-  .react-datepicker__input-time-container
-  .react-datepicker-time__input-container
-  .react-datepicker-time__delimiter {
+.coptikk-app .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__delimiter {
   margin-left: 5px;
   display: inline-block;
 }
@@ -610,21 +547,14 @@ select:focus {
   background: #fff;
   border-bottom-right-radius: 0.3rem;
 }
-.coptikk-app
-  .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box {
+.coptikk-app .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
   width: 85px;
   overflow-x: hidden;
   margin: 0 auto;
   text-align: center;
   border-bottom-right-radius: 0.3rem;
 }
-.coptikk-app
-  .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list {
+.coptikk-app .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
   list-style: none;
   margin: 0;
   height: calc(195px + 0.85rem);
@@ -634,57 +564,27 @@ select:focus {
   width: 100%;
   box-sizing: initial;
 }
-.coptikk-app
-  .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item {
+.coptikk-app .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
   height: 30px;
   padding: 5px 10px;
   white-space: nowrap;
 }
-.coptikk-app
-  .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item:hover {
+.coptikk-app .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover {
   cursor: pointer;
   background-color: #fff;
 }
-.coptikk-app
-  .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item--selected {
+.coptikk-app .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
   background-color: #c7dee5;
   color: #fff;
   font-weight: 700;
 }
-.coptikk-app
-  .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item--selected:hover {
+.coptikk-app .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
   background-color: #c7dee5;
 }
-.coptikk-app
-  .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item--disabled {
+.coptikk-app .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled {
   color: #eee;
 }
-.coptikk-app
-  .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item--disabled:hover {
+.coptikk-app .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--disabled:hover {
   cursor: default;
   background-color: initial;
 }
@@ -696,12 +596,10 @@ select:focus {
   text-align: center;
   margin: 0.166rem;
 }
-.coptikk-app
-  .react-datepicker__week-number.react-datepicker__week-number--clickable {
+.coptikk-app .react-datepicker__week-number.react-datepicker__week-number--clickable {
   cursor: pointer;
 }
-.coptikk-app
-  .react-datepicker__week-number.react-datepicker__week-number--clickable:hover {
+.coptikk-app .react-datepicker__week-number.react-datepicker__week-number--clickable:hover {
   border-radius: 0.3rem;
   background-color: #fff;
 }
@@ -830,7 +728,7 @@ select:focus {
 .coptikk-app .react-datepicker__quarter-text--keyboard-selected,
 .coptikk-app .react-datepicker__year-text--keyboard-selected {
   border-radius: 0.3rem;
-  background-color: #1f1bbd;
+  background-color: theme(colors.green361);
   color: #fff;
 }
 .coptikk-app .react-datepicker__day--keyboard-selected:hover,
@@ -839,68 +737,16 @@ select:focus {
 .coptikk-app .react-datepicker__year-text--keyboard-selected:hover {
   background-color: #1d5d90;
 }
-.coptikk-app
-  .react-datepicker__day--in-selecting-range:not(
-    .react-datepicker__day--in-range,
-    .react-datepicker__month-text--in-range,
-    .react-datepicker__quarter-text--in-range,
-    .react-datepicker__year-text--in-range
-  ),
-.coptikk-app
-  .react-datepicker__month-text--in-selecting-range:not(
-    .react-datepicker__day--in-range,
-    .react-datepicker__month-text--in-range,
-    .react-datepicker__quarter-text--in-range,
-    .react-datepicker__year-text--in-range
-  ),
-.coptikk-app
-  .react-datepicker__quarter-text--in-selecting-range:not(
-    .react-datepicker__day--in-range,
-    .react-datepicker__month-text--in-range,
-    .react-datepicker__quarter-text--in-range,
-    .react-datepicker__year-text--in-range
-  ),
-.coptikk-app
-  .react-datepicker__year-text--in-selecting-range:not(
-    .react-datepicker__day--in-range,
-    .react-datepicker__month-text--in-range,
-    .react-datepicker__quarter-text--in-range,
-    .react-datepicker__year-text--in-range
-  ) {
+.coptikk-app .react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
+.coptikk-app .react-datepicker__month-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
+.coptikk-app .react-datepicker__quarter-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
+.coptikk-app .react-datepicker__year-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
   background-color: rgba(33, 107, 165, 0.5);
 }
-.coptikk-app
-  .react-datepicker__month--selecting-range
-  .react-datepicker__day--in-range:not(
-    .react-datepicker__day--in-selecting-range,
-    .react-datepicker__month-text--in-selecting-range,
-    .react-datepicker__quarter-text--in-selecting-range,
-    .react-datepicker__year-text--in-selecting-range
-  ),
-.coptikk-app
-  .react-datepicker__month--selecting-range
-  .react-datepicker__month-text--in-range:not(
-    .react-datepicker__day--in-selecting-range,
-    .react-datepicker__month-text--in-selecting-range,
-    .react-datepicker__quarter-text--in-selecting-range,
-    .react-datepicker__year-text--in-selecting-range
-  ),
-.coptikk-app
-  .react-datepicker__month--selecting-range
-  .react-datepicker__quarter-text--in-range:not(
-    .react-datepicker__day--in-selecting-range,
-    .react-datepicker__month-text--in-selecting-range,
-    .react-datepicker__quarter-text--in-selecting-range,
-    .react-datepicker__year-text--in-selecting-range
-  ),
-.coptikk-app
-  .react-datepicker__month--selecting-range
-  .react-datepicker__year-text--in-range:not(
-    .react-datepicker__day--in-selecting-range,
-    .react-datepicker__month-text--in-selecting-range,
-    .react-datepicker__quarter-text--in-selecting-range,
-    .react-datepicker__year-text--in-selecting-range
-  ) {
+.coptikk-app .react-datepicker__month--selecting-range .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__year-text--in-selecting-range),
+.coptikk-app .react-datepicker__month--selecting-range .react-datepicker__month-text--in-range:not(.react-datepicker__day--in-selecting-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__year-text--in-selecting-range),
+.coptikk-app .react-datepicker__month--selecting-range .react-datepicker__quarter-text--in-range:not(.react-datepicker__day--in-selecting-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__year-text--in-selecting-range),
+.coptikk-app .react-datepicker__month--selecting-range .react-datepicker__year-text--in-range:not(.react-datepicker__day--in-selecting-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__year-text--in-selecting-range) {
   background-color: #fff;
   color: #000;
 }
@@ -917,22 +763,14 @@ select:focus {
 .coptikk-app .react-datepicker__year-text--disabled:hover {
   background-color: initial;
 }
-.coptikk-app
-  .react-datepicker__month-text.react-datepicker__month--in-range:hover,
-.coptikk-app
-  .react-datepicker__month-text.react-datepicker__month--selected:hover,
-.coptikk-app
-  .react-datepicker__month-text.react-datepicker__quarter--in-range:hover,
-.coptikk-app
-  .react-datepicker__month-text.react-datepicker__quarter--selected:hover,
-.coptikk-app
-  .react-datepicker__quarter-text.react-datepicker__month--in-range:hover,
-.coptikk-app
-  .react-datepicker__quarter-text.react-datepicker__month--selected:hover,
-.coptikk-app
-  .react-datepicker__quarter-text.react-datepicker__quarter--in-range:hover,
-.coptikk-app
-  .react-datepicker__quarter-text.react-datepicker__quarter--selected:hover {
+.coptikk-app .react-datepicker__month-text.react-datepicker__month--in-range:hover,
+.coptikk-app .react-datepicker__month-text.react-datepicker__month--selected:hover,
+.coptikk-app .react-datepicker__month-text.react-datepicker__quarter--in-range:hover,
+.coptikk-app .react-datepicker__month-text.react-datepicker__quarter--selected:hover,
+.coptikk-app .react-datepicker__quarter-text.react-datepicker__month--in-range:hover,
+.coptikk-app .react-datepicker__quarter-text.react-datepicker__month--selected:hover,
+.coptikk-app .react-datepicker__quarter-text.react-datepicker__quarter--in-range:hover,
+.coptikk-app .react-datepicker__quarter-text.react-datepicker__quarter--selected:hover {
   background-color: #c7dee5;
 }
 .coptikk-app .react-datepicker__month-text:hover,
@@ -956,24 +794,12 @@ select:focus {
 .coptikk-app .react-datepicker__year-read-view:hover {
   cursor: pointer;
 }
-.coptikk-app
-  .react-datepicker__month-read-view:hover
-  .react-datepicker__month-read-view--down-arrow,
-.coptikk-app
-  .react-datepicker__month-read-view:hover
-  .react-datepicker__year-read-view--down-arrow,
-.coptikk-app
-  .react-datepicker__month-year-read-view:hover
-  .react-datepicker__month-read-view--down-arrow,
-.coptikk-app
-  .react-datepicker__month-year-read-view:hover
-  .react-datepicker__year-read-view--down-arrow,
-.coptikk-app
-  .react-datepicker__year-read-view:hover
-  .react-datepicker__month-read-view--down-arrow,
-.coptikk-app
-  .react-datepicker__year-read-view:hover
-  .react-datepicker__year-read-view--down-arrow {
+.coptikk-app .react-datepicker__month-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.coptikk-app .react-datepicker__month-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.coptikk-app .react-datepicker__month-year-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.coptikk-app .react-datepicker__month-year-read-view:hover .react-datepicker__year-read-view--down-arrow,
+.coptikk-app .react-datepicker__year-read-view:hover .react-datepicker__month-read-view--down-arrow,
+.coptikk-app .react-datepicker__year-read-view:hover .react-datepicker__year-read-view--down-arrow {
   border-top-color: #b3b3b3;
 }
 .coptikk-app .react-datepicker__month-read-view--down-arrow,
@@ -1037,26 +863,14 @@ select:focus {
 .coptikk-app .react-datepicker__year-option:hover {
   background-color: #eee;
 }
-.coptikk-app
-  .react-datepicker__month-option:hover
-  .react-datepicker__navigation--years-upcoming,
-.coptikk-app
-  .react-datepicker__month-year-option:hover
-  .react-datepicker__navigation--years-upcoming,
-.coptikk-app
-  .react-datepicker__year-option:hover
-  .react-datepicker__navigation--years-upcoming {
+.coptikk-app .react-datepicker__month-option:hover .react-datepicker__navigation--years-upcoming,
+.coptikk-app .react-datepicker__month-year-option:hover .react-datepicker__navigation--years-upcoming,
+.coptikk-app .react-datepicker__year-option:hover .react-datepicker__navigation--years-upcoming {
   border-bottom-color: #b3b3b3;
 }
-.coptikk-app
-  .react-datepicker__month-option:hover
-  .react-datepicker__navigation--years-previous,
-.coptikk-app
-  .react-datepicker__month-year-option:hover
-  .react-datepicker__navigation--years-previous,
-.coptikk-app
-  .react-datepicker__year-option:hover
-  .react-datepicker__navigation--years-previous {
+.coptikk-app .react-datepicker__month-option:hover .react-datepicker__navigation--years-previous,
+.coptikk-app .react-datepicker__month-year-option:hover .react-datepicker__navigation--years-previous,
+.coptikk-app .react-datepicker__year-option:hover .react-datepicker__navigation--years-previous {
   border-top-color: #b3b3b3;
 }
 .coptikk-app .react-datepicker__month-option--selected,
@@ -1185,8 +999,8 @@ select:focus {
   overflow: hidden;
 }
 .coptikk-app .cop .member-label {
-  font-size: 24px;
-  font-family: "Open Sans";
+  font-size: 25px;
+  font-family: theme(fontFamily.heading);
   font-weight: bolder;
   padding-bottom: 1rem;
 }
@@ -1229,9 +1043,10 @@ select:focus {
 .coptikk-app .cop .return-btn {
   font-size: 20px;
   font-weight: 600;
-  background-color: #1f1bbd;
+  background-color: theme(colors.green361);
+  border: 2px solid black;
   /* border-color: #90abe8; */
-  color: white;
+  color: black;
   display: block;
   padding: 20px;
 }
@@ -1330,7 +1145,7 @@ select:focus {
 .coptikk-app .cop__sub-header {
   font-weight: 400;
   margin: 0 5px 20px;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1.5px;
   line-height: 35px;
 }
@@ -1384,20 +1199,21 @@ select:focus {
 }
 .coptikk-app .cop__member__wrapper {
   display: inline-flex;
+  align-items: top;
   justify-content: start;
   width: 100%;
   margin-bottom: 1.5rem;
 }
 .coptikk-app .cop__member__name {
-  font-size: 20px;
-  padding-top: 10px;
+  font-size: 18px;
+  /* padding-top: 10px; */
   width: 100%;
   color: #161616;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
 .coptikk-app .cop__member__description {
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
   /* color: #161616; */
   font-weight: 400;

@@ -30,12 +30,5 @@ export default function BookingForm() {
     };
   }, []);
 
-  return (
-    <div
-      className="coptikk-booking-embed max-w-6xl  h-full"
-      data-member-no="5271"
-      data-member-id="829"
-      data-domain-name="https://www.coptikk.no"
-    ></div>
-  );
+  return <div className="coptikk-booking-embed max-w-[1400px] h-full px-4 py-10 md:px-10" data-member-no="5271" data-member-id="829" data-domain-name="https://www.coptikk.no"></div>;
 }
