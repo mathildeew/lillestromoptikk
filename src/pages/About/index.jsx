@@ -38,14 +38,6 @@ export default function About() {
               <h1>Om oss</h1>
               <p>{aboutData.intro}</p>
             </div>
-            <div className="flex flex-wrap gap-3 justify-center">
-              <a href="mailto:post@lillestromoptikk.no" className="btn-primary bg-green361 border-black">
-                post@lillestromoptikk.no
-              </a>
-              <a href="mailto:post@lillestromoptikk.no" className="btn-primary  bg-green361 border-black">
-                tlf. 64 80 85 85
-              </a>
-            </div>
           </section>
 
           <div className="max-w-[1400px] flex flex-col gap-16 px-5">
