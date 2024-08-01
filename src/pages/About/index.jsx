@@ -3,42 +3,20 @@ import SEOHelmet from "../../components/SEOHelmet";
 import useAPI from "../../hooks/useAPI";
 import { useEffect, useState } from "react";
 import { apiQuieries } from "../../sanity/apiQuieries";
-import { PortableText } from "@portabletext/react";
-import { PortableTextFooter } from "../../components/Layout/Footer/PortableTextFooter";
 import ImageCarousel from "../../components/Carousel";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { urlFor } from "../../sanity/urlFor";
 
 export default function About() {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  const [aboutData, setAboutData] = useState([]);
+  const [carouselImages, setCarouselImages] = useState([]);
 
   const defaultMetadata = {
     title: "Om oss → Lillestrøm Optikk",
     desc: "",
   };
   const metadata = getMetadata(`aboutMetadata`, defaultMetadata);
-  const [aboutData, setAboutData] = useState([]);
-  const [carouselImages, setCarouselImages] = useState([]);
-  const { fetchAPI } = useAPI();
 
+  const { fetchAPI } = useAPI();
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAPI(apiQuieries().about);
@@ -47,6 +25,8 @@ export default function About() {
     };
     getData();
   }, [fetchAPI]);
+
+  console.log(aboutData);
 
   return (
     <>
@@ -67,24 +47,18 @@ export default function About() {
               </a>
             </div>
           </section>
+
           <div className="max-w-[1400px] flex flex-col gap-16">
-            <section className="w-full flex flex-col gap-3 items-center px-5 md:flex-row md:gap-5">
-              <img className="w-full h-96 object-cover md:w-1/2" src="/brands/gotti/gotti_dimensions.jpg" alt="" />
-              <div className="flex flex-col gap-3 md:w-1/2">
-                <h2>Butikken</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis magna nec mi pharetra, et dignissim lorem hendrerit. Nam fermentum sem non arcu facilisis, ac tempus justo facilisis. Integer scelerisque ligula non turpis condimentum, at tincidunt libero ornare. Quisque vel ligula sit amet sapien cursus accumsan. Fusce vel ex et risus congue laoreet. Proin euismod justo ut nibh fermentum, in malesuada purus sagittis. Sed quis quam non justo blandit elementum nec id libero. Curabitur at eros nec sapien fringilla ullamcorper.</p>
-              </div>
-            </section>
-
-            <section className="w-full flex flex-col gap-3 items-center px-5 md:flex-row md:gap-5">
-              <div className="flex flex-col gap-3 md:w-1/2">
-                <h2>Gjenbrukshjørnet</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis magna nec mi pharetra, et dignissim lorem hendrerit. Nam fermentum sem non arcu facilisis, ac tempus justo facilisis. Integer scelerisque ligula non turpis condimentum, at tincidunt libero ornare. Quisque vel ligula sit amet sapien cursus accumsan. Fusce vel ex et risus congue laoreet. Proin euismod justo ut nibh fermentum, in malesuada purus sagittis. Sed quis quam non justo blandit elementum nec id libero. Curabitur at eros nec sapien fringilla ullamcorper.</p>
-              </div>
-              <img className="w-full h-96 object-cover md:w-1/2" src="/brands/gotti/gotti_dimensions.jpg" alt="" />
-            </section>
+            {aboutData.sections?.map((section, index) => (
+              <section className={`w-full flex flex-col gap-3 items-center px-5 md:flex-row md:gap-5 ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}>
+                <img className="w-full h-96 object-cover md:w-1/2" src={urlFor(section.image).url()} alt={section.image.altText} />
+                <div className="flex flex-col gap-3 md:w-1/2">
+                  <h2>{section.heading}</h2>
+                  <p>{section.text}</p>
+                </div>
+              </section>
+            ))}
           </div>
-
           <ImageCarousel data={carouselImages} />
         </section>
       </main>

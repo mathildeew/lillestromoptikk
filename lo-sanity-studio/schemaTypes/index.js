@@ -8,6 +8,7 @@ import brandsMetadata from './brands/metadata'
 import recycling from './recycling/recycling'
 import recyclingMetadata from './recycling/metadata'
 import carouselImage from './carouselImage'
+import section from './about/section'
 
 export const schemaTypes = [
   openingHours,
@@ -20,4 +21,5 @@ export const schemaTypes = [
   recycling,
   recyclingMetadata,
   carouselImage,
+  section,
 ]

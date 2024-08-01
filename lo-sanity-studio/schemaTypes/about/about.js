@@ -20,6 +20,15 @@ const about = {
       validation: (rule) => rule.required(),
     },
     {
+      name: 'sections',
+      title: 'Avsnitt',
+      type: 'array',
+      of: [{type: 'section'}],
+      options: {
+        layout: 'grid',
+      },
+    },
+    {
       name: 'carousel',
       title: 'Bildekarusell',
       type: 'array',

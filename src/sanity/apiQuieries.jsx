@@ -26,7 +26,8 @@ export const apiQuieries = (query, slug) => ({
   about: `
   *[_type == "about"][0]{
     intro,
-    carousel
+    sections,
+    carousel,
    }
   `,
 });
