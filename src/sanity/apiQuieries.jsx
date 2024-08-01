@@ -24,10 +24,8 @@ export const apiQuieries = (query, slug) => ({
   `,
 
   about: `
-  *[_type == "ourBrands"]{
-    title,
-    
-    content
+  *[_type == "about"][0]{
+    intro
    }
   `,
 });

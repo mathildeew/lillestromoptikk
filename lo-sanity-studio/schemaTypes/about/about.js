@@ -11,6 +11,13 @@ const about = {
       readOnly: true,
     },
     {
+      name: 'intro',
+      title: 'intro',
+      type: 'text',
+      rows: 4,
+      //   validation: (rule) => rule.required(),
+    },
+    {
       name: 'content',
       title: 'Innhold',
       type: 'array',

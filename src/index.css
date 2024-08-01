@@ -27,7 +27,6 @@
   h1 {
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 36px;
   }
 
   h2 {
@@ -69,7 +68,7 @@
   }
 
   .btn-primary {
-    @apply font-semibold border-2 rounded-full  p-5 max-w-sm;
+    @apply font-semibold border-2 rounded-full px-6 py-3;
   }
 
   .btn-link {
