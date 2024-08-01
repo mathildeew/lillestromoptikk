@@ -165,4 +165,15 @@
   [data-animation-order="9"] {
     animation-delay: 0.5s;
   }
+
+  /* NAVIGATION - - - - - - - - - - */
+  .navLink {
+    background: linear-gradient(0deg, #43b02a, #43b02a) no-repeat right bottom / 0 100%;
+    transition: background-size 350ms;
+  }
+
+  .navLink:where(:hover, :focus-visible) {
+    background-size: 100% 100%;
+    background-position-x: left;
+  }
 }

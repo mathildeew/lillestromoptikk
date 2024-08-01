@@ -1,36 +1,25 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function MobileNav({ openMenu, setOpenMenu }) {
   return (
-    <nav className={`bg-white w-full h-screen flex flex-col items-end px-6 py-16 absolute z-50 transition-all duration-500 ease-in-out  top-20 lg:hidden ${openMenu ? "right-0 opacity-100" : "-right-full opacity-0"}`}>
-      <ul className="w-full flex flex-col gap-14">
-        <li className="border-b border-black">
-          <Link to={"/timebestilling"} onClick={() => setOpenMenu(!openMenu)} className="px-4">
-            Timebestilling
-          </Link>
-        </li>
-        <li className="border-b border-black">
-          <Link to={"/merker"} onClick={() => setOpenMenu(!openMenu)} className="px-4">
-            Våre merker
-          </Link>
-        </li>
-        <li className="border-b border-black">
-          <Link to={"/om-oss"} onClick={() => setOpenMenu(!openMenu)} className="px-4">
-            Om oss
-          </Link>
-        </li>
-        <li className="border-b border-black">
-          <Link to={"/kontakt-oss"} onClick={() => setOpenMenu(!openMenu)} className="px-4">
-            Kontakt
-          </Link>
-        </li>
-        <li className="btn-link">
-          <a href="https://linsebutikk.coptikk.no/login">Kjøp linser</a>
-          <FontAwesomeIcon icon={faArrowUp} className="rotate-45" />
-        </li>
-      </ul>
+    <nav className={`bg-white w-full h-screen flex flex-col items-end px-6 py-16 absolute z-50 transition-all duration-500 ease-in-out top-20 lg:hidden ${openMenu ? "right-0 opacity-100" : "-right-full opacity-0"}`}>
+      <div className="w-full flex flex-col gap-4 items-center">
+        <Link to={"/timebestilling"} onClick={() => setOpenMenu(!openMenu)} className="navLink font-heading text-lg p-4">
+          Timebestilling
+        </Link>
+        <Link to={"/merker"} onClick={() => setOpenMenu(!openMenu)} className="navLink font-heading text-lg p-4">
+          Våre merker
+        </Link>
+        <Link to={"/om-oss"} onClick={() => setOpenMenu(!openMenu)} className="navLink font-heading text-lg p-4">
+          Om oss
+        </Link>
+        <Link to={"/kontakt-oss"} onClick={() => setOpenMenu(!openMenu)} className="navLink font-heading text-lg p-4">
+          Kontakt
+        </Link>
+        <a href="https://linsebutikk.coptikk.no/login" className="navLink font-heading text-lg p-4">
+          Kjøp linser
+        </a>
+      </div>
     </nav>
   );
 }

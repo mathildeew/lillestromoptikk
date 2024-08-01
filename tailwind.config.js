@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         sans: ["Open Sans, Arial, Tahoma, sans-serif"],
-        heading: ["neue-haas-grotesk-display, sans-serif;"],
+        heading: ["tablet-gothic, sans-serif"],
       },
     },
   },
