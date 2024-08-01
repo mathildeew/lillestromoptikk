@@ -5,25 +5,48 @@ import { useEffect, useState } from "react";
 import { apiQuieries } from "../../sanity/apiQuieries";
 import { PortableText } from "@portabletext/react";
 import { PortableTextFooter } from "../../components/Layout/Footer/PortableTextFooter";
+import ImageCarousel from "../../components/Carousel";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function About() {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   const defaultMetadata = {
     title: "Om oss → Lillestrøm Optikk",
     desc: "",
   };
   const metadata = getMetadata(`aboutMetadata`, defaultMetadata);
   const [aboutData, setAboutData] = useState([]);
+  const [carouselImages, setCarouselImages] = useState([]);
   const { fetchAPI } = useAPI();
 
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAPI(apiQuieries().about);
       setAboutData(data);
+      setCarouselImages(data.carousel);
     };
     getData();
   }, [fetchAPI]);
-
-  console.log(aboutData);
 
   return (
     <>
@@ -44,7 +67,6 @@ export default function About() {
               </a>
             </div>
           </section>
-
           <div className="max-w-[1400px] flex flex-col gap-16">
             <section className="w-full flex flex-col gap-3 items-center px-5 md:flex-row md:gap-5">
               <img className="w-full h-96 object-cover md:w-1/2" src="/brands/gotti/gotti_dimensions.jpg" alt="" />
@@ -63,9 +85,7 @@ export default function About() {
             </section>
           </div>
 
-          <section>
-            
-          </section>
+          <ImageCarousel data={carouselImages} />
         </section>
       </main>
     </>

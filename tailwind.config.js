@@ -13,6 +13,12 @@ export default {
         sans: ["Open Sans, Arial, Tahoma, sans-serif"],
         heading: ["tablet-gothic, sans-serif"],
       },
+      gridTemplateColumns: {
+        news: "repeat(10, minmax(85%, 1fr))",
+      },
+      screens: {
+        gridExpand: "600px",
+      },
     },
   },
   plugins: [],

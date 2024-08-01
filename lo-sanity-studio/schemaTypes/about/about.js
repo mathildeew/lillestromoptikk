@@ -1,3 +1,5 @@
+import carouselImage from '../carouselImage'
+
 const about = {
   name: 'about',
   title: 'Om oss',
@@ -12,21 +14,19 @@ const about = {
     },
     {
       name: 'intro',
-      title: 'intro',
+      title: 'Intro',
       type: 'text',
       rows: 4,
-      //   validation: (rule) => rule.required(),
+      validation: (rule) => rule.required(),
     },
     {
-      name: 'content',
-      title: 'Innhold',
+      name: 'carousel',
+      title: 'Bildekarusell',
       type: 'array',
-      //   validation: (rule) => rule.required(),
-      of: [
-        {
-          type: 'block',
-        },
-      ],
+      of: [{type: 'carouselImage'}],
+      options: {
+        layout: 'grid',
+      },
     },
   ],
 }
