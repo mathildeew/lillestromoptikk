@@ -22,7 +22,6 @@ export default function Home() {
         <Hero />
         <Intro />
         <TimeForCheck />
-        <Newsletter />
       </main>
     </>
   );
