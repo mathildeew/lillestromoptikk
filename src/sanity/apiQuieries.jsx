@@ -14,7 +14,16 @@ export const apiQuieries = (query, slug) => ({
 
   hero: `
   *[_type == "hero"][0]{
-     image
+    title, 
+    images
+   }
+  `,
+
+  temporary: `
+  *[_type == "temporary"][0]{
+    title,
+    text, 
+    image
    }
   `,
 

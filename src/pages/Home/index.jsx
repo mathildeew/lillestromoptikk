@@ -5,13 +5,29 @@ import Intro from "../../components/Intro";
 import Hero from "../../components/Hero";
 import TimeForCheck from "../../components/TimeForEyecheck";
 import Newsletter from "../../components/Newsletter";
+import Temporary from "../../components/Temporary";
+import useAPI from "../../hooks/useAPI";
+import { apiQuieries } from "../../sanity/apiQuieries";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
+  const [temporaryData, setTemporaryData] = useState([]);
+
   const defaultMetadata = {
     title: "Velkommen til Lillestrøm Optikk",
     desc: "",
   };
   const metadata = getMetadata(`homeMetadata`, defaultMetadata);
+
+  const { fetchAPI } = useAPI();
+  useEffect(() => {
+    const getData = async () => {
+      const data = await fetchAPI(apiQuieries().temporary);
+      setTemporaryData(data);
+    };
+    getData();
+  }, [fetchAPI]);
 
   return (
     <>
@@ -20,8 +36,8 @@ export default function Home() {
 
       <main data-animate-in="true" data-animation-order="1">
         <Hero />
-        <Intro />
         <TimeForCheck />
+        {temporaryData.image && <Temporary data={temporaryData} />}
       </main>
     </>
   );

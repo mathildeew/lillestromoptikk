@@ -9,6 +9,7 @@ import {
   AddIcon,
   SparklesIcon,
   SparkleIcon,
+  ActivityIcon,
 } from '@sanity/icons'
 
 export const myStructure = (S) =>
@@ -45,6 +46,10 @@ export const myStructure = (S) =>
                 .title('Hero')
                 .icon(SparkleIcon)
                 .child(S.document().schemaType('hero').documentId('hero')),
+              S.listItem()
+                .title('Midlertidig seksjon')
+                .icon(ActivityIcon)
+                .child(S.document().schemaType('temporary').documentId('temporary')),
             ]),
         ),
 
@@ -133,6 +138,7 @@ export const myStructure = (S) =>
             'about',
             'aboutMetadata',
             'homeMetadata',
+            'temporary',
             'ourBrands',
             'brandsMetadata',
             'recyclingMetadata',
