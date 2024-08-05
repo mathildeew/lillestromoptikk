@@ -1,4 +1,4 @@
-import { urlFor } from "../../sanity/urlFor";
+import { urlFor } from "../../../sanity/urlFor";
 
 export default function Temporary(data) {
   const { data: temporaryData } = data;

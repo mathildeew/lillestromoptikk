@@ -1,7 +1,7 @@
 import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
-import EyecheckInfo from "../../components/EyecheckInfo";
-import BookingForm from "../../components/BookingForm";
+import EyecheckInfo from "../../components/features/booking/EyecheckInfo";
+import BookingForm from "../../components/features/booking/BookingForm";
 
 export default function Eyecheck() {
   const defaultMetadata = {

@@ -1,7 +1,7 @@
 import SEOHelmet from "../../components/SEOHelmet";
 import { useOpeningHours } from "../../context/GetOpeninghours";
 import { PortableText } from "@portabletext/react";
-import { PortableTextFooter } from "../../components/Layout/Footer/PortableTextFooter";
+import { PortableTextFooter } from "../../components/layout/Footer/PortableTextFooter";
 
 export default function Contact() {
   const { openingHours } = useOpeningHours();

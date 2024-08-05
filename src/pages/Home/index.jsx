@@ -1,8 +1,8 @@
 import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
-import Hero from "../../components/Hero";
-import TimeForCheck from "../../components/TimeForEyecheck";
-import Temporary from "../../components/Temporary";
+import Hero from "../../components/features/home/Hero";
+import TimeForCheck from "../../components/features/home/TimeForEyeCheck";
+import Temporary from "../../components/features/home/Temporary";
 import useAPI from "../../hooks/useAPI";
 import { apiQuieries } from "../../sanity/apiQuieries";
 import { useState } from "react";

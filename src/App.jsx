@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/Layout";
 import PageNotFound from "./pages/404";
 import Home from "./pages/Home";
 import Eyecheck from "./pages/Eyecheck";

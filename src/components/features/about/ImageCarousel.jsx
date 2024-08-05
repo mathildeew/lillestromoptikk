@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { urlFor } from "../sanity/urlFor";
+import { urlFor } from "../../../sanity/urlFor";
 import { useState } from "react";
 
 export default function ImageCarousel(data) {
