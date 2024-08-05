@@ -14,7 +14,6 @@ import sanityClient from "../sanity/sanityClient";
  * }}
  */
 export default function useAPI() {
-  const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);

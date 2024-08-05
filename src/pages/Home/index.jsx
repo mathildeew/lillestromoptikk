@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { apiQuieries } from "../../sanity/apiQuieries";
 import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
-import Loader from "../../components/layout/Loader";
 import useAPI from "../../hooks/useAPI";
+import Loader from "../../components/layout/Loader";
 import Hero from "../../components/features/home/Hero";
 import TimeForCheck from "../../components/features/home/TimeForEyeCheck";
 import Temporary from "../../components/features/home/Temporary";
@@ -19,6 +19,7 @@ export default function Home() {
   const metadata = getMetadata(`homeMetadata`, defaultMetadata);
 
   const { fetchAPI, isLoading, isSuccess } = useAPI();
+
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAPI(apiQuieries().temporary);
