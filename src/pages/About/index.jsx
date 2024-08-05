@@ -27,8 +27,6 @@ export default function About() {
     getData();
   }, [fetchAPI]);
 
-  console.log(aboutData);
-
   return (
     <>
       <SEOHelmet title={metadata.title} content={metadata.desc} />

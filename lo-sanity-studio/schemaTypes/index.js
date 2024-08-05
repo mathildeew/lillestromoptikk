@@ -1,5 +1,5 @@
 import openingHours from './storeSettings/openingHours'
-import homeMetadata from './home/metadata'
+import homeMetadata from './home/homeMetadata'
 import eyecheckMetadata from './eyecheck/metadata'
 import about from './about/about'
 import aboutMetadata from './about/metadata'

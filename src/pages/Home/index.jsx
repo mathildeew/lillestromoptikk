@@ -1,12 +1,12 @@
+import { useState, useEffect } from "react";
+import { apiQuieries } from "../../sanity/apiQuieries";
 import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
+import Loader from "../../components/layout/Loader";
+import useAPI from "../../hooks/useAPI";
 import Hero from "../../components/features/home/Hero";
 import TimeForCheck from "../../components/features/home/TimeForEyeCheck";
 import Temporary from "../../components/features/home/Temporary";
-import useAPI from "../../hooks/useAPI";
-import { apiQuieries } from "../../sanity/apiQuieries";
-import { useState } from "react";
-import { useEffect } from "react";
 
 export default function Home() {
   const [temporaryData, setTemporaryData] = useState([]);
@@ -15,9 +15,10 @@ export default function Home() {
     title: "Velkommen til Lillestrøm Optikk",
     desc: "",
   };
+
   const metadata = getMetadata(`homeMetadata`, defaultMetadata);
 
-  const { fetchAPI } = useAPI();
+  const { fetchAPI, isLoading, isSuccess } = useAPI();
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAPI(apiQuieries().temporary);
@@ -31,11 +32,15 @@ export default function Home() {
       <SEOHelmet title={metadata.title} content={metadata.desc} />
       {/* <ScrollingGlasses /> */}
 
-      <main data-animate-in="true" data-animation-order="1">
-        {temporaryData.image && <Temporary data={temporaryData} />}
-        <Hero />
-        <TimeForCheck />
-      </main>
+      {isLoading && <Loader />}
+
+      {isSuccess && (
+        <main data-animate-in="true">
+          {temporaryData.image && <Temporary data={temporaryData} />}
+          <Hero />
+          <TimeForCheck />
+        </main>
+      )}
     </>
   );
 }

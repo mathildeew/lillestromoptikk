@@ -1,4 +1,4 @@
-export const apiQuieries = (query, slug) => ({
+export const apiQuieries = (query) => ({
   openingHours: `
   *[_type == "openingHours"][0]{
     content

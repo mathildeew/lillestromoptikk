@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import DesktopNav from "../Nav/Desktop";
-import MobileNav from "../Nav/Mobile";
+import DesktopNav from "./nav/desktop/DesktopNav";
+import MobileNav from "./nav/mobile/MobileNav";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
