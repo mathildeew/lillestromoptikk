@@ -1041,15 +1041,15 @@ select:focus {
   align-items: center;
 }
 .coptikk-app .cop .return-btn {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   background-color: theme(colors.green361);
-  border: 2px solid black;
   /* border-color: #90abe8; */
   color: black;
   display: block;
   padding: 20px;
 }
+
 .coptikk-app .cop .return-btn-step {
   margin: 40px 0;
 }

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function MobileNav({ openMenu, setOpenMenu }) {
   return (
-    <nav className={`bg-white w-full h-screen flex flex-col items-end px-6 py-16 absolute z-50 transition-all duration-500 ease-in-out top-20 lg:hidden ${openMenu ? "right-0 opacity-100" : "-right-full opacity-0"}`}>
+    <nav className={`bg-white w-full h-screen flex flex-col items-end px-6 py-16 absolute z-50 transition-all duration-500 ease-in-out top-16 lg:hidden ${openMenu ? "right-0 opacity-100" : "-right-full opacity-0"}`}>
       <div className="w-full flex flex-col gap-4 items-center">
         <Link to={"/timebestilling"} onClick={() => setOpenMenu(!openMenu)} className="navLink font-heading text-lg p-4">
           Timebestilling

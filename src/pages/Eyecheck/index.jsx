@@ -9,12 +9,13 @@ export default function Eyecheck() {
     desc: "",
   };
   const metadata = getMetadata(`eyecheckMetadata`, defaultMetadata);
+
   return (
     <>
       <SEOHelmet title={metadata.title} content={metadata.desc} />
 
-      <main>
-        <section className="flex flex-col gap-10" data-animate-in="true" data-animation-order="1">
+      <main data-animate-in="true">
+        <section className="flex flex-col">
           <EyecheckInfo />
           <BookingForm />
         </section>

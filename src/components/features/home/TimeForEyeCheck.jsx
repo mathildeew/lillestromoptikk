@@ -5,8 +5,8 @@ import LogMAR from "./LogMAR";
 
 export default function TimeForCheck() {
   return (
-    <section className="max-w-[1400px] mx-auto px-4 py-16 md:px-10">
-      <div className="flex flex-col-reverse gap-12 lg:grid lg:grid-cols-2 lg:items-center">
+    <section className="max-w-7xl mx-auto px-4 py-24 md:px-10">
+      <div className="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-2 lg:items-center">
         {/* <LogMAR /> */}
 
         <div className="flex flex-col items-start gap-10">
@@ -24,7 +24,7 @@ export default function TimeForCheck() {
           </button>
         </div>
 
-        <img src="public/brands/masunaga/GMS123_124_2.jpg" className="max-h-[500px] w-full object-cover rounded-xl" />
+        <img src="public/brands/masunaga/GMS123_124_2.jpg" className="w-full h-96 object-cover rounded-xl md:h-[600px] lg:h-auto" />
       </div>
     </section>
   );

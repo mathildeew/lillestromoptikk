@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       <header className="bg-white w-full flex z-40 relative md:px-12 border-b-black border-b">
-        <div className="w-full max-w-7xl flex justify-between items-center px-6 md:mx-auto md:px-3.5 ">
+        <div className="w-full max-w-7xl flex justify-between items-center px-6 md:mx-auto md:px-3.5">
           <Link to={`/`}>
             <img aria-label="Gå til forsiden" src="/identity/logo.svg" className="w-24 h-auto lg:w-36" alt="Lillestrøm Optikk logo" />
           </Link>

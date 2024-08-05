@@ -24,7 +24,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full max-w-[1400px] h-fit px-4 pt-16 mx-auto md:px-6 lg:grid lg:grid-cols-2 lg:items-center">
+    <section className="w-full max-w-7xl h-fit px-4 pt-16 mx-auto md:px-10 lg:grid lg:grid-cols-2 lg:items-center lg:pt-20">
       <div className="mr-10 lg:mr-0">
         <Fade {...properties}>
           {heroData?.images?.map((image) => (
