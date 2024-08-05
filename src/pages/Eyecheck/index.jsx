@@ -14,7 +14,7 @@ export default function Eyecheck() {
       <SEOHelmet title={metadata.title} content={metadata.desc} />
 
       <main>
-        <section className="flex flex-col gap-10" data-animate-in="true" data-animation-order="">
+        <section className="flex flex-col gap-10" data-animate-in="true" data-animation-order="1">
           <EyecheckInfo />
           <BookingForm />
         </section>

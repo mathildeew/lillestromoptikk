@@ -1,10 +1,7 @@
 import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
-import ScrollingGlasses from "../../components/ScrollingGlasses";
-import Intro from "../../components/Intro";
 import Hero from "../../components/Hero";
 import TimeForCheck from "../../components/TimeForEyecheck";
-import Newsletter from "../../components/Newsletter";
 import Temporary from "../../components/Temporary";
 import useAPI from "../../hooks/useAPI";
 import { apiQuieries } from "../../sanity/apiQuieries";
@@ -35,9 +32,9 @@ export default function Home() {
       {/* <ScrollingGlasses /> */}
 
       <main data-animate-in="true" data-animation-order="1">
+        {temporaryData.image && <Temporary data={temporaryData} />}
         <Hero />
         <TimeForCheck />
-        {temporaryData.image && <Temporary data={temporaryData} />}
       </main>
     </>
   );

@@ -1,7 +1,7 @@
 export default function LogMAR() {
   return (
-    <div className="relative max-w-xl h-full w-full mx-auto">
-      <div className="w-full h-full absolute p-4 backdrop-blur-md transition-all duration-500 ease-in-out hover:backdrop-blur-0"></div>
+    <div className="relative max-w-xl h-full w-full mx-auto border-4">
+      <div className="w-full h-full absolute p-4 transition-all duration-500 ease-in-out backdrop-blur-sm hover:backdrop-blur-0"></div>
 
       <div className="p-2">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 1460">
