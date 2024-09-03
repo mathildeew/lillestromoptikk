@@ -19,8 +19,6 @@ export default function BrandsHome() {
     getData();
   }, [fetchAPI]);
 
-  console.log(brandsData);
-
   return (
     <section className="max-w-7xl mx-auto px-4 py-24 flex flex-col gap-16 items-center justify-center md:px-10">
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">

@@ -7,6 +7,7 @@ import Loader from "../../components/layout/Loader";
 import Hero from "../../components/features/home/Hero";
 import TimeForCheck from "../../components/features/home/TimeForEyeCheck";
 import Temporary from "../../components/features/home/Temporary";
+import BrandsHome from "../../components/features/home/Brands";
 
 export default function Home() {
   const [temporaryData, setTemporaryData] = useState([]);
@@ -31,15 +32,14 @@ export default function Home() {
   return (
     <>
       <SEOHelmet title={metadata.title} content={metadata.desc} />
-      {/* <ScrollingGlasses /> */}
 
       {isLoading && <Loader />}
-
       {isSuccess && (
         <main data-animate-in="true">
-          {temporaryData.image && <Temporary data={temporaryData} />}
+          {temporaryData.published === true && <Temporary data={temporaryData} />}
           <Hero />
           <TimeForCheck />
+          <BrandsHome />
         </main>
       )}
     </>
