@@ -17,11 +17,13 @@ const about = {
       title: 'Intro',
       type: 'text',
       rows: 4,
+      description: 'Kort tekst som vises øverst på siden.',
       validation: (rule) => rule.required(),
     },
     {
       name: 'sections',
       title: 'Avsnitt',
+      description: 'Trykk på "Add item" for å legge til et nytt avsnitt med tekst og bilde.',
       type: 'array',
       of: [{type: 'section'}],
       options: {

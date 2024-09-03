@@ -35,7 +35,7 @@ export default function Brands() {
             <section className="w-full text-center bg-grey flex flex-col items-center px-4 py-10 md:px-10 lg:py-20">
               <div className="text-center max-w-4xl flex flex-col gap-4">
                 <h1>Våre merker</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos explicabo ratione vero accusamus perspiciatis delectus quod, nostrum dolore modi minus eaque. Porro tempora molestias temporibus animi praesentium quia aspernatur quidem. Alltid med kvalitet og varighet i tankene.</p>
+                <p>Hos oss finner du et nøye kuratert utvalg av innfatninger og solbriller fra våre favorittmerker — alltid med kvalitet, individualitet og varighet i tankene.</p>
               </div>
             </section>
 

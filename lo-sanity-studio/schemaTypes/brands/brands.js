@@ -36,7 +36,7 @@ const ourBrands = {
       name: 'image',
       title: 'Bilde',
       type: 'image',
-      description: 'Bør være under 200KB.',
+      description: 'Bilde som vises sammen med tekst om merke. Bør være under 200KB.',
       validation: (rule) => rule.required(),
       options: {hotspot: true},
       fields: [

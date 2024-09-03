@@ -105,31 +105,6 @@ export const myStructure = (S) =>
             ]),
         ),
 
-      S.listItem()
-        .title('Gjenbrukshjørnet')
-        .icon(RefreshIcon)
-        .child(
-          S.list()
-            .title('Gjenbruksgjørnet')
-            .items([
-              S.listItem()
-                .title('Metadata')
-                .icon(InfoOutlineIcon)
-                .child(
-                  S.document()
-                    .schemaType('recyclingMetadata')
-                    .documentId('recyclingMetadata')
-                    .title('Metadata'),
-                ),
-              S.listItem()
-                .title('Innhold')
-                .icon(AddIcon)
-                .child(
-                  S.document().schemaType('recycling').documentId('recycling').title('Innhold'),
-                ),
-            ]),
-        ),
-
       ...S.documentTypeListItems().filter(
         (listItem) =>
           ![
@@ -138,11 +113,10 @@ export const myStructure = (S) =>
             'about',
             'aboutMetadata',
             'homeMetadata',
+            'hero',
             'temporary',
             'ourBrands',
             'brandsMetadata',
-            'recyclingMetadata',
-            'recycling',
           ].includes(listItem.getId()),
       ),
     ])

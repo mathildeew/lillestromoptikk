@@ -6,21 +6,21 @@ const temporary = {
     {
       title: 'Skal dette publiseres?',
       name: 'published',
-      description: 'Publiseres dette vises det på forsiden øverst.',
+      description: 'Brukes om noe skal vises midlertidig, feks. salg, endrede åpningstider osv. ',
       type: 'boolean',
     },
     {
       name: 'title',
       title: 'Tittel',
       type: 'string',
-      description: 'Det er mulig å kun laste opp bilde.',
+      description: 'Ikke nødvendig. Det er mulig å kun laste opp bilde.',
     },
     {
       name: 'text',
       title: 'Tekst',
       type: 'text',
       description: 'Innholdet til seksjonen.',
-      description: 'Det er mulig å kun laste opp bilde.',
+      description: 'Ikke nødvendig. Det er mulig å kun laste opp bilde.',
       rows: 3,
     },
     {
