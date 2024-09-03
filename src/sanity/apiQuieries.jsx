@@ -15,7 +15,9 @@ export const apiQuieries = (query) => ({
   hero: `
   *[_type == "hero"][0]{
     title, 
-    images
+    "imageUrl": image.asset -> url,
+    "imageAlt": image.alt,
+    content
    }
   `,
 
@@ -34,7 +36,10 @@ export const apiQuieries = (query) => ({
     "imageUrl": image.asset -> url,
     "imageAlt": image.alt,
     image,
-    content
+    content,
+    inFocus,
+    "focusUrl": focusImage.asset -> url,
+    "focusAlt": focusImage.alt
    }
   `,
 
