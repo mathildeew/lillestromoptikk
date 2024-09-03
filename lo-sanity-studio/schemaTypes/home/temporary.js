@@ -4,6 +4,12 @@ const temporary = {
   type: 'document',
   fields: [
     {
+      title: 'Skal dette publiseres?',
+      name: 'published',
+      description: 'Publiseres dette vises det på forsiden øverst.',
+      type: 'boolean',
+    },
+    {
       name: 'title',
       title: 'Tittel',
       type: 'string',
