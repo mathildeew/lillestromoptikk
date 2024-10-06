@@ -33,6 +33,7 @@ const about = {
     {
       name: 'carousel',
       title: 'Bildekarusell',
+      description: 'Legg til bilder for å opprette en bildekarusell nederst på siden.',
       type: 'array',
       of: [{type: 'carouselImage'}],
       options: {

@@ -7,7 +7,6 @@ const section = {
       name: 'heading',
       title: 'Overskrift',
       type: 'string',
-      validation: (rule) => rule.required(),
     },
     {
       name: 'text',

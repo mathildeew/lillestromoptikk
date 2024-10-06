@@ -43,7 +43,7 @@ export default function About() {
               </div>
             </section>
 
-            <div className="max-w-7xl flex flex-col gap-16 px-4 md:px-10">
+            <div className="max-w-7xl flex flex-col gap-4 px-4 mb-10 md:gap-16 md:px-10 lg:mb-20">
               {aboutData.sections?.map((section, index) => (
                 <section key={section._key} className={`w-full flex flex-col gap-4 items-center  md:flex-row md:gap-10 ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}>
                   <img className="w-full h-96 object-cover rounded-xl md:w-1/2" src={urlFor(section.image).url()} alt={section.image.altText} />
@@ -55,7 +55,7 @@ export default function About() {
               ))}
             </div>
 
-            <ImageCarousel data={carouselImages} />
+            {carouselImages && <ImageCarousel data={carouselImages} />}
           </section>
         </main>
       )}

@@ -12,7 +12,7 @@ export default function Contact() {
 
       <main data-animate-in="true">
         <section className="flex flex-col gap-16 items-center pb-16">
-          <section className="w-full text-center bg-grey flex flex-col items-center px-4 py-10 md:px-10 lg:py-20">
+          <section className="w-full text-center bg-grey flex flex-col items-center gap-4 px-4 py-10 md:px-10 lg:py-20">
             <div className="text-center max-w-4xl flex flex-col gap-4">
               <h1>Kontakt oss</h1>
               <p>Send oss en e-post, så tar vi kontakt så fort vi kan. Du kan også ringe oss, så får du kanskje svar på det du lurer på med en gang.</p>
@@ -22,7 +22,7 @@ export default function Contact() {
               <a href="mailto:post@lillestromoptikk.no" className="btn-primary bg-green361 border-black">
                 post@lillestromoptikk.no
               </a>
-              <a href="mailto:post@lillestromoptikk.no" className="btn-primary  bg-green361 border-black">
+              <a href="tel:64808585" className="btn-primary  bg-green361 border-black">
                 tlf. 64 80 85 85
               </a>
             </div>
