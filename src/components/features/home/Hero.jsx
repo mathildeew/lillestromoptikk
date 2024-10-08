@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section className="w-full max-w-7xl h-fit px-4 pt-16 mx-auto md:px-10 lg:grid lg:grid-cols-2 lg:items-center lg:pt-20">
       <div className="z-20 mr-6 lg:mr-0">
-        <img src={heroData.imageUrl} alt={heroData.imageAlt} className="w-full h-auto object-cover rounded-xl" />
+        <img src={heroData.imageUrl} alt={heroData.imageAlt} className="w-full h-auto object-cover rounded-xl sm:max-h-[450px]" />
       </div>
 
       <div className="w-full">

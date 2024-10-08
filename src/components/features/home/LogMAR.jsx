@@ -16,7 +16,7 @@ export default function LogMAR() {
   );
 
   return (
-    <div className=" max-w-lg h-full w-full mx-auto">
+    <div className="max-w-lg w-full mx-auto">
       <div className="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 1460">
           <g transform="translate(-39 -86)">
