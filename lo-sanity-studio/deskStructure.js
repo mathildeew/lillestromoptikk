@@ -10,6 +10,7 @@ import {
   SparklesIcon,
   SparkleIcon,
   ActivityIcon,
+  ComposeIcon,
 } from '@sanity/icons'
 
 export const myStructure = (S) =>
@@ -83,6 +84,7 @@ export const myStructure = (S) =>
                     .documentId('brandsMetadata')
                     .title('Metadata'),
                 ),
+
               S.listItem().title('Merker').icon(AddIcon).child(S.documentTypeList('ourBrands')),
             ]),
         ),
@@ -133,6 +135,7 @@ export const myStructure = (S) =>
             'hero',
             'eyecheckMetadata',
             'brandsMetadata',
+            'content',
             'ourBrands',
             'aboutMetadata',
             'about',

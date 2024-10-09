@@ -49,8 +49,6 @@ export default function Brands() {
                   </div>
                 </section>
               ))}
-
-              <p className="font-semibold">Vi fører også merker som Tom Ford, Ray-Ban, Face a Face, Fleye, Traction Production og mange fler.</p>
             </div>
           </section>
         </main>

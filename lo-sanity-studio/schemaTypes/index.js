@@ -9,6 +9,7 @@ import temporary from './home/temporary'
 import eyecheckMetadata from './eyecheck/metadata'
 // Brands
 import brandsMetadata from './brands/metadata'
+import content from './brands/content'
 import ourBrands from './brands/brands'
 // About
 import aboutMetadata from './about/metadata'
@@ -26,6 +27,7 @@ export const schemaTypes = [
   temporary,
   eyecheckMetadata,
   brandsMetadata,
+  content,
   ourBrands,
   aboutMetadata,
   about,

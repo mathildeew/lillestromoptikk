@@ -30,6 +30,11 @@ export const apiQuieries = (query) => ({
    }
   `,
 
+  content: `
+  *[_type == "content"][0]{
+   }
+  `,
+
   ourBrands: `
   *[_type == "ourBrands"]{
     _id,

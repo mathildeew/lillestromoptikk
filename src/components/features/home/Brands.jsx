@@ -20,18 +20,21 @@ export default function BrandsHome() {
   }, [fetchAPI]);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-24 flex flex-col gap-16 items-center justify-center md:px-10">
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-        {brandsData.map((brand, index) => (
-          <img key={index} src={brand.focusUrl} alt={brand.focusAlt} className="w-full h-auto object-cover" />
-        ))}
+    <section className="max-w-7xl mx-auto px-4 py-24 flex flex-col gap-4 items-center justify-center md:px-10">
+      <h2>Våre merker</h2>
+      <div className="flex flex-col gap-16 items-center justify-center">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+          {brandsData.map((brand, index) => (
+            <img key={index} src={brand.focusUrl} alt={brand.focusAlt} className="w-full h-auto object-cover" />
+          ))}
+        </div>
+        <button className="btn-primary bg-green361">
+          <Link to={"/merker"} className="flex items-center gap-2">
+            Se alle våre merker
+            <FontAwesomeIcon icon={faChevronRight} className="text-md" />
+          </Link>
+        </button>
       </div>
-      <button className="btn-primary bg-green361">
-        <Link to={"/merker"} className="flex items-center gap-2">
-          Se alle våre merker
-          <FontAwesomeIcon icon={faChevronRight} className="text-md" />
-        </Link>
-      </button>
     </section>
   );
 }
