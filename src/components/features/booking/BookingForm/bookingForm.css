@@ -6,6 +6,11 @@
   /* max-width: 700px; */
 }
 
+/* Overstyrer Tailwind class .container*/
+.coptikk-booking-embed .container {
+  width: auto;
+}
+
 .user-form {
   max-width: 600px;
 }

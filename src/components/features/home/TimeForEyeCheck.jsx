@@ -23,8 +23,6 @@ export default function TimeForCheck() {
             </Link>
           </button>
         </div>
-
-        {/* <img src="public/brands/masunaga/GMS123_124_2.jpg" className="w-full h-96 object-cover rounded-xl md:h-[600px] lg:h-auto" /> */}
       </div>
     </section>
   );
