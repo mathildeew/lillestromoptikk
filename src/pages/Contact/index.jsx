@@ -2,13 +2,20 @@ import { PortableText } from "@portabletext/react";
 import { PortableTextFooter } from "../../components/layout/footer/PortableTextFooter";
 import { useOpeningHours } from "../../context/GetOpeninghours";
 import SEOHelmet from "../../components/SEOHelmet";
+import getMetadata from "../../hooks/getMetadata";
 
 export default function Contact() {
   const { openingHours } = useOpeningHours();
 
+  const defaultMetadata = {
+    title: "Contact oss → Lillestrøm Optikk",
+    desc: "",
+  };
+  const metadata = getMetadata("contactMetadata", defaultMetadata);
+
   return (
     <>
-      <SEOHelmet title={"Kontakt oss"} content={"Du finner oss i Storgata 22, Lillestrøm. Mail post@lillestromoptikk.no, telefon 64 80 85 85. "} />
+      <SEOHelmet title={metadata.title} content={metadata.desc} />
 
       <main data-animate-in="true">
         <section className="flex flex-col gap-16 items-center pb-16">

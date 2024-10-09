@@ -5,7 +5,7 @@ import {
   ClockIcon,
   HomeIcon,
   InfoOutlineIcon,
-  RefreshIcon,
+  CommentIcon,
   AddIcon,
   SparklesIcon,
   SparkleIcon,
@@ -68,24 +68,6 @@ export const myStructure = (S) =>
         ),
 
       S.listItem()
-        .title('Om oss')
-        .icon(HeartIcon)
-        .child(
-          S.list()
-            .title('Om oss')
-            .items([
-              S.listItem()
-                .title('Metadata')
-                .icon(InfoOutlineIcon)
-                .child(S.document().schemaType('aboutMetadata').documentId('aboutMetadata')),
-              S.listItem()
-                .title('Innhold')
-                .icon(AddIcon)
-                .child(S.document().schemaType('about').documentId('about')),
-            ]),
-        ),
-
-      S.listItem()
         .title('Våre merker')
         .icon(SparklesIcon)
         .child(
@@ -105,18 +87,56 @@ export const myStructure = (S) =>
             ]),
         ),
 
+      S.listItem()
+        .title('Om oss')
+        .icon(HeartIcon)
+        .child(
+          S.list()
+            .title('Om oss')
+            .items([
+              S.listItem()
+                .title('Metadata')
+                .icon(InfoOutlineIcon)
+                .child(S.document().schemaType('aboutMetadata').documentId('aboutMetadata')),
+              S.listItem()
+                .title('Innhold')
+                .icon(AddIcon)
+                .child(S.document().schemaType('about').documentId('about')),
+            ]),
+        ),
+
+      S.listItem()
+        .title('Kontakt oss')
+        .icon(CommentIcon)
+        .child(
+          S.list()
+            .title('Kontakt oss')
+            .items([
+              S.listItem()
+                .title('Metadata')
+                .icon(InfoOutlineIcon)
+                .child(
+                  S.document()
+                    .schemaType('contactMetadata')
+                    .documentId('contactMetadata')
+                    .title('Metadata'),
+                ),
+            ]),
+        ),
+
       ...S.documentTypeListItems().filter(
         (listItem) =>
           ![
             'openingHours',
-            'eyecheckMetadata',
-            'about',
-            'aboutMetadata',
             'homeMetadata',
-            'hero',
             'temporary',
-            'ourBrands',
+            'hero',
+            'eyecheckMetadata',
             'brandsMetadata',
+            'ourBrands',
+            'aboutMetadata',
+            'about',
+            'contactMetadata',
           ].includes(listItem.getId()),
       ),
     ])
