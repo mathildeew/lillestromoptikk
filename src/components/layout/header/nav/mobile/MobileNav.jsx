@@ -14,7 +14,7 @@ export default function MobileNav({ openMenu, setOpenMenu }) {
           Om oss
         </Link>
         <Link to={"/kontakt-oss"} onClick={() => setOpenMenu(!openMenu)} className="navLink font-heading text-lg p-4">
-          Kontakt
+          Kontakt oss
         </Link>
         <a href="https://www.coptikk.no/linsebutikk" className="navLink font-heading text-lg p-4">
           Kjøp linser

@@ -14,7 +14,7 @@ export default function DesktopNav() {
           Om oss
         </Link>
         <Link to="/kontakt-oss" className="navLink font-heading text-lg p-2" data-animate-in="true" data-animation-order="4">
-          Kontakt
+          Kontakt oss
         </Link>
         <a href="https://www.coptikk.no/linsebutikk" className="navLink font-heading text-lg p-2" data-animate-in="true" data-animation-order="5">
           Kjøp linser
