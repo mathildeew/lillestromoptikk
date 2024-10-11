@@ -3,7 +3,6 @@ import { apiQuieries } from "../../sanity/apiQuieries";
 import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
 import useAPI from "../../hooks/useAPI";
-import Loader from "../../components/layout/Loader";
 import Hero from "../../components/features/home/Hero";
 import TimeForCheck from "../../components/features/home/TimeForEyeCheck";
 import Temporary from "../../components/features/home/Temporary";
@@ -33,7 +32,6 @@ export default function Home() {
     <>
       <SEOHelmet title={metadata.title} content={metadata.desc} />
 
-      {isLoading && <Loader />}
       {isSuccess && (
         <main data-animate-in="true" data-animation-order="1" className="flex flex-col items-center">
           {temporaryData.published === true && <Temporary data={temporaryData} />}
