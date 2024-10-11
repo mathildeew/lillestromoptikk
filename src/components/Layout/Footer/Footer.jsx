@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { PortableText } from "@portabletext/react";
 import { useOpeningHours } from "../../../context/GetOpeninghours";
-import { PortableTextFooter } from "./PortableTextFooter";
+import { PortableTextFooter } from "./footerTextConfig";
 import Newsletter from "../../Newsletter";
 
 export default function Footer() {

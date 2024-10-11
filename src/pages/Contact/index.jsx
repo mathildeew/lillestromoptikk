@@ -1,5 +1,5 @@
 import { PortableText } from "@portabletext/react";
-import { PortableTextFooter } from "../../components/layout/footer/PortableTextFooter";
+import { PortableTextFooter } from "../../components/layout/footer/footerTextConfig";
 import { useOpeningHours } from "../../context/GetOpeninghours";
 import SEOHelmet from "../../components/SEOHelmet";
 import getMetadata from "../../hooks/getMetadata";
