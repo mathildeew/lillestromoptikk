@@ -35,7 +35,7 @@ export default function Home() {
 
       {isLoading && <Loader />}
       {isSuccess && (
-        <main data-animate-in="true" className="flex flex-col items-center">
+        <main data-animate-in="true" data-animation-order="1" className="flex flex-col items-center">
           {temporaryData.published === true && <Temporary data={temporaryData} />}
           <Hero />
           <TimeForCheck />
