@@ -8,7 +8,9 @@
 
 ## Bygget med
 
+- Sanity
 - React
 - Tailwind CSS
 - Integrert bookingsystem med en allerede eksisterende API
 - EmailJS
+- GSAP
