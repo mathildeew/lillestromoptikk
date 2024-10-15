@@ -27,12 +27,12 @@ export default function Header() {
 
           <DesktopNav />
 
-          <div className="w-8 h-8 relative lg:hidden" onClick={() => setOpenMenu(!openMenu)} aria-label="Åpne og lukk menu">
-            <span className={`w-full h-0.5 bg-black absolute top-2 transition-all duration-500 ease-in-out ${openMenu && "translate-x-4 opacity-0"}`}></span>
-            <span className={`w-full h-0.5 bg-black absolute top-4 transition-all duration-500 ease-in-out ${openMenu && "opacity-100 -rotate-45"}`}></span>
-            <span className={`w-full h-0.5 bg-black absolute top-4 transition-all duration-500 ease-in-out ${openMenu && "rotate-45"}`}></span>
-            <span className={`w-full h-0.5 bg-black absolute top-6 transition-right duration-500 ease-in-out ${openMenu && "-translate-x-4 opacity-0"}`}></span>
-          </div>
+          <button className="w-8 h-8 relative lg:hidden" onClick={() => setOpenMenu(!openMenu)} aria-label="Åpne og lukk menu">
+            <span className={`w-full h-0.5 bg-black absolute left-0 top-2 transition-all duration-500 ease-in-out ${openMenu && "translate-x-4 opacity-0"}`}></span>
+            <span className={`w-full h-0.5 bg-black absolute left-0 top-4 transition-all duration-500 ease-in-out ${openMenu && "opacity-100 -rotate-45"}`}></span>
+            <span className={`w-full h-0.5 bg-black absolute left-0 top-4 transition-all duration-500 ease-in-out ${openMenu && "rotate-45"}`}></span>
+            <span className={`w-full h-0.5 bg-black absolute left-0 top-6 transition-right duration-500 ease-in-out ${openMenu && "-translate-x-4 opacity-0"}`}></span>
+          </button>
         </div>
         <MobileNav openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </header>

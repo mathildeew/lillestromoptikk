@@ -9,7 +9,7 @@ export default function LogMAR() {
     () => {
       gsap.to(".disappear", { opacity: 0, repeat: -1, duration: 8, yoyo: true });
       gsap.to(".disappearTwo", { opacity: 0, repeat: -1, duration: 10, yoyo: true, delay: 4, ease: "circ.inOut" });
-      gsap.to(".balance", { transform: "skew(10deg, -5deg)", repeat: -1, duration: 9, yoyo: true, delay: 3, ease: "bounce.inOut" });
+      gsap.to(".balance", { skewX: 20, skewY: -25, repeat: -1, duration: 3, yoyo: true, delay: 3, ease: "bounce.inOut" });
       gsap.to(".rotate", { scaleX: 0, transformOrigin: "center center", duration: 3, repeat: -1, yoyo: true, delay: 1, ease: "sine.inOut" });
       gsap.to(".green", { fill: "#43b02a", duration: 3, ease: "power1.inOut", yoyo: true, repeat: -1 });
     },

@@ -31,7 +31,11 @@ export default function Newsletter() {
 
   return (
     <div className="max-w-lg flex flex-col gap-4 sm:col-span-3 lg:col-span-1">
-      <h3>Meld deg på vårt nyhetsbrev*</h3>
+      <label htmlFor="epost">
+        {" "}
+        <h3>Meld deg på vårt nyhetsbrev* </h3>
+      </label>
+
       <form className="flex flex-col gap-4" ref={form} onSubmit={sendEmail}>
         <div className="relative w-full flex flex-col gap-6">
           <input id="epost" type="email" name="user_email" className="bg-white w-full py-3 pl-6 border-2 border-black rounded-full" placeholder="navn@epost.no" required />
@@ -41,8 +45,10 @@ export default function Newsletter() {
         </div>
 
         <div className="flex items-center gap-4">
-          <input className="bg-white" type="checkbox" role="checkbox" onChange={handleCheckboxChange} aria-checked={checked} required />
-          <p>Ja takk, send meg nyhetsbrev</p>
+          <input className="bg-white" type="checkbox" role="checkbox" id="mailCheckbox" onChange={handleCheckboxChange} aria-checked={checked} required />
+          <label htmlFor="mailCheckbox">
+            <p>Ja takk, send meg nyhetsbrev</p>
+          </label>
         </div>
       </form>
       <p className="italic">* Kun gode tilbud og informasjon inkludert</p>

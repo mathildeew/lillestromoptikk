@@ -25,7 +25,7 @@ export default function BrandsHome() {
       <div className="flex flex-col gap-16 items-center justify-center">
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           {brandsData.map((brand, index) => (
-            <img key={index} src={brand.focusUrl} alt={brand.focusAlt} className="w-full h-auto object-cover" />
+            <img key={index} src={brand.focusUrl} alt={brand.title} className="w-full h-auto object-cover" />
           ))}
         </div>
         <button className="btn-primary bg-green361">
