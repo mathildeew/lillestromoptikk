@@ -44,9 +44,15 @@ export default function Footer() {
 
         <div>
           <p className="text-sm">{new Date().getFullYear()} &copy; Lillestrøm Optikk</p>
-          <p className="text-sm mr-2">
-            Utvikling og design av{" "}
-            <a href="https://www.mathildeelinor.no" className="text-base underline hover:text-green361">
+          <p className="text-xs mr-2">
+            Visuell identitet:{" "}
+            <a href="https://www.alltomorrows.no/" className="underline hover:text-green361">
+              All Tomorrow’s
+            </a>
+          </p>
+          <p className="text-xs mr-2">
+            Webdesign og utvikling:{" "}
+            <a href="https://www.mathildeelinor.no" className="underline hover:text-green361">
               Mathilde Elinor
             </a>
           </p>
