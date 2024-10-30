@@ -4,7 +4,7 @@ export default function DesktopNav() {
   return (
     <nav className="hidden w-2/3 lg:block">
       <div className="flex items-center justify-between">
-        <Link to="/timebestilling" className="navLink font-heading text-lg p-2" data-animate-in="true" data-animation-order="1">
+        <Link to="https://www.coptikk.no/bestill-synstest?single=true&current_optician=5271" className="navLink font-heading text-lg p-2" data-animate-in="true" data-animation-order="1">
           Timebestilling
         </Link>
         <Link to="/merker" className="navLink font-heading text-lg p-2" data-animate-in="true" data-animation-order="2">
