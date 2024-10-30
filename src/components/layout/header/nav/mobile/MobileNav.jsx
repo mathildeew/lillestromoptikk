@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export default function MobileNav({ openMenu, setOpenMenu }) {
@@ -23,3 +24,8 @@ export default function MobileNav({ openMenu, setOpenMenu }) {
     </nav>
   );
 }
+
+MobileNav.propTypes = {
+  openMenu: PropTypes.bool.isRequired,
+  setOpenMenu: PropTypes.func.isRequired,
+};
