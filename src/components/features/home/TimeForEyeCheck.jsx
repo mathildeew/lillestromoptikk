@@ -17,10 +17,10 @@ export default function TimeForCheck() {
           </div>
 
           <button className="btn-primary bg-green361">
-            <Link to={"/timebestilling"} className="flex items-center gap-2">
+            <a href={"https://www.coptikk.no/bestill-synstest?single=true&current_optician=5271"} className="flex items-center gap-2">
               Bestill synsundersøkelse
               <FontAwesomeIcon icon={faChevronRight} className="text-md" />
-            </Link>
+            </a>
           </button>
         </div>
       </div>
