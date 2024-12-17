@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useEffect } from "react";
-import { booking } from "./index-1.0.mjs";
+import { booking } from "./index-1.1.mjs";
 import "./bookingForm.css";
 import { useLocation } from "react-router-dom";
 

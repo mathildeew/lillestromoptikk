@@ -2,25 +2,8 @@
 @import url("https://use.typekit.net/hgq0xzm.css");
 
 .coptikk-app {
-  font-size: 18px;
-  /* max-width: 700px; */
+  font-size: 16px;
 }
-
-/* Overstyrer Tailwind class .container*/
-.coptikk-booking-embed .container {
-  width: auto;
-}
-
-.user-form {
-  max-width: 600px;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 1px solid #acc3ff;
-}
-
 .coptikk-app [type="color"],
 .coptikk-app [type="date"],
 .coptikk-app [type="datetime-local"],
@@ -41,13 +24,12 @@ select:focus {
   width: 100%;
   height: 2.4375rem;
   margin: 0 0 1rem;
-  /* padding: 0.5rem; */
+  padding: 0.5rem;
   border: 1px solid #cacaca;
   border-radius: 20px;
   background-color: #fefefe;
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-  /* font-family: inherit;
-   */
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -57,22 +39,13 @@ select:focus {
     border-color 0.25s ease-in-out;
   appearance: none;
 }
-
-.coptikk-app [type="text"],
-[type="search"],
-[type="email"] {
-  font-family:
-    Open Sans,
-    sans-serif;
-}
-
 .coptikk-app .button {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
   padding: 0.66667rem 1.33333rem 0.8rem;
   border: 1px solid transparent;
-  border-radius: 100px;
+  border-radius: 20px;
   transition:
     background-color 0.25s ease-out,
     color 0.25s ease-out;
@@ -84,7 +57,6 @@ select:focus {
   cursor: pointer;
   background-color: #004f68;
   color: #fefefe;
-  max-width: 300px;
 }
 .coptikk-app .button.expanded {
   display: block;
@@ -99,12 +71,12 @@ select:focus {
   border: 1px solid #cacaca;
   border-radius: 20px;
   background-color: #fefefe;
-  /* font-family: inherit; */
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #0a0a0a;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: black, 138, 138%29'></polygon></svg>");
   background-origin: content-box;
   background-position: right -1rem center;
   background-repeat: no-repeat;
@@ -119,22 +91,25 @@ select:focus {
   cursor: not-allowed;
 }
 .coptikk-app select.custom-select {
-  border: 1px solid black;
+  /* border: 1px solid #004f68; */
   background-color: #fff;
-  color: #004f68;
+  /* color: #004f68; */
   border-radius: 20px;
   margin: 0;
-  padding: 15px 50px 15px 18px;
+  /* padding: 11px 50px 11px 18px; */
   width: auto;
   height: auto;
   line-height: 1;
-  /* font-size: 1rem; */
-  font-size: 18px;
+  font-size: 1rem;
   background-position: right -32px center;
   background-size: 16px 8px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='16' height='8' viewBox='0 0 16 8'><polygon points='0,0 16,0 8,8' style='fill: black'></polygon></svg>");
-  outline: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='16' height='8' viewBox='0 0 16 8'><polygon points='0,0 16,0 8,8' style='fill: black, 104%29'></polygon></svg>");
+
+  /* added */
+  border: 1px solid black;
+  padding: 11px 50px 11px 18px;
 }
+
 .coptikk-app .calendar-dropdown {
   padding: 10px;
   border: 1px solid #bbb;
@@ -154,17 +129,18 @@ select:focus {
   width: 100%;
 }
 .coptikk-app .store-field-wrapper .store-field {
-  /* margin: rem(0 0 28px); */
-  /* padding: rem(0.5rem 18px); */
-  padding: 22px 50px 22px 18px;
-
+  margin: rem(0 0 28px);
+  padding: rem(0.5rem 18px);
   height: rem(39px);
   width: 100%;
-  /* color: red; */
+  /* color: #004f68; */
   background-color: #fff;
 }
 .coptikk-app .store-field-wrapper .store-field::placeholder {
   opacity: 1;
+  /* color: #004f68; */
+
+  /* added */
   color: black;
 }
 .coptikk-app .store-field-wrapper .error {
@@ -185,28 +161,26 @@ select:focus {
 .coptikk-app .columns {
   flex: 1 1 0px;
   padding-right: 0.625rem;
-  /* padding-left: 0.625rem; */
+  padding-left: 0.625rem;
   min-width: 0;
 }
 @media print, screen and (min-width: 40em) {
   .coptikk-app .column,
   .coptikk-app .columns {
     padding-right: 0.9375rem;
-    /* padding-left: 0.9375rem; */
+    padding-left: 0.9375rem;
   }
 }
 .coptikk-app .small-12 {
   flex: 0 0 100%;
   max-width: 100%;
-  font-size: 18px;
-  letter-spacing: 1.5px;
 }
 .coptikk-app .small-6 {
   flex: 0 0 50%;
   /* max-width: 50%; */
 }
 .coptikk-app .arrow-down_icon-wrapper {
-  color: black;
+  /* color: #004f68; */
   cursor: pointer;
   margin: 0;
   width: auto;
@@ -215,19 +189,24 @@ select:focus {
   font-size: 1rem;
 }
 .coptikk-app .arrow-down_icon-wrapper .store-field {
-  color: black;
-  border-radius: 20px;
-  border: 1px solid #004f68;
+  /* color: #004f68; */
+  border-radius: 25px;
+  /* border: 1px solid #004f68; */
   /* width: calc(100% - 20px); */
-  padding: 15px 0 11px 20px;
-  font-size: 18px;
+  /* padding: 10px 0 10px 20px; */
+
+  /* added */
+  border: 1px solid black;
+  padding: 3px 50px 3px 18px;
+  margin-bottom: 1.86667rem;
 }
+
 .coptikk-app .arrow-down_icon-wrapper .arrow-down_icon {
-  color: #004f68;
+  /* color: #004f68; */
   top: 0.5rem;
   position: absolute;
   cursor: pointer;
-  margin: 5px 0 0 15px;
+  margin: 0 0 0 15px;
   width: 24px;
   height: 24px;
   right: 10px;
@@ -459,9 +438,12 @@ select:focus {
 }
 .coptikk-app .react-datepicker__navigation-icon {
   position: relative;
-  top: -1px;
+  /* top: -1px; */
   font-size: 20px;
   width: 0;
+
+  /* added */
+  top: 18px;
 }
 .coptikk-app .react-datepicker__navigation-icon--next {
   left: -2px;
@@ -711,8 +693,11 @@ select:focus {
 .coptikk-app .react-datepicker__year-text--in-selecting-range,
 .coptikk-app .react-datepicker__year-text--selected {
   border-radius: 0.3rem;
-  background-color: #c7dee5;
+  /* background-color: #c7dee5; */
   color: #fff;
+
+  /* added */
+  background-color: #33871f;
 }
 .coptikk-app .react-datepicker__day--in-range:hover,
 .coptikk-app .react-datepicker__day--in-selecting-range:hover,
@@ -733,9 +718,13 @@ select:focus {
 .coptikk-app .react-datepicker__quarter-text--keyboard-selected,
 .coptikk-app .react-datepicker__year-text--keyboard-selected {
   border-radius: 0.3rem;
-  background-color: theme(colors.green361);
+  /* background-color: #004f68; */
   color: #fff;
+
+  /* added */
+  background-color: #33871f;
 }
+
 .coptikk-app .react-datepicker__day--keyboard-selected:hover,
 .coptikk-app .react-datepicker__month-text--keyboard-selected:hover,
 .coptikk-app .react-datepicker__quarter-text--keyboard-selected:hover,
@@ -952,12 +941,13 @@ select:focus {
   font-size: 1.44rem;
 }
 .coptikk-app .cop .cop__date-group {
-  width: 280px;
+  width: 300px;
 }
 .coptikk-app .cop .store-select {
   width: 100%;
   margin-bottom: 1.86667rem;
 }
+
 .coptikk-app .cop .react-calendar {
   width: 350px;
   max-width: 100%;
@@ -1004,10 +994,15 @@ select:focus {
   overflow: hidden;
 }
 .coptikk-app .cop .member-label {
-  font-size: 25px;
-  font-family: theme(fontFamily.heading);
-  font-weight: bolder;
+  font-size: 20px;
   padding-bottom: 1rem;
+
+  /* added */
+  font-family: tablet-gothic, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 .coptikk-app .cop .container {
   display: block;
@@ -1018,15 +1013,16 @@ select:focus {
   font-size: 22px;
   user-select: none;
   margin-top: 5px;
+
+  /* added */
+  width: fit-content;
 }
 .coptikk-app .cop .fc-primary {
-  border-color: black;
-  color: black;
-  font-size: 18px;
-  outline: none;
+  /* border-color: #004f68; */
+  /* color: #004f68; */
 }
 .coptikk-app .cop .fc-primary::placeholder {
-  color: #680000;
+  /* color: #004f68; */
 }
 .coptikk-app .cop .container input {
   position: absolute;
@@ -1037,24 +1033,32 @@ select:focus {
   position: absolute;
   top: 0;
   left: 0;
-  height: 24px;
-  width: 24px;
-  border: 1px solid black;
+  height: 18px;
+  width: 18px;
+  /* border: 1px solid #004f68; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* added */
+  border: 1px solid #33871f;
 }
 .coptikk-app .cop .return-btn {
-  font-size: 16px;
-  font-weight: 600;
-  background-color: theme(colors.green361);
-  /* border-color: #90abe8; */
-  color: black;
+  /* background-color: #c7dee5; */
+  /* border-color: #c7dee5; */
+  color: #161616;
   display: block;
-  padding: 20px;
-}
 
+  /* added */
+  background-color: #43b02a;
+  border-radius: 9999px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 600;
+}
 .coptikk-app .cop .return-btn-step {
   margin: 40px 0;
 }
@@ -1073,7 +1077,10 @@ select:focus {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: black;
+  /* background: #004f68; */
+
+  /* added */
+  background: #33871f;
 }
 .coptikk-app .cop .store-field-with-error {
   border-color: #b8686a;
@@ -1116,13 +1123,11 @@ select:focus {
 }
 .coptikk-app .cop__booking-form {
   overflow-y: auto;
-  /* padding: 15px; */
+  padding: 15px;
 }
 .coptikk-app .cop__booking-form__title {
-  font-size: 24px;
-  color: black;
+  color: #004f68;
   font-weight: 700;
-  margin-bottom: 0px;
 }
 .coptikk-app .cop__booking-form__success {
   background-color: #fff;
@@ -1150,28 +1155,21 @@ select:focus {
 .coptikk-app .cop__sub-header {
   font-weight: 400;
   margin: 0 5px 20px;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  line-height: 35px;
 }
 .coptikk-app .cop__big-text-container {
   margin: 0;
   padding: 0.5rem 1.5rem;
   height: 2.6rem;
   min-height: 110px;
-  border: 1px solid black;
-  outline: none;
 }
 .coptikk-app .cop__separator {
-  /* border-top: 1px solid #bbb;
-  margin: 35px 0; */
-  display: none;
+  border-top: 1px solid #bbb;
+  margin: 35px 0;
 }
 .coptikk-app .cop .custom__input__header {
   width: 100%;
   text-align: center;
 }
-
 .coptikk-app .cop .custom__input {
   padding: 0 0 0 15px;
   min-width: 65px;
@@ -1180,10 +1178,7 @@ select:focus {
   margin-top: 4px;
   border-width: 1px;
   border-radius: 25px;
-  border: 1px solid black;
-  outline: none;
 }
-
 .coptikk-app .cop .custom__wrapper {
   display: flex;
   width: 100%;
@@ -1204,27 +1199,28 @@ select:focus {
 }
 .coptikk-app .cop__member__wrapper {
   display: inline-flex;
-  align-items: top;
   justify-content: start;
   width: 100%;
   margin-bottom: 1.5rem;
 }
 .coptikk-app .cop__member__name {
-  font-size: 18px;
   /* padding-top: 10px; */
   width: 100%;
-  color: #161616;
+  /* color: #161616; */
   font-weight: 700;
-  letter-spacing: 1.5px;
 }
 .coptikk-app .cop__member__description {
-  font-size: 16px;
   width: 100%;
   /* color: #161616; */
   font-weight: 400;
-  /* line-height: 2rem; */
-  line-height: 35px;
-  letter-spacing: 1.5px;
+  line-height: 2rem;
+
+  /* added */
+  font-family:
+    Open Sans,
+    Arial,
+    Tahoma,
+    sans-serif;
 }
 .coptikk-app .cop__member__price {
   position: absolute;
