@@ -108,6 +108,7 @@
   /* added */
   border: 1px solid black;
   padding: 11px 50px 11px 18px;
+  max-width: 400px;
 }
 
 .coptikk-app .calendar-dropdown {
@@ -126,8 +127,12 @@
 }
 .coptikk-app .store-field-wrapper {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+
+  /* added */
+  max-width: 400px;
 }
+
 .coptikk-app .store-field-wrapper .store-field {
   margin: rem(0 0 28px);
   padding: rem(0.5rem 18px);
@@ -156,6 +161,9 @@
 }
 .coptikk-app .date-picker-input-wrapper {
   margin-bottom: rem(59px);
+
+  /* added */
+  max-width: 400px;
 }
 .coptikk-app .column,
 .coptikk-app .columns {
@@ -1058,7 +1066,20 @@
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-weight: 600;
+  max-width: 500px;
+  transition: all 2s ease-in-out;
+  border: 1px solid #43b02a;
 }
+
+/* added */
+.cop .return-brn:hover {
+  transform: scale(0.7);
+}
+
+.cop .return-brn:active {
+  border-color: black;
+}
+
 .coptikk-app .cop .return-btn-step {
   margin: 40px 0;
 }
@@ -1161,6 +1182,9 @@
   padding: 0.5rem 1.5rem;
   height: 2.6rem;
   min-height: 110px;
+
+  /* added */
+  max-width: 600px;
 }
 .coptikk-app .cop__separator {
   border-top: 1px solid #bbb;
@@ -1178,6 +1202,9 @@
   margin-top: 4px;
   border-width: 1px;
   border-radius: 25px;
+
+  /* added */
+  width: 50px;
 }
 .coptikk-app .cop .custom__wrapper {
   display: flex;
@@ -1235,4 +1262,17 @@
 }
 .coptikk-app .cop__member__next-step {
   margin: 10px 5px;
+}
+
+/* added */
+select:active,
+select:hover,
+select:focus,
+textarea:active,
+textarea:hover,
+textarea:focus,
+input:active,
+input:hover,
+input:focus {
+  outline-color: #206212;
 }

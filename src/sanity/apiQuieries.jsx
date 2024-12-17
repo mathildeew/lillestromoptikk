@@ -56,4 +56,10 @@ export const apiQuieries = (query) => ({
     carousel,
    }
   `,
+
+  eyecheckInfo: `
+  *[_type == "eyecheckInfo"][0]{
+   intro
+   }
+  `,
 });

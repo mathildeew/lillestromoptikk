@@ -7,6 +7,7 @@ import hero from './home/hero'
 import temporary from './home/temporary'
 // Booking
 import eyecheckMetadata from './eyecheck/metadata'
+import eyecheckInfo from './eyecheck/info'
 // Brands
 import brandsMetadata from './brands/metadata'
 import content from './brands/content'
@@ -26,6 +27,7 @@ export const schemaTypes = [
   hero,
   temporary,
   eyecheckMetadata,
+  eyecheckInfo,
   brandsMetadata,
   content,
   ourBrands,

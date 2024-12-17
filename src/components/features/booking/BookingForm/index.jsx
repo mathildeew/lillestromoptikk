@@ -1,10 +1,10 @@
-import { useRef } from "react";
-import { useEffect } from "react";
+import { useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { booking } from "./index-1.1.mjs";
 import "./bookingForm.css";
-import { useLocation } from "react-router-dom";
 
 export default function BookingForm() {
+  const topRef = useRef(null);
   const pageLoaded = useRef(false);
   const location = useLocation();
 
@@ -26,6 +26,20 @@ export default function BookingForm() {
 
     return () => {
       window.removeEventListener("load", mountBooking); // Rydde opp etterpå
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScrollTotop = (event) => {
+      if (event.target.textContent === "Bestill time") {
+        topRef.current?.scrollInToView({ behavior: "smoot" });
+      }
+    };
+
+    document.addEventListener("click", handleScrollTotop);
+
+    return () => {
+      document.removeEventListener("click", handleScrollTotop);
     };
   }, []);
 

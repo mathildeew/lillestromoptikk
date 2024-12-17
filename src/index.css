@@ -66,7 +66,7 @@
   }
 
   .btn-primary {
-    @apply font-semibold rounded-full px-6 py-3 transition-all ease-in-out duration-200 hover:scale-95 active:border active:border-black;
+    @apply font-semibold rounded-full px-6 py-3 border border-green361 transition-all ease-in-out duration-200 hover:scale-95 active:border active:border-black;
   }
 
   /* FORMS - - - - - - - - - - */
