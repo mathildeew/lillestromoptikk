@@ -35,6 +35,12 @@ export const apiQuieries = (query) => ({
    }
   `,
 
+  brandsInfo: `
+  *[_type == "brandsInfo"][0]{
+   intro
+   }
+  `,
+
   ourBrands: `
   *[_type == "ourBrands"]{
     _id,

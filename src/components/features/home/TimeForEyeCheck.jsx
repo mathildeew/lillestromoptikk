@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import LogMAR from "./LogMAR";
@@ -15,12 +16,10 @@ export default function TimeForCheck() {
             <p>Å prioritere regelmessige synsundersøkelser er å investere i fremtiden til øynene dine, uavhengig av alder eller daglige aktiviteter.</p>
           </div>
 
-          <button className="btn-primary bg-green361">
-            <a href={"https://www.coptikk.no/bestill-synstest?single=true&current_optician=5271"} className="flex items-center gap-2">
-              Bestill synsundersøkelse
-              <FontAwesomeIcon icon={faChevronRight} className="text-md" />
-            </a>
-          </button>
+          <Link to="timebestilling" className="btn-primary bg-green361 flex items-center gap-2" aria-label="Bestill synsundersøkelse">
+            Bestill synsundersøkelse
+            <FontAwesomeIcon icon={faChevronRight} className="text-md" aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </section>

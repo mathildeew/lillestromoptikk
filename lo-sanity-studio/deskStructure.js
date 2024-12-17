@@ -88,6 +88,13 @@ export const myStructure = (S) =>
                     .title('Metadata'),
                 ),
 
+              S.listItem()
+                .title('Info')
+                .icon(InfoOutlineIcon)
+                .child(
+                  S.document().schemaType('brandsInfo').documentId('brandsInfo').title('Info'),
+                ),
+
               S.listItem().title('Merker').icon(AddIcon).child(S.documentTypeList('ourBrands')),
             ]),
         ),
@@ -139,6 +146,7 @@ export const myStructure = (S) =>
             'eyecheckMetadata',
             'eyecheckInfo',
             'brandsMetadata',
+            'brandsInfo',
             'content',
             'ourBrands',
             'aboutMetadata',

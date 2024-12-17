@@ -22,7 +22,7 @@ export default function Home() {
 
   useEffect(() => {
     const getData = async () => {
-      const [temporary, hero] = await Promise.all([fetchAPI(apiQuieries().temporary), fetchAPI(apiQuieries().hero)]);
+      const [hero, temporary] = await Promise.all([fetchAPI(apiQuieries().hero), fetchAPI(apiQuieries().temporary)]);
       setData({ heroData: hero, temporaryData: temporary });
     };
     getData();
@@ -37,7 +37,7 @@ export default function Home() {
       {isLoading && <Loader />}
 
       {isSuccess && (
-        <main className="flex flex-col items-center">
+        <main>
           {temporaryData.published === true && <Temporary data={temporaryData} />}
           <Hero {...heroData} />
           <TimeForCheck />

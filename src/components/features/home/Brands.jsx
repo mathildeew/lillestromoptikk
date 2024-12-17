@@ -8,7 +8,8 @@ import useAPI from "../../../hooks/useAPI";
 export default function BrandsHome() {
   const [brandsData, setBrandsData] = useState([]);
 
-  const { fetchAPI, isLoading, isSuccess } = useAPI();
+  const { fetchAPI } = useAPI();
+
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAPI(apiQuieries().ourBrands);
@@ -28,12 +29,10 @@ export default function BrandsHome() {
             <img key={index} src={brand.focusUrl} alt={brand.title} className="w-full h-auto object-cover" />
           ))}
         </div>
-        <button className="btn-primary bg-green361">
-          <Link to={"/merker"} className="flex items-center gap-2">
-            Se alle våre merker
-            <FontAwesomeIcon icon={faChevronRight} className="text-md" />
-          </Link>
-        </button>
+        <Link to={"merker"} className="btn-primary bg-green361 flex items-center gap-2" aria-label="Gå til alle våre merker">
+          Se alle våre merker
+          <FontAwesomeIcon icon={faChevronRight} className="text-md" aria-hidden="true" />
+        </Link>
       </div>
     </section>
   );

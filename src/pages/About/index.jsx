@@ -6,19 +6,19 @@ import SEOHelmet from "../../components/SEOHelmet";
 import useAPI from "../../hooks/useAPI";
 import ImageCarousel from "../../components/features/about/ImageCarousel";
 import Loader from "../../components/layout/Loader";
+import Error from "../../components/layout/Error";
 
 export default function About() {
   const [aboutData, setAboutData] = useState([]);
   const [carouselImages, setCarouselImages] = useState([]);
 
-  const defaultMetadata = {
+  const metadata = getMetadata(`aboutMetadata`, {
     title: "Om oss → Lillestrøm Optikk",
     desc: "",
-  };
+  });
 
-  const metadata = getMetadata(`aboutMetadata`, defaultMetadata);
+  const { fetchAPI, isLoading, isSuccess, isError } = useAPI();
 
-  const { fetchAPI, isLoading, isSuccess } = useAPI();
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAPI(apiQuieries().about);
@@ -30,11 +30,11 @@ export default function About() {
 
   return (
     <>
-      <SEOHelmet title={metadata.title} content={metadata.desc} />
+      <SEOHelmet {...metadata} />
       {isLoading && <Loader />}
 
       {isSuccess && (
-        <main data-animate-in="true">
+        <main>
           <section className="flex flex-col gap-16 items-center">
             <section className="w-full text-center bg-grey flex flex-col items-center px-4 py-10 md:px-10 lg:py-20">
               <div className="text-center max-w-4xl flex flex-col gap-4">
@@ -59,6 +59,8 @@ export default function About() {
           </section>
         </main>
       )}
+
+      {isError && <Error />}
     </>
   );
 }

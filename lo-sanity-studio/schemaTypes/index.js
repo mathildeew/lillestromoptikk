@@ -10,6 +10,7 @@ import eyecheckMetadata from './eyecheck/metadata'
 import eyecheckInfo from './eyecheck/info'
 // Brands
 import brandsMetadata from './brands/metadata'
+import brandsInfo from './brands/info'
 import content from './brands/content'
 import ourBrands from './brands/brands'
 // About
@@ -30,6 +31,7 @@ export const schemaTypes = [
   eyecheckInfo,
   brandsMetadata,
   content,
+  brandsInfo,
   ourBrands,
   aboutMetadata,
   about,
