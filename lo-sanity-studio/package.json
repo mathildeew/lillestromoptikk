@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "package.json",
   "license": "UNLICENSED",
+  "type": "module",
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
@@ -17,14 +18,16 @@
   "dependencies": {
     "@portabletext/react": "^3.1.0",
     "@sanity/vision": "^3.52.2",
+    "autoprefixer": "^10.4.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanity": "^3.52.2",
+    "sanity": "^3.67.1",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/react": "^18.0.25",
+    "caniuse-lite": "^1.0.30001689",
     "eslint": "^8.6.0",
     "prettier": "^3.0.2",
     "typescript": "^5.1.6"
