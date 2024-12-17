@@ -16,7 +16,7 @@ export default function Eyecheck() {
 
   const metadata = getMetadata(`eyecheckMetadata`, defaultMetadata);
 
-  const { fetchAPI, isLoading, isSuccess, isError } = useAPI();
+  const { fetchAPI, isLoading, isSuccess } = useAPI();
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAPI(apiQuieries().eyecheckInfo);

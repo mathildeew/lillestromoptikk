@@ -8,6 +8,11 @@
     margin: 0;
   }
 
+  ::selection {
+    color: black;
+    background-color: rgba(67, 176, 42, 0.5);
+  }
+
   html {
     overflow-x: hidden;
     position: relative;

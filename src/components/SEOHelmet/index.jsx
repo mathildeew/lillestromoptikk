@@ -1,15 +1,18 @@
+import PropTypes from "prop-types";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 
-export default function SEOHelmet({ title, content }) {
+export default function SEOHelmet({ title, desc }) {
   return (
     <HelmetProvider>
       <Helmet>
-        <link rel="stylesheet" href="https://use.typekit.net/hgq0xzm.css" />
-        <script src="https://kit.fontawesome.com/831e6c6172.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/x-icon" href="/identity/favicon.svg" />
-        <meta name="description" content={content} />
+        <meta name="description" content={desc} />
         <title>{`${title}`}</title>
       </Helmet>
     </HelmetProvider>
   );
 }
+
+SEOHelmet.propTypes = {
+  title: PropTypes.string,
+  desc: PropTypes.string,
+};
