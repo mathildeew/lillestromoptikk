@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { PortableText } from "@portabletext/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
-import { PortableTextBrands } from "./PortableTextBrands";
 
 export default function RenderBrands({ allBrands }) {
   if (!allBrands || !Array.isArray(allBrands)) {
