@@ -15,7 +15,7 @@ export default function Contact() {
       <SEOHelmet {...metadata} />
 
       <MainComponentAnimation>
-        <section className="flex flex-col gap-16 items-center pb-16">
+        <section className="w-full flex flex-col gap-16 items-center pb-16">
           <ContactIntro />
           <StoreInfo />
         </section>

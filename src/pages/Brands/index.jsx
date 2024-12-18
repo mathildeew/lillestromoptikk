@@ -7,7 +7,7 @@ import Loader from "../../components/layout/Loader";
 import Error from "../../components/layout/Error";
 import MainComponentAnimation from "../../components/layout/MainComponentAnimation";
 import BrandsIntro from "../../components/features/brands/BrandsIntro";
-import AllBrands from "../../components/features/brands/AllBrands";
+import RenderBrands from "../../components/features/brands/RenderBrands";
 
 export default function Brands() {
   const [data, setData] = useState({ brandsInfo: [], selectedBrands: [] });
@@ -37,10 +37,10 @@ export default function Brands() {
 
       {isSuccess && (
         <MainComponentAnimation>
-          <section className="flex flex-col gap-16 items-center pb-16">
+          <section className="w-full flex flex-col gap-16 items-center pb-16">
             <BrandsIntro {...brandsInfo} />
 
-            <AllBrands allBrands={allBrands} />
+            <RenderBrands allBrands={allBrands} />
           </section>
         </MainComponentAnimation>
       )}

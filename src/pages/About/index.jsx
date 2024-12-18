@@ -37,7 +37,7 @@ export default function About() {
 
       {isSuccess && (
         <MainComponentAnimation>
-          <section className="flex flex-col gap-16 items-center">
+          <section className="w-full flex flex-col gap-16 items-center">
             <AboutIntro {...aboutData} />
             <AboutContent {...aboutData} />
             {carouselImages && <ImageCarousel data={carouselImages} />}
