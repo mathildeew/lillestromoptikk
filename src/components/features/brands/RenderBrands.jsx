@@ -1,7 +1,10 @@
 import PropTypes from "prop-types";
 import { PortableText } from "@portabletext/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { PortableTextBrands } from "./PortableTextBrands";
 
-export default function AllBrands({ allBrands }) {
+export default function RenderBrands({ allBrands }) {
   if (!allBrands || !Array.isArray(allBrands)) {
     return;
   }
@@ -13,7 +16,13 @@ export default function AllBrands({ allBrands }) {
           <img src={brand.imageUrl} className="w-full h-96 object-cover rounded-xl md:w-1/2" alt={`Vi har briller fra ${brand.title}`} />
           <div className="flex flex-col gap-2 md:w-1/2">
             <h2>{brand.title}</h2>
-            <PortableText value={brand.content} />
+            <div>
+              <PortableText value={brand.content} />
+              <a href={brand.link} className="flex items-center gap-2 mt-4 transition-all duration-500 ease-in-out hover:underline">
+                Les mer
+                <FontAwesomeIcon icon={faArrowRightLong} className="text-md" aria-hidden="true" />
+              </a>
+            </div>
           </div>
         </section>
       ))}
@@ -21,6 +30,6 @@ export default function AllBrands({ allBrands }) {
   );
 }
 
-AllBrands.propTypes = {
+RenderBrands.propTypes = {
   allBrands: PropTypes.array,
 };

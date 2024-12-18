@@ -26,11 +26,19 @@ const ourBrands = {
         {
           name: 'focusAlt',
           title: 'Alternativ tekst',
-          description: 'Enkel beskrivelse av bildet, 5-10 ord.',
           type: 'string',
+          description: 'Enkel beskrivelse av bildet, 5-10 ord.',
           validation: (rule) => rule.required(),
         },
       ],
+    },
+    {
+      name: 'link',
+      title: 'Link',
+      type: 'string',
+      value: 'URL',
+      description: 'Link til nettsted slik at kunde kan lese mer.',
+      validation: (rule) => rule.required(),
     },
     {
       name: 'image',

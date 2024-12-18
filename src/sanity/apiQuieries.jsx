@@ -45,6 +45,7 @@ export const apiQuieries = (query) => ({
   *[_type == "ourBrands"]{
     _id,
     title,
+    link,
     "imageUrl": image.asset -> url,
     "imageAlt": image.alt,
     image,
