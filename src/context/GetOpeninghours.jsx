@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { createContext, useContext, useEffect, useState } from "react";
 import { apiQuieries } from "../sanity/apiQuieries";
 import sanityClient from "../sanity/sanityClient";
@@ -19,3 +20,7 @@ export function GetOpeningHours({ children }) {
 }
 
 export const useOpeningHours = () => useContext(OpeningHoursContext);
+
+GetOpeningHours.propTypes = {
+  children: PropTypes.node,
+};
