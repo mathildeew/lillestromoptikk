@@ -5,6 +5,7 @@ import SEOHelmet from "../../components/SEOHelmet";
 import useAPI from "../../hooks/useAPI";
 import Loader from "../../components/layout/Loader";
 import Error from "../../components/layout/Error";
+import MainComponentAnimation from "../../components/layout/MainComponentAnimation";
 import Hero from "../../components/features/home/Hero";
 import TimeForCheck from "../../components/features/home/TimeForEyeCheck";
 import Temporary from "../../components/features/home/Temporary";
@@ -37,12 +38,12 @@ export default function Home() {
       {isLoading && <Loader />}
 
       {isSuccess && (
-        <main>
+        <MainComponentAnimation>
           {temporaryData.published === true && <Temporary data={temporaryData} />}
           <Hero {...heroData} />
           <TimeForCheck />
           <BrandsHome />
-        </main>
+        </MainComponentAnimation>
       )}
 
       {isError && <Error />}

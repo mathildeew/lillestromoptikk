@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import { apiQuieries } from "../../sanity/apiQuieries";
-import { urlFor } from "../../sanity/urlFor";
 import getMetadata from "../../hooks/getMetadata";
 import SEOHelmet from "../../components/SEOHelmet";
 import useAPI from "../../hooks/useAPI";
 import ImageCarousel from "../../components/features/about/ImageCarousel";
 import Loader from "../../components/layout/Loader";
 import Error from "../../components/layout/Error";
+import MainComponentAnimation from "../../components/layout/MainComponentAnimation";
+import AboutIntro from "../../components/features/about/AboutIntro";
+import AboutContent from "../../components/features/about/AboutContent";
 
 export default function About() {
   const [aboutData, setAboutData] = useState([]);
@@ -34,30 +36,13 @@ export default function About() {
       {isLoading && <Loader />}
 
       {isSuccess && (
-        <main>
+        <MainComponentAnimation>
           <section className="flex flex-col gap-16 items-center">
-            <section className="w-full text-center bg-grey flex flex-col items-center px-4 py-10 md:px-10 lg:py-20">
-              <div className="text-center max-w-4xl flex flex-col gap-4">
-                <h1>Om oss</h1>
-                <p>{aboutData.intro}</p>
-              </div>
-            </section>
-
-            <div className="max-w-7xl flex flex-col gap-4 px-4 mb-10 md:gap-16 md:px-10 lg:mb-20">
-              {aboutData.sections?.map((section, index) => (
-                <section key={section._key} className={`w-full flex flex-col gap-4 items-center  md:flex-row md:gap-10 ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}>
-                  <img className="w-full h-96 object-cover rounded-xl md:w-1/2" src={urlFor(section.image).url()} alt={section.image.alt} />
-                  <div className="flex flex-col gap-2 md:w-1/2">
-                    <h2>{section.heading}</h2>
-                    <p>{section.text}</p>
-                  </div>
-                </section>
-              ))}
-            </div>
-
+            <AboutIntro {...aboutData} />
+            <AboutContent {...aboutData} />
             {carouselImages && <ImageCarousel data={carouselImages} />}
           </section>
-        </main>
+        </MainComponentAnimation>
       )}
 
       {isError && <Error />}
